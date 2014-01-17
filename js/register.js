@@ -76,20 +76,20 @@ function filechange(){
 	 
 	}
 
-function validate(){
-            var fname  	 = $('#first_name').val();
-            var lname 	 = $('#last_name').val();
-            var address  = $('#address').val();
-            var city 	 = $('#city').val();
-            var email 	 = $('#email').val();
-            var question = $('#question').val();
-            var answer 	 = $('#answer').val();
+//function validate(){
+  //          var fname  	 = $('#first_name').val();
+    //        var lname 	 = $('#last_name').val();
+      //      var address  = $('#address').val();
+        //    var city 	 = $('#city').val();
+          //  var email 	 = $('#email').val();
+           // var question = $('#question').val();
+            //var answer 	 = $('#answer').val();
 			
-			if(fname.length == 0 || lname.length == 0 || address.length == 0 || city.length == 0 || email.length == 0 || question.length == 0 || answer.lenght == 0){
+			//if(fname.length == 0 || lname.length == 0 || address.length == 0 || city.length == 0 || email.length == 0 || question.length == 0 || answer.lenght == 0){
 			 // $("#submit").attr("disabled", "disabled");
-			}
-			else{
+			//}
+			//else{
 			   //$('#submit').prop('disabled', false);
-			}
+			//}
 			
-}
+//}

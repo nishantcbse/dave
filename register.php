@@ -51,9 +51,7 @@ include_once('header.php');
             <?php _e('City'); ?>
           </label>
           <div class="controls">
-            <select class="select2 span8 m-wrap" tabindex="1" id="city" name="city" onclick="validate()">
-               <option value="" ></option>
-            </select>
+            <input type="text" class="span8 m-wrap" tabindex="1" id="city" name="city" onclick="validate()"/>
           </div>
         </div>
         <div class="control-group">

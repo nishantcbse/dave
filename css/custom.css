@@ -117,3 +117,72 @@
   transform: translate(-300px, 0) scale(4);
   direction: ltr;
 }
+/* End of Image Uplode */
+
+/* Ravi Css */
+
+.front-header .navbar-inner .nav-collapse > ul {
+float: right;
+	margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: -79px;
+    margin-left: -15px;
+}
+
+.navbar .btn, .navbar .btn-group {
+	margin-right: 10px;
+	margin-top: -120px;
+}
+
+
+
+.input-append {
+	margin-top: -41px;
+	margin-left: -70px;
+}
+
+.nav-collapse collapse .nav li{
+	margin-top: -50px;
+}
+
+.front-header .navbar-inner .nav-collapse > ul {
+	float: right;
+    margin-bottom: -18px;
+    margin-left: -15px;
+    margin-right: 0;
+	margin-top: -20px;
+}
+
+.navbar .nav {
+    display: block;
+    float: left;
+    left: 0;
+    margin: -5px -21px -35px 0;
+    position: relative;
+}
+
+.profil {
+	margin-top: 40px;
+}
+.nav .nav-pills .nav-stacked {
+	margin-left: -30px;
+}
+.span2 {
+	margin-left:-10px;
+}
+
+.form-horizontal {
+	margin-left: -55px;
+}
+.border {
+	margin-bottom: 20px;
+}
+
+/* End Of Ravi Css */
+
+/* Vik Css */
+.active1 a {
+	background:#FFF;
+	color:#333 !important;
+}
+/* End Of Ravi Css */

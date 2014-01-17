@@ -28,14 +28,6 @@
     <!-- END COPYRIGHT -->
 
        
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            App.init();    
-            App.initBxSlider();
-            Index.initRevolutionSlider(); 
-           App.gridOption1();
-        });
-    </script>
     
 </body>
 </html>

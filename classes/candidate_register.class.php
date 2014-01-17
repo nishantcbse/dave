@@ -8,7 +8,6 @@ class CandidateRegister extends Generic {
         if(!empty($_GET['id'])) $this->grab();
 
 		if(!empty($_POST)) {
-
 			foreach ($_POST as $key => $value)
 				$this->options[$key] = parent::secure($value);
 
@@ -68,7 +67,6 @@ class CandidateRegister extends Generic {
 			$this->error = '<div class="alert alert-error">'._('You must enter a First name.').'</div>';
         }
 	}
-
 
     private function add() {
 

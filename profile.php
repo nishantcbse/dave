@@ -1,134 +1,250 @@
-<?php include_once('classes/profile.class.php');?>
-<?php include_once('header.php');?>
+<?php 
+$title = 'Profile';
+$label = 'profile';
+include_once('header.php');
+include_once('classes/profile.class.php');
 
-<h1>
+$user_avatar = 'documents/upload/default.png';
+$file_avatar = 'default.png';
+include_once('classes/listbox.class.php');
+?>
 
-	<a href="http://gravatar.com/emails/" class="a-tooltip" data-rel="tooltip-bottom" title="<?php _e('Change your avatar at Gravatar.com'); ?>">
-		<img class="gravatar thumbnail" src="<?php echo $profile->get_gravatar($profile->getField('email'), false, 54); ?>"/>
-	</a>
+ <script src="js/profile.js"></script>
+    <!-- BEGIN CONTAINER -->   
+    <div class="container min-hight">
+    
+    <div class="span2">
+    	<h2>Settings</h2>
+        <ul class="nav nav-pills nav-stacked">
+        <li><a href="#">Profile Edit</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Audio</a></li>
+        <li><a href="video_img.php">Image And Video</a></li>
+        </ul>
+    
+    </div>
+    
+        <!-- BEGIN ABOUT INFO -->   
+        <div class="row-fluid margin-bottom-30">
+            <!-- BEGIN INFO BLOCK -->               
+            <div class="span5 space-mobile pull-left">
+            				<h2>Settings</h2>
+                            <i class="fa fa-user-md fa-2x"></i> &nbsp; &nbsp; Profile Editing
+                            <div class="border"></div>
+            
+            <!-- BEGIN FORM-->
+            <form action="#" class="form-horizontal" method="post" id="profile">
+            <input type="hidden" name="user-id"  val="-1" />
+            
+                <div class="control-group">
+                          <label class="control-label" for="image">
+                            <?php _e('Uplode Image'); ?>
+                          </label>
+                      <div class="controls">
+                        <div class="fileupload fileupload-new" data-provides="fileupload">
+                         <input type="hidden" name="avatar" id="avatar" value="<?php echo $file_avatar; ?>"/>
+                            <div class="fileupload-new thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;"><img src="<?php echo $user_avatar; ?>" /></div>
+                                <div class="fileupload-preview fileupload-exists thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                                    <div>
+                                        <span class="btn btn-file"><span class="fileupload-new">Select image</span>
+                                        <span class="fileupload-exists" >Change</span><input type="file"  name="fileToUpload" id="fileToUpload" onchange="filechange()"/></span>
+                                        <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                    </div>
+                         </div>
+                      </div>
+                </div>
+            
+                
+                <div class="control-group">
+                    <label class="control-label"><?php _e('First name'); ?></label>
+                    <div class="controls">
+                        <input type="text" placeholder="" id="first_name" name="first_name" class="m-wrap span8" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label"><?php _e('Last name'); ?></label>
+                    <div class="controls">
+                        <input type="text" placeholder="" id="last_name" name="last_name" class="m-wrap span8" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label"><?php _e('Address'); ?></label>
+                    <div class="controls">
+                        <textarea class="span8 m-wrap" rows="3" name="address" id="address"></textarea>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label"><?php _e('City'); ?></label>
+                    <div class="controls">
+                        <select class="span8 m-wrap select2" tabindex="1" id="city" name="city">
+                         <?php echo $sdistrict ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Email"><?php _e('Email'); ?></label>
+                    <div class="controls">
+                        <input class="m-wrap span8" type="email" id="email" name="email" placeholder="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label"><?php _e('Security Question'); ?></label>
+                    <div class="controls">
+                    <select class="select2 span8 m-wrap" tabindex="1" id="security_question" name="security_question" onclick="validate()" >
+                     <option value="a" >a</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label"><?php _e('Answer'); ?></label>
+                    <div class="controls">
+                        <input type="text" placeholder="" id="answer" name="answer" class="m-wrap span8" />
+                    </div>
+                </div>
+                
+        <div class="control-group">
+          <div class="controls">
+            <button type="submit" class="theme-btn btn" value="Submit" id="submit"><?php _e('Save changes'); ?></button>
+            <button class="btn" type="reset">Clear</button>
+          </div>
+        </div>
+            </form>
+											<!-- END FORM-->  
+            </div>
+            <!-- END INFO BLOCK -->   
 
-	<?php echo $profile->getField('username') . ' (' . $profile->getField('name') . ')'; ?>
+            <!-- BEGIN CAROUSEL -->            
+            <div class="offset1 span4 front-carousel pull-right">
+            <div class="row-fluid">
+            <div class="span12">
+                  <div class="fullwidthbanner-container slider-main margin-bottom-10" >
 
-</h1>
+        	<div class="fullwidthabnner">
+            <ul id="revolutionul" style="display:none;">            
+                    <!-- THE FIRST SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                        <img src="assets/img/pics/img1-medium.jpg" alt="">
+                    </li>
 
-<br>
+                    <!-- THE SECOND SLIDE -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                        <img src="assets/img/pics/img2-medium.jpg" alt="">
 
-<div class="tabs-left">
+                    </li>
+                    
+                    <!-- THE THIRD SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <img src="assets/img/pics/img3-medium.jpg" alt="">
+                       
+                    </li>               
+                    
+                    <!-- THE FORTH SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                        <img src="assets/img/pics/img4-medium.jpg" alt="">
+                        
+                    </li>
+            </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+        	</div>
+            </div>
 
-	<ul class="nav nav-tabs">
+            </div>                
+            </div>
+            
+                <div class="row-fluid">
+                <div class="span12">
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
 
-		<?php if ( !$profile->guest ) : ?>
-			<li class="active"><a href="#usr-control" data-toggle="tab"><i class="icon-cog"></i> <?php _e('General'); ?></a></li>
-		<?php endif; ?>
+        	<div class="fullwidthabnner1">
+            <ul id="revolutionul" style="display:none;">            
+                    <!-- THE FIRST SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                        <img src="assets/img/pics/img1-medium.jpg" alt="">
+                    </li>
 
-		<?php $profile->generateProfileTabs($profile->guest); ?>
-		<?php if (!$profile->guest && !$profile->denyAccessLogs()) : ?>
-		<li><a href="#usr-access-logs" data-toggle="tab"><i class="icon-list-alt"></i> <?php _e('Access logs'); ?></a></li>
-		<?php endif; ?>
+                    <!-- THE SECOND SLIDE -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                        <img src="assets/img/pics/img2-medium.jpg" alt="">
 
-		<?php if ( !$profile->guest && !empty( $jigowatt_integration->enabledMethods ) ) : ?>
-		<li><a href="#usr-integration" data-toggle="tab"><i class="icon-random"></i> <?php _e('Integration'); ?></a></li>
-		<?php endif; ?>
+                    </li>
+                    
+                    <!-- THE THIRD SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <img src="assets/img/pics/img3-medium.jpg" alt="">
+                       
+                    </li>               
+                    
+                    <!-- THE FORTH SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                        <img src="assets/img/pics/img4-medium.jpg" alt="">
+                        
+                    </li>
+            </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+        	</div>
+            </div>
+                </div>                
+            </div>
 
-	</ul>
+                <div class="row-fluid">
+                <div class="span12">
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
 
-	<form class="form-horizontal" method="post" action="profile.php">
-	<div class="tab-content">
+        	<div class="fullwidthabnner2">
+            <ul id="revolutionul" style="display:none;">            
+                    <!-- THE FIRST SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                        <img src="assets/img/pics/img1-medium.jpg" alt="">
+                    </li>
 
-		<?php if ( !$profile->guest ) : ?>
-		<div class="tab-pane fade in active" id="usr-control">
-			<fieldset>
-				<legend><?php _e('General'); ?></legend>
-				<div class="control-group">
-					<label class="control-label" for="CurrentPass"><?php _e('Current password'); ?></label>
-					<div class="controls">
-						<input type="password" autocomplete="off" class="input-xlarge" id="CurrentPass" name="CurrentPass">
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="name"><?php _e('Name'); ?></label>
-					<div class="controls">
-						<input type="text" class="input-xlarge" id="name" name="name" value="<?php echo $profile->getField('name'); ?>">
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="email"><?php _e('Email'); ?></label>
-					<div class="controls">
-						<input type="email" class="input-xlarge" id="email" name="email" value="<?php echo $profile->getField('email'); ?>">
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="password"><?php _e('New password'); ?></label>
-					<div class="controls">
-						<input type="password" autocomplete="off" class="input-xlarge" id="password" name="password" placeholder="<?php _e('Leave blank for no change'); ?>">
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="confirm"><?php _e('New password again'); ?></label>
-					<div class="controls">
-						<input type="password" autocomplete="off" class="input-xlarge" id="confirm" name="confirm">
-					</div>
-				</div>
+                    <!-- THE SECOND SLIDE -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                        <img src="assets/img/pics/img2-medium.jpg" alt="">
 
-				<?php if ( $profile->getOption('profile-public-enable') ) : ?>
-				<div class="control-group">
-					<label class="control-label" for="confirm"><?php _e('Your public link'); ?></label>
-					<div class="controls">
-						<span class="uneditable-input"><?php echo SITE_PATH . 'profile.php?uid=' . $profile->getField('user_id'); ?></span>
-					</div>
-				</div>
-				<?php endif; ?>
+                    </li>
+                    
+                    <!-- THE THIRD SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <img src="assets/img/pics/img3-medium.jpg" alt="">
+                       
+                    </li>               
+                    
+                    <!-- THE FORTH SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+                        <img src="assets/img/pics/img4-medium.jpg" alt="">
+                        
+                    </li>
+            </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+        	</div>
+            </div>
+                </div>                
+            </div>
 
-			</fieldset>
-		</div>
-		<?php endif; ?>
-
-		<?php $profile->generateProfilePanels($profile->guest); ?>
-
-		<?php if (!$profile->guest && !$profile->denyAccessLogs()) : ?>
-		<div class="tab-pane fade" id="usr-access-logs">
-			<fieldset>
-				<legend><?php _e('Access Logs'); ?></legend>
-				<?php $profile->generateAccessLogs(); ?>
-			</fieldset>
-		</div>
-		<?php endif; ?>
-
-		<?php if ( !$profile->guest && !empty( $jigowatt_integration->enabledMethods ) ) : ?>
-		<div class="tab-pane fade" id="usr-integration">
-			<fieldset>
-				<legend><?php _e('Integration'); ?></legend><br>
-
-				<p><?php _e('Use your preferred social method to login the next time you visit our site.'); ?></p><br>
-
-				<?php
-
-					foreach ($jigowatt_integration->enabledMethods as $key ) :
-						$inUse = $jigowatt_integration->isUsed($key);
-						?><div class="span3">
-							<a class="a-tooltip" href="#" data-rel="tooltip" tabindex="99" title="<?php echo ucwords($key); ?>">
-								<img src="assets/img/<?php echo $key; ?>.png" alt="<?php echo $key; ?>">
-							</a>
-							<a href="<?php echo $inUse ? '#' : '?link='.$key; ?>" class="btn btn-small btn-info<?php echo $inUse ? ' disabled' : ''; ?>"><?php _e('Link'); ?></a>
-							<a href="<?php echo !$inUse ? '#' : '?unlink='.$key; ?>" class="btn btn-small<?php echo !$inUse ? ' disabled' : ''; ?>"><?php _e('Unlink'); ?></a>
-							</div><?php
-
-					endforeach;
-
-				?>
-
-			</fieldset>
-		</div>
-		<?php endif; ?>
-
-		<?php if ( !$profile->guest ) : ?>
-		<div class="form-actions">
-			<button type="submit" class="btn btn-primary"><?php _e('Save changes'); ?></button>
-		</div>
-		<?php endif; ?>
-
+         </div>
+            <!-- END CAROUSEL -->             
+        </div>
+        <!-- END ABOUT INFO --> 
+        
+  </div>
+    
+<div id="modal-error" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<form method="post" id="error-form">
+    <div class="modal-header">
+	    <h3 id="modal-title-error"></h3>
 	</div>
-	</form>
+	<div id="modal-body-error">
+    </div>
+    <div class="modal-footer">
+	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+	</div>
+</form>
 </div>
 
 <?php include ('footer.php'); ?>

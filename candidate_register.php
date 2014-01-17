@@ -65,7 +65,7 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="partysymbol"><?php _e('Party Symbol'); ?></label>
                     <div class="controls">
-                        <select name="" id="select2_partysymbol" class="span8 ">
+                        <select name="party_symbol" id="select2_partysymbol" class="span8 ">
                             <option value="1">UNITED PEOPLE'S FREEDOM ALLIANCE</option>
                             <option value="2">UNITED NATIONAL PARTY</option>
                             <option value="3">PEOPLE'S LIBERATION FRONT (JVP)</option>
