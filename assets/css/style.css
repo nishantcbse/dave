@@ -222,7 +222,7 @@ float: right;
 .front-header .navbar-inner .dropdown-menu {
 	border: none; 
 	box-shadow: none;
-	min-width: 185px;
+	min-width: 126px;
 	border-bottom: none;
 	border-left: solid 1px #eee; 
 	border-right: solid 1px #eee; 

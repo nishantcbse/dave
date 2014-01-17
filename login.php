@@ -7,8 +7,14 @@
             <!-- BEGIN INFO BLOCK -->               
             <div class="span7 space-mobile">
 				<div class="margin-bottom-30">
-					<form method="post" action="login.php" class="form-horizontal">
+                	<div class="loginhead">
 						<h4><?php _e('Sign in to Nwareindia'); ?></h4>
+                    </div>
+					<form method="post" action="login.php" class="form-horizontal">
+						<div class="control-group">
+							<div class="controls">
+                        	</div>
+                        </div>
 						<div class="control-group">
 							<label class="control-label" for="username"><?php echo $login->use_emails ? _('Email address') : _('Username'); ?></label>
 							<div class="controls">
@@ -26,7 +32,8 @@
 								<label class="checkbox">
 									<input type="checkbox" id="remember" name="remember"><?php _e('Stay signed in'); ?></label>
 								<input type="hidden" name="token" value="<?php echo $_SESSION['jigowatt']['token']; ?>"/>
-								<button type="submit" value="<?php _e('Sign in'); ?>" class="btn black" id="login-submit" name="login">Sign in</button>
+								<button type="submit" value="" class="btn black" id="login-submit" name="login"><?php _e('Sign In'); ?></button>
+								<a href="#"><button type="button" value="" class="btn black" id="forgate-password" name="forgate-password"><?php _e('Forgate Password'); ?></button></a>
 							</div>
 						</div>
 		<?php if ( !empty($jigowatt_integration->enabledMethods) ) : ?>

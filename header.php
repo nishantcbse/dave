@@ -128,41 +128,48 @@
 
                     <!-- BEGIN TOP NAVIGATION MENU -->
     <div class="nav-collapse collapse pull-right">
+    
+    <div class="login-nav" >
         <ul class="nav"> 
         
-            <?php if(isset($_SESSION['jigowatt']['username'])) { ?>
-                            <li class="dropdown" style="margin-top: 17px;">
-                                <p class="navbar-text dropdown-toggle" data-toggle="dropdown" id="userDrop">
-                                    <span style="float:left"><?php echo $_SESSION['jigowatt']['gravatar']; ?></span>
-                                    <span style="float:left"><a href="#"><?php echo $_SESSION['jigowatt']['username']; ?></a></span>
-                                   <span style="float:left; margin-top: 10px;"> <b class="caret"></b></span>
-                                </p>
-                                <ul class="dropdown-menu">
-                        <?php if(in_array(1, $_SESSION['jigowatt']['user_level'])) { ?>
-                                    <li><a href="admin/index.php"><i class="icon-home"></i> <?php _e('Control Panel'); ?></a></li>
-                                    <li><a href="admin/settings.php"><i class="icon-cog"></i> <?php _e('Settings'); ?></a></li> <?php } ?>
-                                    <li><a href="profile.php"><i class="icon-user"></i> <?php _e('My Account'); ?></a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="logout.php"><?php _e('Sign out'); ?></a></li>
-                                </ul>
-                            </li>                           
-                     <?php }else{ ?>
-                     
-                                <li><a  href="register.php"><button type="button" class="btn btn-primary btn-lg active">Register</button></a></li>
-                                <li><a  href="login.php"><button type="button" class="btn btn-primary btn-lg active">Login</button></a></li>
-                                <br><br><br>
-             <?php } ?>                 
+	<?php if(isset($_SESSION['jigowatt']['username'])) { ?>
+                    <li class="dropdown" style="margin-top: 17px;">
+                        <p class="navbar-text dropdown-toggle" data-toggle="dropdown" id="userDrop">
+                            <span style="float:left"><?php echo $_SESSION['jigowatt']['gravatar']; ?></span>
+                            <span style="float:left"><a href="#"><?php echo $_SESSION['jigowatt']['username']; ?></a></span>
+                           <span style="float:left; margin-top: 10px;"> <b class="caret"></b></span>
+                        </p>
+                        
+                        <ul class="dropdown-menu">
+                <?php if(in_array(1, $_SESSION['jigowatt']['user_level'])) { ?>
+<!--                            <li><a href="admin/index.php"><i class="icon-home"></i> <?php _e('Control Panel'); ?></a></li>
+-->                            <li><a href="profile.php"><i class="icon-cog"></i> <?php _e('Settings'); ?></a></li> <?php } ?>
+<!--                            <li><a href="profile.php"><i class="icon-user"></i> <?php _e('My Account'); ?></a></li>
+-->                            <li class="divider"></li>
+                            <li><a href="logout.php"><?php _e('Sign out'); ?></a></li>
+                        </ul>
+                        
+                    </li>                           
+             <?php }else{ ?>
+             
+                        <li><a  href="register.php"  class="loginnav">Register</a></li>
+                        <li><a  href="login.php" class="loginnav">Login</a></li>
+                        <br><br><br>
+     <?php } ?>                 
     
-            
-            <li>
-            <div class="input-append">
+            </ul>
+        </div>
+           <div class="input-append search">
                 <form>
                     <input style="background:#fff;" class="m-wrap" type="text" placeholder="Search" />
                     <button type="submit" class="btn theme-btn">Go</button>
                 </form>
             </div>
-            </li>
+
+            
+            
     </div>
+    
                     <!-- BEGIN TOP NAVIGATION MENU -->
                 </div>
             </div>
