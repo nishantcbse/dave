@@ -27,7 +27,7 @@ include_once('classes/listbox.class.php');
         <!-- BEGIN ABOUT INFO -->   
         <div class="row-fluid margin-bottom-30">
             <!-- BEGIN INFO BLOCK -->               
-            <div class="span5 space-mobile pull-left">
+            <div class="span6 space-mobile pull-left">
             				<h2>Settings</h2>
                             <i class="fa fa-user-md fa-2x"></i> &nbsp; &nbsp; Profile Editing
                             <div class="border"></div>
@@ -98,7 +98,7 @@ include_once('classes/listbox.class.php');
                 <div class="control-group">
                     <label class="control-label"><?php _e('Answer'); ?></label>
                     <div class="controls">
-                        <input type="text" placeholder="" id="answer" name="answer" class="m-wrap span8" />
+                        <input type="text" placeholder="" id="answer" name="answer" class="m-wrap span12" />
                     </div>
                 </div>
                 
@@ -113,124 +113,9 @@ include_once('classes/listbox.class.php');
             </div>
             <!-- END INFO BLOCK -->   
 
-            <!-- BEGIN CAROUSEL -->            
-            <div class="offset1 span4 front-carousel pull-right">
-            <div class="row-fluid">
-            <div class="span12">
-                  <div class="fullwidthbanner-container slider-main margin-bottom-10" >
-
-        	<div class="fullwidthabnner">
-            <ul id="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                    </li>
-
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                       
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-
-            </div>                
-            </div>
-            
-                <div class="row-fluid">
-                <div class="span12">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
-
-        	<div class="fullwidthabnner1">
-            <ul id="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                    </li>
-
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                       
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>                
-            </div>
-
-                <div class="row-fluid">
-                <div class="span12">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
-
-        	<div class="fullwidthabnner2">
-            <ul id="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                    </li>
-
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="9400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                       
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="9400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>                
-            </div>
-
-         </div>
-            <!-- END CAROUSEL -->             
         </div>
         <!-- END ABOUT INFO --> 
+        <div class="span4"></div>
         
   </div>
     

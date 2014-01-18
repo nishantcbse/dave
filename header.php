@@ -17,6 +17,7 @@
 		<![endif]-->
 
 		<!-- Le styles -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css"/>
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css"/>
@@ -36,7 +37,6 @@
      
     <link href="assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>    
     <link rel="shortcut icon" href="favicon.ico" />
-    <link href="css/custom.css" rel="stylesheet" type="text/css"/>
 	<!-- Upload --> 
 	<link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
 	<link href="assets/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />

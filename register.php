@@ -18,7 +18,7 @@ include_once('header.php');
   <!-- BEGIN ABOUT INFO -->
   <div class="row-fluid margin-bottom-30"> 
     <!-- BEGIN INFO BLOCK -->
-    <div class="span7 space-mobile"> 
+    <div class="span4 space-mobile"> 
       <!-- BEGIN FORM-->
       <form action="" method="post" class="form-horizontal" id="register-form">
       <input type="hidden" name="user-id"  val="-1" />
@@ -27,7 +27,7 @@ include_once('header.php');
             <?php _e('First name'); ?>
           </label>
           <div class="controls">
-            <input type="text" placeholder="" class="m-wrap span8" id="first_name" name="first_name" onclick="validate()"/>
+            <input type="text" placeholder="" class="m-wrap span12" id="first_name" name="first_name" onclick="validate()"/>
           </div>
         </div>
         <div class="control-group">
@@ -35,7 +35,7 @@ include_once('header.php');
             <?php _e('Last name'); ?>
           </label>
           <div class="controls">
-            <input type="text" placeholder="" class="m-wrap span8" id="last_name" name="last_name" onclick="validate()"/>
+            <input type="text" placeholder="" class="m-wrap span12" id="last_name" name="last_name" onclick="validate()"/>
           </div>
         </div>
         <div class="control-group">
@@ -43,7 +43,7 @@ include_once('header.php');
             <?php _e('Address'); ?>
           </label>
           <div class="controls">
-            <textarea class="span8 m-wrap" rows="3" id="address" name="address" onclick="validate()"></textarea>
+            <textarea class="span12 m-wrap" rows="3" id="address" name="address" onclick="validate()"></textarea>
           </div>
         </div>
         <div class="control-group">
@@ -51,7 +51,7 @@ include_once('header.php');
             <?php _e('City'); ?>
           </label>
           <div class="controls">
-            <input type="text" class="span8 m-wrap" tabindex="1" id="city" name="city" onclick="validate()"/>
+            <input type="text" class="span12 m-wrap" tabindex="1" id="city" name="city" onclick="validate()"/>
           </div>
         </div>
         <div class="control-group">
@@ -59,14 +59,14 @@ include_once('header.php');
             <?php _e('Email'); ?>
           </label>
           <div class="controls">
-            <input class="m-wrap span8" type="email" id="email" name="email" onclick="validate()">
+            <input class="m-wrap span12" type="email" id="email" name="email" onclick="validate()">
           </div>
         </div>
         
         <div class="control-group">
           <label class="control-label">Security Question</label>
           <div class="controls">
-            <select class="select2 span8 m-wrap" tabindex="1" id="security_question" name="security_question" onclick="validate()" >
+            <select class="select2 span12 m-wrap" tabindex="1" id="security_question" name="security_question" onclick="validate()" >
              <option value="a" >a</option>
             </select>
           </div>
@@ -86,7 +86,7 @@ include_once('header.php');
             <?php _e('Registration Category'); ?>
           </label>
           <div class="controls">
-            <select class="select2 span8 m-wrap" tabindex="1" id="registration_category" name="registration_category" onclick="validate()" >
+            <select class="select2 span12 m-wrap" tabindex="1" id="registration_category" name="registration_category" onclick="validate()" >
              <option value="advertisement">Advertisement</option>
              <option value="profile">Profile</option>
             </select>

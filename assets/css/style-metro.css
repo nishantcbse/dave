@@ -83,6 +83,7 @@ select:focus {
   color: white;  
   text-shadow: none;	
   background-color: #d84a38;
+  height: 17px;
 }
 .btn.red:hover, 
 .btn.red:focus, 
@@ -113,6 +114,8 @@ select:focus {
   color: black;  
   text-shadow: none;  
   background-color: transparent;
+  line-height: 24px;
+  height: 17px;
 }
 
 .btn.blue   
@@ -149,6 +152,7 @@ select:focus {
   color: white;
   text-shadow: none;	 
   background-color: #35aa47;
+  height: 17px;
 }
 .btn.green:hover, 
 .btn.green:focus, 
@@ -178,6 +182,7 @@ select:focus {
   color: white; 
   text-shadow: none;	
   background-color: #852b99;
+  height: 17px;
 }
 .btn.purple:hover, 
 .btn.purple:focus, 

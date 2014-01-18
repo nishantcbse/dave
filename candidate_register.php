@@ -23,7 +23,7 @@ $sprovince  = $listbox->getProvince();
         <!-- BEGIN ABOUT INFO -->   
         <div class="row-fluid margin-bottom-30">
             <!-- BEGIN INFO BLOCK -->               
-            <div class="span7 space-mobile">
+            <div class="span4 space-mobile">
             <!-- BEGIN FORM-->
             <form action="" method="post" class="form-horizontal" id="candidate-register-form">
     	  	<input type="hidden" name="user-id"  val="-1" />
