@@ -6,10 +6,6 @@
 
 </style>
   
-    <!-- BEGIN BREADCRUMBS -->   
-    
-    <!-- END BREADCRUMBS -->
-
     <!-- BEGIN CONTAINER -->   
     <div class="container min-hight">
         <!-- BEGIN FILTER -->           
@@ -32,13 +28,9 @@
                         <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="850"
-                             data-speed="400"
-                             data-start="1000"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -54,8 +46,6 @@
                         
                              Advertisement click to Buy! - $2
                         </a> 
-                             
-                        
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -94,11 +84,8 @@
             </div>                
             
             <!-- END CAROUSEL -->             
+            
 
-
-
-
-        
                     <!-- BEGIN CAROUSEL -->            
             <div class="span4">
             <div class="fullwidthbanner-container slider-main margin-bottom-10">
@@ -118,7 +105,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -134,7 +120,6 @@
                         
                              Advertisement click to Buy! - $2
                         </a> 
-
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -149,7 +134,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>    
-                       
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
@@ -165,7 +149,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>                        
-                        
                     </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
@@ -193,8 +176,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -207,10 +188,8 @@
                              data-speed="400"
                              data-start="1000"
                              data-easing="easeOutExpo" > 
-                        
                              Advertisement click to Buy! - $2
                         </a> 
-
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -225,7 +204,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>    
-                       
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
@@ -241,7 +219,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>                             
-                        
                     </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
@@ -270,7 +247,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -286,7 +262,6 @@
                         
                              Advertisement click to Buy! - $2
                         </a> 
-
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -301,7 +276,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>    
-                       
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
@@ -317,7 +291,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>                              
-                        
                     </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
@@ -346,7 +319,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -362,7 +334,6 @@
                         
                              Advertisement click to Buy! - $2
                         </a> 
-
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -377,7 +348,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>    
-                       
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
@@ -393,7 +363,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>                              
-                        
                     </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
@@ -421,7 +390,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -437,7 +405,6 @@
                         
                              Advertisement click to Buy! - $2
                         </a> 
-
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -452,7 +419,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>    
-                       
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
@@ -468,7 +434,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>                              
-                        
                     </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
@@ -498,7 +463,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -514,7 +478,6 @@
                         
                              Advertisement click to Buy! - $2
                         </a> 
-
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -529,7 +492,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>    
-                       
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
@@ -545,7 +507,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>                              
-                        
                     </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
@@ -574,7 +535,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -590,7 +550,6 @@
                         
                              Advertisement click to Buy! - $2
                         </a> 
-
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -605,7 +564,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>    
-                       
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
@@ -621,7 +579,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>                              
-                        
                     </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
@@ -648,7 +605,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>               
-                        
                     </li>
 
                     <!-- THE SECOND SLIDE -->
@@ -664,7 +620,6 @@
                         
                              Advertisement click to Buy! - $2
                         </a> 
-
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
@@ -679,7 +634,6 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>    
-                       
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
@@ -695,28 +649,18 @@
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>                             
-                        
                     </li>
             </ul>
             <div class="tp-bannertimer tp-bottom"></div>
         	</div>
             </div>
                 </div>            
-            
-            
-            
-                
             </ul>
         </div>
         <!-- END FILTER --> 
-        
                   
     </div>
     <!-- END CONTAINER -->
-
-    <!-- BEGIN FOOTER -->
-    
-    
 	
 <?php include 'footer.php' ?>
         

@@ -79,7 +79,7 @@ api =  jQuery('.fullwidthabnner1').revolution(
 	                    touchenabled:"on",                      // Enable Swipe Function : on/off
 	                    onHoverStop:"on",                       // Stop Banner Timet at Hover on Slide on/off
 
-	                    stopAtSlide:-1,
+	                    stopAtSlide:0,
 	                    stopAfterLoops:-1,
 
 	                    hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
