@@ -2,39 +2,27 @@ $(document).ready(function() {
     var register_form = $("#register-form");
 	if (register_form.length > 0) {
 		
-        $(register_form).validate(
-		
-		
-		{
-/*invalidHandler: function(event, validator) {
-// 'this' refers to the form
-				var errors = validator.numberOfInvalids();
+        $(register_form).validate({
+				invalidHandler: function(event, validator) {
+									var errors = validator.numberOfInvalids();
 				
-							$('#modal-title-error').html('System');
-							$('#modal-body-error').html('<div class="alert alert-error">Please correct error then submit form</div>');
-							$("#modal-error").modal();
+									$('#modal-title-error').html('System');
+									$('#modal-body-error').html('<div class="alert alert-error">Please correct error then submit form</div>');
+									$("#modal-error").modal();
 				
-								
-				
-				},*/
-		 submitHandler: function() {
-			 var id = $("#user-id").val();
-									if (id==-1){
+								},
+				submitHandler: function() {
+									 var id = $("#user-id").val();
+									
 								   
 									var registrationType = $('#registration_category').val();alert(registrationType);
+									
 									if( registrationType == 'profile'){
-										Modify('add');
+										Modify();
 										
 									}else if(registrationType == 'advertisement'){
 										confirm()
 									}
-				
-										
-										
-									} else {
-										Modify('edit');
-									}
-			 
 			 
 		 }
 				});
@@ -65,11 +53,7 @@ function checkRegistrationType(){
 
 function confirm(){
        	var $modal = $('#conferm');
- 
-		  // create the backdrop and wait for next modal to be triggered
-		  //alert('here');
 		  $('body').modalmanager('loading');
-		 
 		  setTimeout(function(){
 		     $modal.load('pages/modals_payment.php', '', function(){
 		      $modal.modal().on("hidden", function() {
@@ -81,12 +65,7 @@ function confirm(){
        
 }
 
-
-
-
-
-
-function Modify(type){
+function Modify(){
     var post = $('#register-form').serialize();
     $.post('classes/register.class.php', post, function (data) {
         if (data.match('success') !== null) {
@@ -135,20 +114,3 @@ function filechange(){
 	 
 	}
 
-//function validate(){
-  //          var fname  	 = $('#first_name').val();
-    //        var lname 	 = $('#last_name').val();
-      //      var address  = $('#address').val();
-        //    var city 	 = $('#city').val();
-          //  var email 	 = $('#email').val();
-           // var question = $('#question').val();
-            //var answer 	 = $('#answer').val();
-			
-			//if(fname.length == 0 || lname.length == 0 || address.length == 0 || city.length == 0 || email.length == 0 || question.length == 0 || answer.lenght == 0){
-			 // $("#submit").attr("disabled", "disabled");
-			//}
-			//else{
-			   //$('#submit').prop('disabled', false);
-			//}
-			
-//}
