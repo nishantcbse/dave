@@ -13,7 +13,7 @@ include_once('header.php');
 
 <script src="js/register.js"></script>
 <!-- BEGIN CONTAINER -->
-
+<div id="conferm" class="modal hide fade" tabindex="-1"></div>
 <div class="container min-hight"> 
   <!-- BEGIN ABOUT INFO -->
   <div class="row-fluid margin-bottom-30"> 
@@ -27,7 +27,7 @@ include_once('header.php');
             <?php _e('First name'); ?>
           </label>
           <div class="controls">
-            <input type="text" placeholder="" class="m-wrap span12" id="first_name" name="first_name" onclick="validate()"/>
+            <input type="text" placeholder="" class="m-wrap span12" id="first_name" name="first_name" required="required"/>
           </div>
         </div>
         <div class="control-group">
@@ -35,7 +35,7 @@ include_once('header.php');
             <?php _e('Last name'); ?>
           </label>
           <div class="controls">
-            <input type="text" placeholder="" class="m-wrap span12" id="last_name" name="last_name" onclick="validate()"/>
+            <input type="text" placeholder="" class="m-wrap span12" id="last_name" name="last_name" required="required"/>
           </div>
         </div>
         <div class="control-group">
@@ -43,7 +43,7 @@ include_once('header.php');
             <?php _e('Address'); ?>
           </label>
           <div class="controls">
-            <textarea class="span12 m-wrap" rows="3" id="address" name="address" onclick="validate()"></textarea>
+            <textarea class="span12 m-wrap" rows="3" id="address" name="address" required="required"></textarea>
           </div>
         </div>
         <div class="control-group">
@@ -51,7 +51,7 @@ include_once('header.php');
             <?php _e('City'); ?>
           </label>
           <div class="controls">
-            <input type="text" class="span12 m-wrap" tabindex="1" id="city" name="city" onclick="validate()"/>
+            <input type="text" class="span12 m-wrap" tabindex="1" id="city" name="city" required="required"/>
           </div>
         </div>
         <div class="control-group">
@@ -59,14 +59,14 @@ include_once('header.php');
             <?php _e('Email'); ?>
           </label>
           <div class="controls">
-            <input class="m-wrap span12" type="email" id="email" name="email" onclick="validate()">
+            <input class="m-wrap span12" type="email" id="email" name="email" required="required">
           </div>
         </div>
         
         <div class="control-group">
           <label class="control-label">Security Question</label>
           <div class="controls">
-            <select class="select2 span12 m-wrap" tabindex="1" id="security_question" name="security_question" onclick="validate()" >
+            <select class="select2 span12 m-wrap" tabindex="1" id="security_question" name="security_question" required="required">
              <option value="a" >a</option>
             </select>
           </div>
@@ -76,7 +76,7 @@ include_once('header.php');
             <?php _e('Answer'); ?>
           </label>
           <div class="controls">
-            <input type="text" id="answer" name="answer" class="m-wrap span8" onclick="validate()" />
+            <input type="text" id="answer" name="answer" class="m-wrap span8" required="required"/>
           </div>
         </div>
         
@@ -86,7 +86,7 @@ include_once('header.php');
             <?php _e('Registration Category'); ?>
           </label>
           <div class="controls">
-            <select class="select2 span12 m-wrap" tabindex="1" id="registration_category" name="registration_category" onclick="validate()" >
+            <select class="select2 span12 m-wrap" tabindex="1" id="registration_category" name="registration_category" required="required">
              <option value="advertisement">Advertisement</option>
              <option value="profile">Profile</option>
             </select>
@@ -99,7 +99,7 @@ include_once('header.php');
         
         <div class="control-group">
           <div class="controls">
-            <button type="submit" class="theme-btn btn" value="Submit" id="submit">Submit</button>
+            <button type="submit" class="theme-btn btn" value="Submit" id="submit" onclick="">Submit</button>
             <button class="btn" type="reset">Clear</button>
           </div>
         </div>
@@ -127,5 +127,4 @@ include_once('header.php');
 	</div>
 </form>
 </div>
-
 <?php include 'footer.php' ?>

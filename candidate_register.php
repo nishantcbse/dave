@@ -17,7 +17,7 @@ $sprovince  = $listbox->getProvince();
 
 ?>
  <script src="js/candidate_register.js"></script>
-
+<div id="conferm" class="modal hide fade" tabindex="-1"></div>
     <!-- BEGIN CONTAINER -->   
     <div class="container min-hight">
         <!-- BEGIN ABOUT INFO -->   
@@ -155,7 +155,7 @@ $sprovince  = $listbox->getProvince();
                 
                 <div class="control-group">
                     <div class="controls">
-                    <button type="submit" class="theme-btn btn" value="Submit">Submit</button>
+                    <button type="submit" class="theme-btn btn" value="Submit" onclick="conferm()">Submit</button>
                     <button class="btn" type="reset">Clear</button>
                     </div>
                 </div>
