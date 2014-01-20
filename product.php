@@ -6,25 +6,25 @@
 
 </style>
 
-    <div class="container min-hight">
+    <div class="container">
     
     	<h2>Profile</h2>
         <!-- BEGIN FILTER -->           
         <div class="filter-v1 margin-bottom-40">
             <ul class="grid-v1 thumbnails">
-               
-                    <!-- BEGIN CAROUSEL -->            
-                    <!-- BEGIN CAROUSEL -->            
-                <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+			<div id="welcome_modeal" class="modal hide fade" tabindex="-1"></div>
+             <!-- BEGIN CAROUSEL -->            
+            <div class="span4">
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
-        	<div class="fullwidthabnner6">
-            
-            
+        	<div class="fullwidthabnner">
+            <ul class="revolutionul" style="display:none;">            
+                    <!-- THE FIRST SLIDE -->
+                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                          <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="850"
                              data-speed="400"
@@ -33,21 +33,22 @@
                              Advertisement click to Buy! - $1
                         </a>               
                         
-                        
+                    </li>
+
                     
+            </ul>
             <div class="tp-bannertimer tp-bottom"></div>
         	</div>
             </div>
-            </div>                
-            
+            </div>
             <!-- END CAROUSEL -->             
 
         
                     <!-- BEGIN CAROUSEL -->            
             <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10">
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
-        	<div class="fullwidthabnner7">
+        	<div class="fullwidthabnner">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
@@ -74,9 +75,9 @@
             <!-- END CAROUSEL -->             
                 
 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
-        	<div class="fullwidthabnner9">
+        	<div class="fullwidthabnner">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
@@ -140,7 +141,7 @@
                     <!-- BEGIN CAROUSEL -->            
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()" >
 
         	<div class="fullwidthabnner1">
             
@@ -222,7 +223,7 @@
         
                     <!-- BEGIN CAROUSEL -->            
             <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10">
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner2">
             <ul class="revolutionul" style="display:none;">            
@@ -297,7 +298,7 @@
                 
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()" >
 
         	<div class="fullwidthabnner3">
             <ul class="revolutionul" style="display:none;">            
@@ -374,7 +375,7 @@
         
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner4">
             <ul class="revolutionul" style="display:none;">            
@@ -450,7 +451,7 @@
                 
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner5">
             <ul class="revolutionul" style="display:none;">            
@@ -525,7 +526,7 @@
             
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner6">
             <ul class="revolutionul" style="display:none;">            
@@ -602,7 +603,7 @@
             
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner7">
             <ul class="revolutionul" style="display:none;">            
@@ -678,7 +679,7 @@
             
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner8">
             <ul class="revolutionul" style="display:none;">            
@@ -752,7 +753,7 @@
             <!-- END CAROUSEL -->
             
 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner9">
             <ul class="revolutionul" style="display:none;">            
@@ -836,8 +837,5 @@
     <!-- END CONTAINER -->
 
     <!-- BEGIN FOOTER -->
-    
-    
-	
 <?php include 'footer.php' ?>
         

@@ -6,20 +6,17 @@
 
 </style>
   
-    <!-- BEGIN BREADCRUMBS -->   
-    
-    <!-- END BREADCRUMBS -->
 
     <!-- BEGIN CONTAINER -->   
     <div class="container min-hight">
         <!-- BEGIN FILTER -->           
         <div class="filter-v1 margin-bottom-40">
             <ul class="grid-v1 thumbnails">
-               
+				<div id="welcome_modeal" class="modal hide fade" tabindex="-1"></div>
                     <!-- BEGIN CAROUSEL -->            
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner1">
             
@@ -101,7 +98,7 @@
         
                     <!-- BEGIN CAROUSEL -->            
             <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10">
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner2">
             <ul class="revolutionul" style="display:none;">            
@@ -176,7 +173,7 @@
                 
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner3">
             <ul class="revolutionul" style="display:none;">            
@@ -253,7 +250,7 @@
         
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner4">
             <ul class="revolutionul" style="display:none;">            
@@ -329,7 +326,7 @@
                 
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner5">
             <ul class="revolutionul" style="display:none;">            
@@ -404,7 +401,7 @@
             
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner6">
             <ul class="revolutionul" style="display:none;">            
@@ -481,7 +478,7 @@
             
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner7">
             <ul class="revolutionul" style="display:none;">            
@@ -557,7 +554,7 @@
             
                     <!-- BEGIN CAROUSEL -->            
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner8">
             <ul class="revolutionul" style="display:none;">            
@@ -631,7 +628,7 @@
             <!-- END CAROUSEL -->
             
 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" >
+            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
 
         	<div class="fullwidthabnner9">
             <ul class="revolutionul" style="display:none;">            
@@ -715,8 +712,6 @@
     <!-- END CONTAINER -->
 
     <!-- BEGIN FOOTER -->
-    
-    
 	
 <?php include 'footer.php' ?>
         
