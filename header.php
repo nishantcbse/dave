@@ -11,11 +11,6 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
 		<!-- Le styles -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
@@ -41,6 +36,11 @@
 	<link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
 	<link href="assets/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />
     <!-- Upload --> 
+	<!-- Model Box -->
+	<link rel="stylesheet" type="text/css" href="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.css"/>
+	<link href="assets/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css"/>
+	<!-- End Model Box --> 
+    
 	<!-- Le javascript -->
     <script src="assets/plugins/jquery-1.10.1.min.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
@@ -54,7 +54,6 @@
     <script type="text/javascript" src="assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
 	<script type="text/javascript" src="assets/plugins/select2/select2.min.js"></script>
     <script src="js/jquery.validate.js"></script>
-    <!--[if lt IE 9]>
     <!-- END CORE PLUGINS -->
     <script src="assets/scripts/app.js"></script>         
     <script src="assets/scripts/index.js"></script> 
@@ -65,9 +64,12 @@
 	<script src="assets/scripts/app.js"></script>
 	<script src="assets/scripts/form-fileupload.js"></script>
 	<script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
-    
 	<!-- Upload -->
-    
+	<!-- Model Box --> 
+	<script src="assets/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript" ></script>
+	<script src="assets/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript" ></script>
+	<script src="assets/scripts/ui-modals.js"></script>     
+	<!-- End Model Box --> 
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();    
@@ -152,7 +154,7 @@
                     </li>                           
              <?php }else{ ?>
              
-                        <li><a  href="register.php"  class="loginnav">Register</a></li>
+                        <li><a  href="product.php"  class="loginnav">Register</a></li>
                         <li><a  href="login.php" class="loginnav">Login</a></li>
                         <br><br><br>
      <?php } ?>                 
