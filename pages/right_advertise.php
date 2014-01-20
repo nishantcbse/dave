@@ -18,11 +18,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                         <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>       
@@ -33,11 +33,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                        <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                        <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -52,8 +52,8 @@
                          <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -65,11 +65,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
@@ -92,11 +92,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>       
@@ -107,11 +107,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                        <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                        <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -123,11 +123,11 @@
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
-                         <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -139,11 +139,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
@@ -167,11 +167,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>       
@@ -182,11 +182,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                        <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                        <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -198,11 +198,11 @@
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
-                         <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -214,11 +214,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
@@ -242,11 +242,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>     
@@ -257,11 +257,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                         <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -273,11 +273,11 @@
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
-                         <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -289,11 +289,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
@@ -316,11 +316,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>     
@@ -331,11 +331,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                         <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -347,11 +347,11 @@
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
-                         <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -363,11 +363,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
@@ -392,11 +392,11 @@
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>     
@@ -407,11 +407,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                         <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -423,11 +423,11 @@
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
-                         <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -439,11 +439,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
@@ -468,11 +468,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>     
@@ -483,11 +483,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                         <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -499,11 +499,11 @@
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
-                         <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -515,11 +515,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
@@ -542,11 +542,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>     
@@ -557,11 +557,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                         <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -573,11 +573,11 @@
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
-                         <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -589,11 +589,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
@@ -617,11 +617,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
-                        <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $1
                         </a>     
@@ -632,11 +632,11 @@
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
-                         <a  class="caption lft btn green  slide_btn slide_item_left pricetag" href=""  
+                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
                        		 data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo" > 
                         
                              Advertisement click to Buy! - $2
@@ -648,11 +648,11 @@
                     <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
-                         <a class="caption lft btn red abc slide_btn slide_item_left pricetag" href=""
+                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $3
                         </a>      
@@ -664,11 +664,11 @@
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
+                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
                              data-x="0"
                              data-y="1300"
-                             data-speed="400"
-                             data-start="1000"
+                             data-speed="100"
+                             data-start="100"
                              data-easing="easeOutExpo">
                              Advertisement click to Buy! - $4
                         </a>     
