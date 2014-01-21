@@ -24,7 +24,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>       
                         
                     </li>
@@ -40,7 +40,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -55,7 +55,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                             click to Buy!
                         </a>      
                        
                     </li>               
@@ -71,7 +71,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -98,7 +98,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>       
                         
                     </li>
@@ -114,7 +114,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -129,7 +129,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                     		 click to Buy! - $3
                         </a>      
                        
                     </li>               
@@ -145,7 +145,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -173,7 +173,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>       
                         
                     </li>
@@ -189,7 +189,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -204,7 +204,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                             click to Buy!
                         </a>      
                        
                     </li>               
@@ -220,7 +220,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -248,7 +248,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -264,7 +264,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -279,7 +279,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                             click to Buy!
                         </a>      
                        
                     </li>               
@@ -295,7 +295,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -322,7 +322,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -338,7 +338,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -353,7 +353,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                             click to Buy!
                         </a>      
                        
                     </li>               
@@ -369,7 +369,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -398,7 +398,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -414,7 +414,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -429,7 +429,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                             click to Buy!
                         </a>      
                        
                     </li>               
@@ -445,7 +445,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -474,7 +474,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -490,7 +490,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -505,7 +505,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                             click to Buy!
                         </a>      
                        
                     </li>               
@@ -521,7 +521,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -548,7 +548,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -564,7 +564,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -579,7 +579,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                             click to Buy!
                         </a>      
                        
                     </li>               
@@ -595,7 +595,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -623,7 +623,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $1
+                             click to Buy!
                         </a>     
                         
                     </li>
@@ -639,7 +639,7 @@
                              data-start="100"
                              data-easing="easeOutExpo" > 
                         
-                             Advertisement click to Buy! - $2
+                             click to Buy!
                         </a> 
 
                     </li>
@@ -654,7 +654,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $3
+                             click to Buy!
                         </a>      
                        
                     </li>               
@@ -670,7 +670,7 @@
                              data-speed="100"
                              data-start="100"
                              data-easing="easeOutExpo">
-                             Advertisement click to Buy! - $4
+                             click to Buy!
                         </a>     
                         
                     </li>
