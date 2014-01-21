@@ -1,4 +1,11 @@
+<?php 
+include_once('classes/check.class.php'); 
+protect("1,2");
+?>
+
 <?php
+
+
 
 // # Create Payment using PayPal as payment method
 // This sample code demonstrates how you can process a 
@@ -27,14 +34,14 @@ $payer->setPaymentMethod("paypal");
 // (Optional) Lets you specify item wise
 // information
 $item1 = new Item();
-$item1->setName('Ground Coffee 40 oz')
+$item1->setName('Advertisement left')
 	->setCurrency('USD')
 	->setQuantity(1)
-	->setPrice('7.50');
+	->setPrice('2.00');
 $item2 = new Item();
-$item2->setName('Granola bars')
+$item2->setName('Advertisement right')
 	->setCurrency('USD')
-	->setQuantity(5)
+	->setQuantity(1)
 	->setPrice('2.00');
 
 $itemList = new ItemList();
@@ -45,9 +52,9 @@ $itemList->setItems(array($item1, $item2));
 // payment information such as tax, shipping
 // charges etc.
 $details = new Details();
-$details->setShipping('1.20')
-	->setTax('1.30')
-	->setSubtotal('17.50');
+$details->setShipping('1.00')
+	->setTax('1.00')
+	->setSubtotal('6.00');
 
 // ### Amount
 // Lets you specify a payment amount.
@@ -55,7 +62,7 @@ $details->setShipping('1.20')
 // such as shipping, tax.
 $amount = new Amount();
 $amount->setCurrency("USD")
-	->setTotal("20.00")
+	->setTotal("6.00")
 	->setDetails($details);
 
 // ### Transaction
