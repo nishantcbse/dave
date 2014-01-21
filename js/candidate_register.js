@@ -3,35 +3,41 @@ $(document).ready(function() {
 	if (register_form.length > 0) {
 		
         $(register_form).validate({
-	        submitHandler: function() {
-               
-                    var id = $("#user-id").val();
-                    if (id==-1){
-                        Modify('add');
-                    } else {
-                        Modify('edit');
-                    }
-                
-            },
-        });
+				invalidHandler: function(event, validator) {
+									var errors = validator.numberOfInvalids();
+				
+									$('#modal-title-error').html('System');
+									$('#modal-body-error').html('<div class="alert alert-error">Please correct error then submit form</div>');
+									$("#modal-error").modal();
+				
+								},
+				submitHandler: function() {
+									 var id = $("#user-id").val();
+										confirm()
+										Modify();
+									}
+			 
+				});
 		
 		}
 		
-		   $('.select2').select2({
-                placeholder: "Select an Option",
-                allowClear: true
-            });
-			
-		$("#select2_partysymbol").select2({
-			allowClear: true,
-			formatResult: format,
-			formatSelection: format,
-			escapeMarkup: function (m) {
-				return m;
-			}
-		});
-		
 });
+
+
+
+function confirm(){
+       	var $modal = $('#conferm');
+		  $('body').modalmanager('loading');
+		  setTimeout(function(){
+		     $modal.load('pages/modals_payment1.php', '', function(){
+		      $modal.modal().on("hidden", function() {
+              	$modal.empty();
+				Modify(type);
+              });
+		    });
+		  }, 1000);
+       
+}
 
 
 function format(state) {
@@ -41,7 +47,7 @@ function format(state) {
 
 
 
-function Modify(type){
+function Modify(){
     var post = $('#candidate-register-form').serialize();
     $.post('classes/candidate_register.class.php', post, function (data) {
         if (data.match('success') !== null) {

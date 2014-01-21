@@ -38,26 +38,26 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="firstname"><?php _e('First name'); ?></label>
                     <div class="controls">
-                        <input type="text" class="m-wrap span8"  id="first_name" name="first_name" placeholder="" />
+                        <input type="text" class="m-wrap span8"  id="first_name" name="first_name" placeholder="" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label"for="middlename"><?php _e('Middle name'); ?></label>
                     <div class="controls">
-                        <input type="text" class="m-wrap span8"  id="middle_name" name="middle_name" placeholder=""/>
+                        <input type="text" class="m-wrap span8"  id="middle_name" name="middle_name" placeholder="" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="lastname"><?php _e('Last name'); ?>  </label>
                     <div class="controls">
-                        <input type="text" class="m-wrap span8"  id="last_name" name="last_name" placeholder=""/>
+                        <input type="text" class="m-wrap span8"  id="last_name" name="last_name" placeholder="" required="required"/>
                     </div>
                 </div>
                 
                 <div class="control-group">
                     <label class="control-label" for="politicalpratner"><?php _e('Political Party'); ?></label>
                     <div class="controls">
-                        <select class="span8 m-wrap select2" tabindex="1" id="political_party" name="political_party" placeholder="">
+                        <select class="span8 m-wrap select2" tabindex="1" id="political_party" name="political_party" placeholder="" required="required">
                          <?php echo $spartyList; ?>  
                         </select>
                     </div>
@@ -65,7 +65,7 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="partysymbol"><?php _e('Party Symbol'); ?></label>
                     <div class="controls">
-                        <select name="party_symbol" id="select2_partysymbol" class="span8 ">
+                        <select name="party_symbol" id="select2_partysymbol" class="span8 " required="required">
                             <option value="1">UNITED PEOPLE'S FREEDOM ALLIANCE</option>
                             <option value="2">UNITED NATIONAL PARTY</option>
                             <option value="3">PEOPLE'S LIBERATION FRONT (JVP)</option>
@@ -77,7 +77,7 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="provinces"><?php _e('Provinces'); ?></label>
                     <div class="controls">
-                        <select class="span8 m-wrap select2" tabindex="1" id="province" name="province" placeholder=""/>
+                        <select class="span8 m-wrap select2" tabindex="1" id="province" name="province" placeholder="" required="required"/>
                           <?php echo $sprovince; ?> 
                         </select>
                     </div>
@@ -85,13 +85,13 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="officeaddress"><?php _e('Office address'); ?></label>
                     <div class="controls">
-                        <textarea class="span8 m-wrap" rows="3" name="office_address" id="office_address"></textarea>
+                        <textarea class="span8 m-wrap" rows="3" name="office_address" id="office_address" required="required"></textarea>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="officecity"><?php _e('Office city'); ?></label>
                     <div class="controls">
-                        <select class="span8 m-wrap select2" tabindex="1" id="office_city" name="office_city">
+                        <select class="span8 m-wrap select2" tabindex="1" id="office_city" name="office_city" required="required">
                          <?php echo $sdistrict ?>
                         </select>
                     </div>
@@ -99,13 +99,13 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="officephone"><?php _e('Office phone'); ?></label>
                     <div class="controls">
-                        <input type="text" placeholder="" id="office_phone1" name="office_phone1" class="m-wrap span8" />
+                        <input type="text" placeholder="" id="office_phone1" name="office_phone1" class="m-wrap span8" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="officefax"><?php _e('Office fax'); ?></label>
                     <div class="controls">
-                        <input type="text" placeholder="" id="office_fax" name="office_fax" class="m-wrap span8" />
+                        <input type="text" placeholder="" id="office_fax" name="office_fax" class="m-wrap span8" required="required"/>
                     </div>
                 </div>
                 
@@ -113,7 +113,7 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="officemail"><?php _e('Email'); ?></label>
                     <div class="controls">
-                        <input class="m-wrap span8" type="email" id="office_email" name="office_email" placeholder="" />
+                        <input class="m-wrap span8" type="email" id="office_email" name="office_email" placeholder="" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
@@ -155,7 +155,7 @@ $sprovince  = $listbox->getProvince();
                 
                 <div class="control-group">
                     <div class="controls">
-                    <button type="submit" class="theme-btn btn" value="Submit" onclick="conferm()">Submit</button>
+                    <button type="submit" class="theme-btn btn" value="Submit" onclick="">Submit</button>
                     <button class="btn" type="reset">Clear</button>
                     </div>
                 </div>
