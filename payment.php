@@ -21,7 +21,7 @@ use PayPal\Api\Payer;
 use PayPal\Api\Payment;
 use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
-session_start();
+//session_start();
 
 // ### Payer
 // A resource representing a Payer that funds a payment
@@ -34,14 +34,14 @@ $payer->setPaymentMethod("paypal");
 // (Optional) Lets you specify item wise
 // information
 $item1 = new Item();
-$item1->setName('Advertisement left')
+$item1->setName('Ground Coffee 40 oz')
 	->setCurrency('USD')
 	->setQuantity(1)
-	->setPrice('2.00');
+	->setPrice('7.50');
 $item2 = new Item();
-$item2->setName('Advertisement right')
+$item2->setName('Granola bars')
 	->setCurrency('USD')
-	->setQuantity(1)
+	->setQuantity(5)
 	->setPrice('2.00');
 
 $itemList = new ItemList();
@@ -52,9 +52,9 @@ $itemList->setItems(array($item1, $item2));
 // payment information such as tax, shipping
 // charges etc.
 $details = new Details();
-$details->setShipping('1.00')
-	->setTax('1.00')
-	->setSubtotal('6.00');
+$details->setShipping('1.20')
+	->setTax('1.30')
+	->setSubtotal('17.50');
 
 // ### Amount
 // Lets you specify a payment amount.
@@ -62,7 +62,7 @@ $details->setShipping('1.00')
 // such as shipping, tax.
 $amount = new Amount();
 $amount->setCurrency("USD")
-	->setTotal("6.00")
+	->setTotal("20.00")
 	->setDetails($details);
 
 // ### Transaction
