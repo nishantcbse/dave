@@ -15,7 +15,7 @@ $(document).ready(function() {
 									 var id = $("#user-id").val();
 									
 								   
-									var registrationType = $('#registration_category').val();alert(registrationType);
+									var registrationType = $('#registration_category').val();
 									
 									if( registrationType == 'profile'){
 										Modify();
