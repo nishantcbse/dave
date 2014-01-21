@@ -1,4 +1,7 @@
 <?php 
+include_once('classes/check.class.php'); 
+protect("1,2");
+
 $title = 'Profile';
 $label = 'profile';
 include_once('header.php');
