@@ -189,6 +189,22 @@ float: right;
 
 h4 {
 	margin: 10px 18px;
+	
+}
+
+.checkbox input[type="checkbox"] {
+    float: left;
+    margin-left: 0 !important;
+	margin-right: 10px !important;
+}
+
+.buy {
+	margin-top: 27px !important;
+	margin-left: -27px !important;
+}
+	
+	
+	
 
 /*.tp-simpleresponsive .caption,
 .tp-simpleresponsive .tp-caption {

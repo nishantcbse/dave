@@ -1042,3 +1042,12 @@ a.btn-transparent:hover {
   -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;      
 }
+
+
+
+/*RAVI*/
+
+/*.checkbox input[type="checkbox"] {
+    float: left;
+    margin-left: 0 !important;
+}*/

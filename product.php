@@ -1,771 +1,599 @@
 <?php  include "header.php"; ?>
-<style>
-.pricetag{
- padding:10px !important;
-}
 
-</style>
-
-    <div class="container">
+    <div class="container min-hight">
     	<h2>Profile</h2>
         <!-- BEGIN FILTER -->           
-        <div class="filter-v1 margin-bottom-40">
-            <ul class="grid-v1 thumbnails">
-			<div id="welcome_modeal" class="modal hide fade" tabindex="-1"></div>
-             <!-- BEGIN CAROUSEL -->            
-            <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
+        <div class="row-fluid margin-bottom-40">
+        	<div class="span12">
+            
+        	<div class="row-fluid">
+            <div class="span8">
+            <form action="#" class="form-horizontal">
+            
+					<div class="control-group">
+						<label class="control-label">NAME</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">PARTY</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">NUMBER</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">PHOTO</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">DESCRIPTION ABOUT YOU</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">PHONE</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">FAX</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">ADDRESS</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">WEB ADDRESS</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">SOCIAL NETWORKING LINKS</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">RECIEVE DIRECT MAIL</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
+            
+					<div class="control-group">
+						<label class="control-label">CAMPAIGN PHOTO</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES</option>
+                            <option value="Category 4">NO</option>
+						</select>
+						</div>
+					</div>            
 
-        	<div class="fullwidthabnner">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                          <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="400"
-                             data-start="1000"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                        
-                    </li>
+					<div class="control-group">
+						<label class="control-label">CAMPAIGN VIDEO</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES-100</option>
+                            <option value="Category 4">NO-100</option>
+						</select>
+						</div>
+					</div>            
 
-                    
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-            </div>
-            <!-- END CAROUSEL -->             
+					<div class="control-group">
+						<label class="control-label">COMPAIGN AUDIO</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES-100</option>
+                            <option value="Category 4">NO-100</option>
+						</select>
+						</div>
+					</div>            
 
-        
-                    <!-- BEGIN CAROUSEL -->            
-            <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
+					<div class="control-group">
+						<label class="control-label">PLAN DURATION</label>
+						<div class="controls">
+						<select class="span5 m-wrap" tabindex="1">
+                            <option value="Category 1">YES-100</option>
+                            <option value="Category 4">NO-100</option>
+						</select>
+						</div>
+					</div>            
+            
+            </form>
+         </div>
+         
+        	<div class="span4">
+            	<div class="row-fluid">
+                <div class="span12">
+            	<span>REGISTER PAGE ADS</span><br>
+            	<span>9 STILL ADS</span>
+                </div>
+                </div>
+                <br><br>
+            	<div class="row-fluid">
+                <div class="span12">
+            	<span>LOGIN PAGE</span><br>
+            	<span>9 STILL ADS</span>
+                </div>
+                </div>
+                <br><br>
+            	<div class="row-fluid">
+                <div class="span12">
+            	<span>CONTACT US PAGE</span><br>
+            	<span>9 STILL ADS</span>
+                </div>
+                </div>
+            	<br><br>
+                <div class="row-fluid">
+                <div class="span12">
+            	<span>ABOUT PAGE</span><br>
+            	<span>9 STILL ADS</span>
+                </div>
+                </div>
+            	<br><br>
+                <div class="row-fluid">
+                <div class="span12">
+            	<span>WELCOME PAGE</span><br>
+            	<span>9 STILL ADS</span>
+                </div>
+                </div>
+            	<br><br>
+                <div class="row-fluid">
+                <div class="span12">
+            	<span>ACCOUNT SPONSOR INFO PAGE</span><br>
+            	<span>9 STILL ADS</span>
+                </div>
+                </div>
+            	<br><br>
+                <div class="row-fluid">
+                <div class="span12">
+            	<span>CANDIDATE INFO PAGE</span><br>
+            	<span>9 STILL ADS</span>
+                </div>
+                </div>
 
-        	<div class="fullwidthabnner">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                          <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="400"
-                             data-start="1000"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                        
-                    </li>
-
-                    
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-            </div>
-            <!-- END CAROUSEL -->             
                 
-<div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
-
-        	<div class="fullwidthabnner">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                         <a class="caption lft btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="400"
-                             data-start="1000"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                        
-                    </li>
-
-                    
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
             </div>
-                </div>            
-            </ul>
+        
+        
         </div>
-        <!-- END FILTER --> 
     </div>
+    </div>
+    </div>
+    
+    
     <!-- END CONTAINER -->
             
 
     <!-- BEGIN CONTAINER -->   
     <div class="container min-hight">
         <!-- BEGIN FILTER -->
-        <h2>Advertisement</h2>           
-        <div class="filter-v1 margin-bottom-40">
-            <ul class="grid-v1 thumbnails">
-				<div id="welcome_modeal" class="modal hide fade" tabindex="-1"></div>
-                    <!-- BEGIN CAROUSEL -->            
-                    <!-- BEGIN CAROUSEL -->            
-                <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
-
-        	<div class="fullwidthabnner1">
-            
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                    </li>
-
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                       
-                       <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                        
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                       <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>      
-                       
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt=""> 
-                        
-                       <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>      
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-            </div>                
-            
-            <!-- END CAROUSEL -->             
-            
-
-                    <!-- BEGIN CAROUSEL -->            
-            <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
-
-        	<div class="fullwidthabnner2">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                          <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                    </li>
-
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                        
-                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                        
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>    
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                       <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>                        
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-            </div>
-            <!-- END CAROUSEL -->             
-                
-                    <!-- BEGIN CAROUSEL -->            
-                <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
-
-        	<div class="fullwidthabnner3">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                         <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                    </li>
-
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                        
-                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>    
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt=""> 
-                        
-                        <a class="caption lft btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>                             
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>                
-            <!-- END CAROUSEL -->
-            
+        <h2>Advertisement</h2>
         
-                    <!-- BEGIN CAROUSEL -->            
+        <div class="row-fluid margin-bottom-10">           
+        
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
-
-        	<div class="fullwidthabnner4">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                         <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                    </li>
-
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                        
-                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                        
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>    
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>                              
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>                
-            <!-- END CAROUSEL -->
-                         
                 
-                    <!-- BEGIN CAROUSEL -->            
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                
+                
+                </div>               
 
-        	<div class="fullwidthabnner5">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                         <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                    </li>
 
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                        
-                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                        
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>    
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>                              
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>                
-            <!-- END CAROUSEL -->
+                </div>
             
-                    <!-- BEGIN CAROUSEL -->            
+            <div class="span4">
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                
+                
+                </div>               
+                                     
+              </div>
+            
+            <div class="span4">
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
 
-        	<div class="fullwidthabnner6">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                         <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                    </li>
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
 
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                        
-                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                        
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>    
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>                              
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>                
-            <!-- END CAROUSEL -->
-            
-            
-            
-                    <!-- BEGIN CAROUSEL -->            
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                
+                
+                </div> 
+                
+                
+                <div class="row-fluid"></div>
+                              
+                
+         </div> 
+         </div>          
+        
 
-        	<div class="fullwidthabnner7">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                         <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                    </li>
 
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                        
-                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                        
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>    
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>                              
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>                
-            <!-- END CAROUSEL -->
-            
-            
-                    <!-- BEGIN CAROUSEL -->            
+
+        <div class="row-fluid margin-bottom-10">           
+        
                 <div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
 
-        	<div class="fullwidthabnner8">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                         <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy! - $1
-                        </a>               
-                    </li>
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
 
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                        
-                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                        
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>    
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>                              
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>                
-            <!-- END CAROUSEL -->
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
+                <div class="span4">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                
+                
+                </div>               
+
+                </div>
             
-<div class="span4">
-            <div class="fullwidthbanner-container slider-main margin-bottom-10" onClick="modelbox()">
+            <div class="span4">
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
 
-        	<div class="fullwidthabnner9">
-            <ul class="revolutionul" style="display:none;">            
-                    <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img1-medium.jpg" alt="">
-                        
-                         <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>               
-                    </li>
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
 
-                    <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
-                        <img src="assets/img/pics/img2-medium.jpg" alt="">
-                        
-                         <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
-                       		 data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo" > 
-                        
-                             click to Buy!
-                        </a> 
-                    </li>
-                    
-                    <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <img src="assets/img/pics/img3-medium.jpg" alt="">
-                        
-                        <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="850"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>    
-                    </li>               
-                    
-                    <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
-                        <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-                        <img src="assets/img/pics/img4-medium.jpg" alt=""> 
-                        
-                        <a class="caption fade btn purple abc slide_btn slide_item_left pricetag" href=""
-                             data-x="0"
-                             data-y="860"
-                             data-speed="100"
-                             data-start="100"
-                             data-easing="easeOutExpo">
-                             click to Buy!
-                        </a>                             
-                    </li>
-            </ul>
-            <div class="tp-bannertimer tp-bottom"></div>
-        	</div>
-            </div>
-                </div>            
-            </ul>
-        </div>
-        <!-- END FILTER --> 
-                  
-    </div>
-    <!-- END CONTAINER -->
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
+                <div class="span4">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                
+                
+                </div>               
+                                     
+                </div>
+            
+            <div class="span4">
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
 
-    <!-- BEGIN FOOTER -->
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
+                <div class="span4">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                
+                
+                </div>               
+                
+         </div>
+         </div>           
+        
+
+
+        <div class="row-fluid">           
+        
+                <div class="span4">
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
+                <div class="span4">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                
+                
+                </div>               
+                </div>
+            
+            <div class="span4">
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
+                <div class="span4">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                
+                
+                </div>               
+                                     
+                </div>
+            
+            <div class="span4">
+                <div class="row-fluid">
+                <div class="span6">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 1stSlide $1.00
+                        </label>
+                      </div> 
+                      
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 2ndSlide $2.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 3rdSlide $3.00
+                        </label>
+                      </div>                
+
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> 4thSlide $4.00
+                        </label>
+                      </div> 
+                </div>
+                <div class="span4">
+                	<div class="buy">
+                	<button type="button" class="btn btn-primary">BUY</button>
+                    </div>
+                </div>
+                </div>               
+                </div> 
+         </div>           
+        
+
+</div>
+
+
+
+
 <?php include 'footer.php' ?>
         
