@@ -43,5 +43,5 @@ window.location.href = "register.php";
 }
 
 function redirect1(){
-window.location.href = "home.php";
+window.location.href = "payment.php";
 }
