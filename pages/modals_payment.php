@@ -13,10 +13,7 @@
 			<p>Do you want to continue</p>
 		</div>
 	</div>
-<!--	<p>
-		<button class="btn green update modelbo">Update</button>
-	</p>
---></div>
+</div>
 <div class="modal-footer">
 	<button type="button" data-dismiss="modal" class="btn">No</button>
 	<a class="btn button" style="background-image:url(image/images.png); width:81px; height:24px;" onclick="redirect1()"></a>

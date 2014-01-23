@@ -168,7 +168,7 @@
         	<div class="fullwidthabnner3">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
@@ -183,7 +183,7 @@
                     </li>
 
                     <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" class="pointer" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
                          <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
@@ -197,7 +197,7 @@
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
@@ -211,7 +211,7 @@
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt=""> 
                         
@@ -239,7 +239,7 @@
         	<div class="fullwidthabnner4">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
@@ -254,7 +254,7 @@
                     </li>
 
                     <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" class="pointer" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
                          <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
@@ -269,7 +269,7 @@
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
@@ -283,7 +283,7 @@
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
@@ -311,7 +311,7 @@
         	<div class="fullwidthabnner5">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
@@ -326,7 +326,7 @@
                     </li>
 
                     <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" class="pointer" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
                          <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
@@ -341,7 +341,7 @@
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
@@ -355,7 +355,7 @@
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
@@ -382,7 +382,7 @@
         	<div class="fullwidthabnner6">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
@@ -397,7 +397,7 @@
                     </li>
 
                     <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" class="pointer" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
                          <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
@@ -412,7 +412,7 @@
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
@@ -426,7 +426,7 @@
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
@@ -455,7 +455,7 @@
         	<div class="fullwidthabnner7">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
@@ -470,7 +470,7 @@
                     </li>
 
                     <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" class="pointer" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
                          <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
@@ -485,7 +485,7 @@
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
@@ -499,7 +499,7 @@
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
@@ -527,7 +527,7 @@
         	<div class="fullwidthabnner8">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
@@ -542,7 +542,7 @@
                     </li>
 
                     <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" class="pointer" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
                          <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
@@ -557,7 +557,7 @@
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
@@ -571,7 +571,7 @@
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt="">
                         
@@ -597,7 +597,7 @@
         	<div class="fullwidthabnner9">
             <ul class="revolutionul" style="display:none;">            
                     <!-- THE FIRST SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=		                     "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img1-medium.jpg" alt="">
                         
@@ -612,7 +612,7 @@
                     </li>
 
                     <!-- THE SECOND SLIDE -->
-                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
+                    <li data-transition="fade" data-slotamount="7" onClick="modelbox()" class="pointer" data-masterspeed="300" data-delay="2400" data-thumb=                          			                      "assets/img/sliders/revolution/thumbs/thumb2.jpg">                        
                         <img src="assets/img/pics/img2-medium.jpg" alt="">
                         
                          <a  class="caption fade btn green  slide_btn slide_item_left pricetag" href=""  
@@ -627,7 +627,7 @@
                     </li>
                     
                     <!-- THE THIRD SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <img src="assets/img/pics/img3-medium.jpg" alt="">
                         
                         <a class="caption fade btn red abc slide_btn slide_item_left pricetag" href=""
@@ -641,7 +641,7 @@
                     </li>               
                     
                     <!-- THE FORTH SLIDE -->
-                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
+                    <li data-transition="fade" data-slotamount="8" onClick="modelbox()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb=                        "assets/img/sliders/revolution/thumbs/thumb2.jpg">
                         <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
                         <img src="assets/img/pics/img4-medium.jpg" alt=""> 
                         
