@@ -1,0 +1,82 @@
+.clear{clear:both;}
+h1,h2,h3,h4,h5,h6,ul,img,a,p{margin:0px; padding:0px;text-decoration:none;list-style-type:none;border:0px;outline:none;}
+/******Popup*******/
+.pop_mn{ float:left; width:690px; height:auto; background-color:#333333; box-shadow:0px 0px 0px; border-radius:6px;}
+.pop_up{ float:left; width:689px; height:auto; background-color:#FFF;}
+.log_in{ background-color: #333;float:left; width:100%; height:auto;}
+.pop_txt{color: #FFFFFF; float:left; width:100%; text-align:center; font-size:15px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;  margin:0px;}
+.pop_txt p{color: #FFFFFF;  width:74%; text-align:center; font-size:15px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;  margin:0 auto;}
+.popup_lnk{ width:100%; height:auto; float:left; margin-top:30px;}
+.popup_lnk ul{ margin:auto; height:auto;text-align:center;}
+.popup_lnk ul li{ margin-left:5px; display:inline-block}
+.pop_mid{ float:left; width:100%; border-top:1px solid #00a2ff; height:auto; margin-top:38px;}
+.pop_img{ float:left; text-align:center; background-image:url(../img/5.png); background-repeat:no-repeat; font-size:17px; font-family:Arial, Helvetica, sans-serif; color:#FFF; height:41px; width:41px; line-height:42px;position: relative;
+left: 320px;
+margin-top: -21px;}
+.pop_lft{ float:left; width:317px; height:auto; border-right:1px solid #00a2ff; margin-left:25px;}
+.txt1{ float:left; text-align:left; font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#fff; font-weight:bold;}
+.pop_lft ul{ float:left; width:100%; height:auto; margin-top:10px;}
+.pop_lft ul li{ float:left; width:100%; height:auto;margin-bottom:10px;}
+.txt2{ float:left; text-align:left; font-size:13px; font-family:Arial, Helvetica, sans-serif; color:#fff; width:100%;margin-top:5px}
+.txt_bx{ float:left; width:100%; margin-top:6px;}
+.txt_bx input.box1{ float:left; width:256px; height:26px; border:1px solid #bbbbbb; background-color:#f7f7f7;font-size:13px; font-family:Arial, Helvetica, sans-serif; color:#333;}
+.btn_sec{ float:left;width:80px; height:auto;}
+.btn_sec input.btnn{ float:left; width:73px; font-family:Arial, Helvetica, sans-serif; color:#fff; font-size:13px; background-image:url(../img/images/img2.png); height:30px; cursor:pointer; border-radius:4px; border:0px; }
+.btn_sec input.btnn:hover{background-image:url(../img/images/img2_hov.png); }
+.txt3{ float:left; font-size:13px; margin-top:7px; margin-left:9px; font-family:Arial, Helvetica, sans-serif; text-align:left; }
+.txt3 a, .txt4 a, .txt7 a{ color:#fff!important;float: none!important;font-weight: normal; font-family:Arial, Helvetica, sans-serif; line-height: 14px;}
+.pop_rgt{ float:left; width:317px; height:auto; margin-left:25px;}
+.pop_rgt ul{ float:left; width:295px; height:auto; margin-top:26px;}
+.pop_rgt ul li{ float:left; width:100%; font-size:14px; font-family:Arial, Helvetica, sans-serif; text-align:left; color:#fff; height:auto;margin-bottom:10px; line-height: 16px;}
+.btn_sec1{ float:left;width:80px; height:auto; margin-top:5px;}
+.btn_sec1 input.btnn1{ float:left; width:156px; font-family:Arial, Helvetica, sans-serif; color:#fff; font-size:13px; background-image:url(../img/images/img2.png); height:30px; cursor:pointer; border-radius:4px; border:0px; }
+.btn_sec1 input.btnn1:hover{background-image:url(../img/images/img2_hov.png); }
+
+/************Popoup2*************/
+.pop_mid2{ float:left; width:100%; margin-top:37px; height:auto;}
+.pop_lft1{ float:left; width:317px; height:auto;margin-left:25px;}
+.pop_lft1 ul{ float:left; width:100%; height:auto; margin-top:30px;}
+.pop_lft1 ul li{ float:left; width:100%; height:auto;margin-bottom:14px;}
+.txt_1{ float:left; text-align:left; font-size:13px; font-family:Arial, Helvetica, sans-serif; color:#fff; font-weight:bold;}
+.dividr{ float:left; width:100%; border:1px solid #00a2ff; margin-top:7px;}
+.txt_bx select{height:32px; border:1px solid #bbbbbb; background-color:#f7f7f7; font-size:13px; font-family:Arial, Helvetica, sans-serif; color:#000;} 
+.txt2 span.txt4{ text-align:left; font-size:13px; font-family:Arial, Helvetica, sans-serif; float:none }
+.txt2 span.txt4 a{color:#6a6a6a;}
+.txt_bx input.box_a{float:left; width:30px; height:21px; border:1px solid #bbbbbb; background-color:#f7f7f7; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#c2af9a; margin-right:6px; text-align:center;}
+.txt_bx input.box_b{float:left; width:47px; height:21px; border:1px solid #bbbbbb; background-color:#f7f7f7; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#c2af9a; text-align:center;}
+.pop_rgt1{ float:left; margin-left:15px; width:304px; height:auto;border-left:1px solid #00a2ff;}
+.pop_rgt1 ul{ float:left; width:295px; height:auto; margin-top:30px;margin-left:15px;}
+.pop_rgt1 ul li{ float:left; width:100%; font-size:14px; font-family:Arial, Helvetica, sans-serif; text-align:left; color:#394b56; height:auto;margin-bottom:10px;}
+.txt_2{ float:left; margin-left:15px; width:95%; text-align:left; font-size:13px; font-family:Arial, Helvetica, sans-serif; color:#fff; font-weight:bold;}
+.dividr1{  float:left; margin-left:15px;width:95%; border:1px solid #00a2ff; margin-top:7px; line-height: 14px}
+.chk_bx{ float:left;}
+.txt5{ float:left; font-size:12px; width:261px; font-family:Arial, Helvetica, sans-serif; text-align:left; color:#fff; padding:3px;line-height: 14px}
+.pop_mid3{float:left; width: 650px;
+margin: 15px 20px;
+padding: 10px 0;
+border-top: 1px solid #c8c8c8;
+border-bottom: 1px solid #c8c8c8;}
+.txt6{ float:left; width:100%;}
+.txt_6{ width:418px; margin:auto; height:auto;}
+.txt7{font-size: 12px;color:#fff; padding-top:3px; padding-left:5px; float:left; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+.txt7 a{ color:#081f2c;}
+.btn_sec2{width:100%; height:auto; margin-top:auto; text-align:center; float:left; margin-top:15px;}
+.btn_sec2 input.btnn2{ width:80px; height:29px; font-size:13px; font-family:Arial, Helvetica, sans-serif; color:#FFF; background-image:url(../img/images/img2.png); border-radius:4px; border:0px; margin:auto;cursor: pointer; float: none;}
+.btn_sec2 input.btnn2:hover{background-image:url(../img/images/img2_hov.png)}
+.pop_mid4{float:left; width: 650px;
+margin: 0px 20px;
+padding: 10px 0;
+}
+.txt8{ float:left; text-align:left; font-size:12px; width:100%; font-family:Arial, Helvetica, sans-serif;}
+.txt8 a{ color:#081f2c;}
+.txt8 a:hover{ text-decoration:underline;}
+.txt9{ float:left; text-align:left; font-size:12px; margin-top:8px; font-family:Arial, Helvetica, sans-serif;color:#081f2c;}
+.login-error{font-size: 12px; color: red; height: 15px; margin-top: 5px}
+.reg-notify{padding-top:5px; margin-left: 3px;display: none; width: 20px;float: left}
+.input-error{border:1px solid #FF0000!important; background: #F1CFCF!important}
+#countryuser{width: 260px;}
+.forgotform .txt2, .resetform .txt2, .siteloginform .txt2, .teamloginform .txt2{width:150px;margin-top:12px;}
+.forgotform .txt_bx, .resetform .txt_bx, .siteloginform .txt_bx, .teamloginform .txt_bx{width:450px}
+.forgotform fieldset, .resetform fieldset, .siteloginform fieldset, .teamloginform fieldset{margin:10px 0px}
+.forgotform .form-error, .resetform .form-error, .siteloginform .form-error, .teamloginform .form-error{border:1px solid #FF0000!important; background: #F1CFCF!important}
+
