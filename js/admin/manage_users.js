@@ -1,4 +1,4 @@
-$(document).ready(function() {
+	$(document).ready(function() {
    $('#users-label').html('<i class="icon-list-alt"></i> users');
         $("#users-add").click(function(e){
 			e.preventDefault();

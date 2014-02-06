@@ -2,7 +2,7 @@ $(document).ready(function() {
     var register_edit = $("#register-edit-form");
 	if (register_edit.length > 0) {
 		
-        $(register_form).validate({
+        $('#register_form').validate({
 				invalidHandler: function(event, validator) {
 									var errors = validator.numberOfInvalids();
 				

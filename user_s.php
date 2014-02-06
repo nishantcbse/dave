@@ -100,6 +100,7 @@ $answer                  = $setting->getField('answer');
                   <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
                   <li><a href="#profile" data-toggle="tab">Profile Info</a></li>
                   <li><a href="#account" data-toggle="tab">Account</a></li>
+                  <li><a href="#media" data-toggle="tab">Media</a></li>
                   <li><a href="#manage" data-toggle="tab">Manage</a></li>
                   <li><a href="#table" data-toggle="tab">Table</a></li>
                 </ul>
@@ -121,6 +122,11 @@ $answer                  = $setting->getField('answer');
                   <!--tab_1_2-->
                   <div class="tab-pane row-fluid profile-account" id="account">
                       <?php include_once('pages/admin/page-account.php'); ?>
+                  </div>
+                  <!--end tab-pane-->
+                  
+                  <div class="tab-pane row-fluid profile-account" id="media">
+                      <?php include_once('pages/admin/page-media.php'); ?>
                   </div>
                   <!--end tab-pane-->
                   
