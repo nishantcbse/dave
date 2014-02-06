@@ -12,7 +12,7 @@
                           <div class="tab-content">
                             <div id="tab_1-1" class="tab-pane active">
                               <div style="height: auto;" id="accordion1-1" class="accordion collapse">
-     							 <form action="" method="post" class="form-horizontal" id="register-form">
+     							 <form action="" method="post" class="form-horizontal" id="register-edit-form">
       <input type="hidden" name="user-id"  val="-1" />
         <div class="control-group">
           <label class="control-label" for="firstname">
@@ -100,7 +100,7 @@
                             </div>
                             <div id="tab_2-2" class="tab-pane">
                               <div style="height: auto;" id="accordion2-2" class="accordion collapse">
-                                <form action="#">
+                                <form action=""method="post" class="form-horizontal" id="image-edit-form">
                                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
                                   <br />
                                   <div class="controls">
@@ -120,7 +120,7 @@
                       </div>
                                   <div class="clearfix"></div>
                                   <div class="space10"></div>
-                                  <div class="submit-btn"> <a href="#" class="btn green">Submit</a> <a href="#" class="btn">Cancel</a> </div>
+                                  <div class="submit-btn"> <a href="#" class="btn green" onclick="Modify_image()">Submit</a> <a href="#" class="btn">Cancel</a> </div>
                                 </form>
                               </div>
                             </div>
@@ -139,13 +139,13 @@
                             </div>
                             <div id="tab_4-4" class="tab-pane">
                               <div style="height: auto;" id="accordion4-4" class="accordion collapse">
-       					     <form action="" method="post" class="form-horizontal" id="candidate-register-form">
+       					     <form action="" method="post" class="form-horizontal" id="candidate-edit-form">
     	  	<input type="hidden" name="user-id"  val="-1" />
            
             <div class="control-group">
                     <label class="control-label" for="firstname"><?php _e('Info'); ?></label>
                     <div class="controls">
-                        <textarea type="text" class="m-wrap span8"  id="Info" name="Info" ><?php echo $info; ?></textarea>
+                        <textarea type="text" class="m-wrap span8"  id="info" name="info" ><?php echo $info; ?></textarea>
                     </div>
                 </div>            
             
@@ -250,7 +250,7 @@
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                    <button type="submit" class="theme-btn btn" value="Submit" onclick="">Submit</button>
+                    <button type="submit" class="theme-btn btn" value="Submit" onclick="candidate_edit()">Submit</button>
                     <button class="btn" type="reset">Clear</button>
                     </div>
                 </div>
