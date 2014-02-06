@@ -31,6 +31,7 @@ function addtocart(){
 	var price = 0;
 	$('.homeProduct').find('.Home:checked').each(function(){
 		var productVal = $(this).val();
+		alert(productVal); 
 		var value = productVal.split('|');
 		console.log(parseFloat(value[1]) + parseFloat(value[1]) );
 		price +=  parseFloat(value[1]);

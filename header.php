@@ -51,8 +51,11 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
 	<link href="assets/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css"/>
 	<!-- End Model Box --> 
     
+<<<<<<< HEAD
     <link href="assets/css/pages/search.css" rel="stylesheet" type="text/css"/>
     
+=======
+>>>>>>> 0b9e5f0ac40c05c0dcb7a73715934e3db43bf5bb
 	<!-- Le javascript -->
     <script src="assets/plugins/jquery-1.10.1.min.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
@@ -65,8 +68,12 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
     <script type="text/javascript" src="assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
 	<script type="text/javascript" src="assets/plugins/select2/select2.min.js"></script>
+<<<<<<< HEAD
 <!--	<script type="text/javascript" src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 -->    <script src="js/jquery.validate.js"></script>
+=======
+    <script src="js/jquery.validate.js"></script>
+>>>>>>> 0b9e5f0ac40c05c0dcb7a73715934e3db43bf5bb
     <!-- END CORE PLUGINS -->
     <script src="assets/scripts/app.js"></script>         
     <script src="assets/scripts/index.js"></script> 
@@ -175,7 +182,7 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
                 <form>
                     <input style="background:#fff;" class="m-wrap" type="text" id="searchText" placeholder="Search" />
                     <button type="submit" class="btn theme-btn" onClick="getSearch()">Go</button>
-                </form>
+               </form>
             </div>
 
             

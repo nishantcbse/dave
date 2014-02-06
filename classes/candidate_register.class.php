@@ -12,7 +12,7 @@ class CandidateRegister extends Generic {
 				$this->options[$key] = parent::secure($value);
 
 
-             //   $this->validate();
+                $this->validate();
 
                     $this->add();
                 } 

@@ -6,8 +6,12 @@ $title = 'Product';
 $label = 'product';
 include_once('header.php');
 include_once('classes/product.class.php');
+include_once('classes/function_product.php');
 
 $shomeProduct = $product->homeProduct();
+
+
+//echo '<pre>'; print_r($sregisterProduct);
 
 ?>
 <style>
@@ -27,7 +31,7 @@ $shomeProduct = $product->homeProduct();
 <!-- BEGIN FILTER -->
 
 
-<div class="row-fluid padd">
+<div class="row-fluid">
 
 
 <div class=""  id="product-cart" style="display:none;">
@@ -44,7 +48,7 @@ $shomeProduct = $product->homeProduct();
 
     <h2>Profile page Details</h2>
      <div class="border"></div>
-  <div class="span6">
+  <div class="margin-bottom-40 span6">
     <div class="row-fluid span12">
       <div class="span8">
         <form action="#" class="form-horizontal">
@@ -147,11 +151,10 @@ $shomeProduct = $product->homeProduct();
 <!-- END CONTAINER --> 
 
 <!-- BEGIN CONTAINER -->
-
-<div class="container min-hight advertisement"> 
-  <h2 class="marg">Home Page Advertisement</h2>
+<div class="container min-hight"> 
+  <h2>Home Page Advertisement</h2>
   <div class="border"></div>
-  <div class="row-fluid ">
+  <div class="row-fluid margin-bottom-10">
     <div class="span12 homeProduct"> 
     
     
@@ -164,7 +167,7 @@ $shomeProduct = $product->homeProduct();
  				<h4>Tile <?php echo $i+1 ; ?></h4>
                 <div class="checkbox">
                    <?php  foreach($posx as $posx){ ?>
-                    <input type="checkbox" value="<?php echo $posx['name']; ?>|<?php echo $posx['price']; ?>" class="<?php echo $posx['label']; ?>"    <?php echo $posx['sell'] == 1 ?'disabled=disabled' : ''; ?> > <label><?php echo $posx['name']; ?>  &nbsp; $<?php echo $posx['price']; ?></label>
+                    <input type="checkbox" value="<?php echo $posx['name']; ?>|<?php echo $posx['price']; ?>|home" class="<?php echo $posx['label']; ?>"    <?php echo $posx['sell'] == 1 ?'disabled=disabled' : ''; ?> > <label><?php echo $posx['name']; ?>  &nbsp; $<?php echo $posx['price']; ?></label>
                    <?php  } ?>
                 </div>
               </div>
@@ -186,34 +189,23 @@ $shomeProduct = $product->homeProduct();
     <h2>Other page Ads</h2>
     <div class="border"></div>
 	<div class="row-fluid">
+         
+   <!-- ##############  REGISTER PRODUCT ################# -->  
+         
           <div class="span6 homeProduct">
           	<h4>REGISTER</h4>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 1st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 2st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 3st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 4st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 5st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 6st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 7st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 8st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|register" class="Home"> 9st Image $1.00
-                </div> 
-              </div>
-              
+                  <?php  display_registerproduct(); ?>
+               
                 <div class="buy1">
                 <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
                 </div>
           </div>
+          
+          
+  <!-- ##############  Login Product ################# -->  
+  
+  
+  
           
           <div class="span6 homeProduct">
           	<h4>LOGIN PAGE</h4>

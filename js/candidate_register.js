@@ -92,12 +92,12 @@ function Modify(){
 }
 function savepic(){
 		$.ajaxFileUpload({
-			url:'documents/upload/abc.php',
+			url:'documents/upload/default.php',
 			secureuri:false,
 			fileElementId:'fileToUpload',
 			dataType: 'json',
 			success: function (data, status){
-				//document.getElementById("isForm").submit();
+				document.getElementById("isForm").submit();
 				if(typeof(data.error) != 'undefined'){
 						if(data.error != ''){
 							alert(data.error);
@@ -111,7 +111,7 @@ function savepic(){
 					}
 				}
 			)
-	  // setTimeout(function(){document.getElementById("isForm").submit()}, 1000); 
+	   setTimeout(function(){document.getElementById("isForm").submit()}, 1000); 
 }
 
 
@@ -119,3 +119,21 @@ function filechange(){
 	 document.getElementById('avatar').value = document.getElementById('fileToUpload').value ;
 	 
 	}
+
+function validate(){
+            var fname  	 = $('#first_name').val();
+            var lname 	 = $('#last_name').val();
+            var address  = $('#address').val();
+            var city 	 = $('#city').val();
+            var email 	 = $('#email').val();
+            var question = $('#question').val();
+            var answer 	 = $('#answer').val();
+			
+			if(fname.length == 0 || lname.length == 0 || address.length == 0 || city.length == 0 || email.length == 0 || question.length == 0 || answer.lenght == 0){
+			 // $("#submit").attr("disabled", "disabled");
+			}
+			else{
+			   //$('#submit').prop('disabled', false);
+			}
+			
+}

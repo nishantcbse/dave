@@ -19,6 +19,7 @@ function display_homeproduct() {
 				
 				
 				 $posX[$pos[0]][$pos[1]] = array(
+				                            'id'    => $row['id'],
 				                            'label' => $row['label'],
 											'name'  => $row['name'],
 											'price' => $row['price'],
