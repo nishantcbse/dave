@@ -1,6 +1,11 @@
 <?php
 include_once('classes/check.class.php');
 //protect("1,2");
+if(isset($_SESSION['user_profile_id'])){
+
+}else{
+   header('Location: register.php');
+}
 
 
 $title = 'register';
@@ -25,13 +30,12 @@ $sprovince  = $listbox->getProvince();
             <!-- BEGIN INFO BLOCK -->               
             <div class="span4 space-mobile">
             <!-- BEGIN FORM-->
-            <form action="" method="post" class="form-horizontal" id="candidate-register-form">
-    	  	<input type="hidden" name="user-id"  val="-1" />
+            <form  enctype="multipart/form-data"   class="form-horizontal" id="candidate-register-form">
            
             <div class="control-group">
                     <label class="control-label" for="firstname"><?php _e('Info'); ?></label>
                     <div class="controls">
-                        <textarea type="text" class="m-wrap span8"  id="Info" name="Info" ></textarea>
+                        <textarea type="text" class="m-wrap span8"  id="info" name="info" ></textarea>
                     </div>
                 </div>            
             
@@ -44,7 +48,7 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label"for="middlename"><?php _e('Middle name'); ?></label>
                     <div class="controls">
-                        <input type="text" class="m-wrap span8"  id="middle_name" name="middle_name" placeholder="" required="required"/>
+                        <input type="text" class="m-wrap span8"  id="middle_name" name="middle_name" placeholder=""/>
                     </div>
                 </div>
                 <div class="control-group">
@@ -135,18 +139,21 @@ $sprovince  = $listbox->getProvince();
                     </div>
                 </div>
  
+
+
         <div class="control-group">
           <label class="control-label" for="image">
             <?php _e('Uplode Image'); ?>
           </label>
           <div class="controls">
         <div class="fileupload fileupload-new" data-provides="fileupload">
-         <input type="hidden" name="avatar" id="avatar" value="<?php echo $file_avatar; ?>"/>
+         <input  type="hidden" name="avatar" id="avatar" value=""/>
             <div class="fileupload-new thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;"><img src="<?php echo $user_avatar; ?>" /></div>
                 <div class="fileupload-preview fileupload-exists thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px; line-height: 20px;"></div>
                     <div>
                         <span class="btn btn-file"><span class="fileupload-new">Select image</span>
-                        <span class="fileupload-exists" >Change</span><input type="file"  name="fileToUpload" id="fileToUpload" onchange="filechange()"/></span>
+                        <span class="fileupload-exists" >Change</span>
+                        <input type="file"  name="fileToUpload" id="fileToUpload" onchange="filechange()"/></span>
                         <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
                     </div>
                 </div>
@@ -155,7 +162,7 @@ $sprovince  = $listbox->getProvince();
                 
                 <div class="control-group">
                     <div class="controls">
-                    <button type="submit" class="theme-btn btn" value="Submit" onclick="">Submit</button>
+                    <button type="submit" class="theme-btn btn" value="Submit" onclick=" savepic()">Submit</button>
                     <button class="btn" type="reset">Clear</button>
                     </div>
                 </div>

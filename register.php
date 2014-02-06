@@ -99,8 +99,8 @@ include_once('header.php');
         
         <div class="control-group">
           <div class="controls">
-            <button type="submit" class="theme-btn btn" value="Submit" id="submit" onclick="">Submit</button>
-            <button class="btn" type="reset">Clear</button>
+            <button type="submit" class="btn btn-primary" value="Submit" id="submit" onclick="">Submit</button>
+            <button class="btn btn-info" type="reset">Clear</button>
           </div>
         </div>
       </form>

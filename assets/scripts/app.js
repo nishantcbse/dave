@@ -507,7 +507,7 @@ var App = function () {
         }
     }
 
-    var handleScrollers = function () {
+/*    var handleScrollers = function () {
         $('.scroller').each(function () {
                 var height;
                 if ($(this).attr("data-height")) {
@@ -526,7 +526,7 @@ var App = function () {
                     });
             });
     }
-
+*/
     var handleTooltips = function () {
         if (App.isTouchDevice()) { // if touch device, some tooltips can be skipped in order to not conflict with click events
             jQuery('.tooltips:not(.no-tooltip-on-touch-device)').tooltip();
@@ -802,7 +802,7 @@ var App = function () {
             handleInit();
             handleResponsiveOnResize(); // set and handle responsive    
             handleUniform();        
-            handleScrollers(); // handles slim scrolling contents 
+          //  handleScrollers(); // handles slim scrolling contents 
             handleResponsiveOnInit(); // handler responsive elements on page load
 
             //layout handlers

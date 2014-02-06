@@ -5,7 +5,7 @@
         <!-- BEGIN ABOUT INFO -->   
         <div class="row-fluid margin-bottom-30">
             <!-- BEGIN INFO BLOCK -->               
-            <div class="span4 space-mobile">
+            <div class="span4 space-mobile pull-left">
 				<div class="margin-bottom-30">
                 	<div class="loginhead">
 						<h4><?php _e('Sign in to Nwareindia'); ?></h4>
@@ -16,7 +16,7 @@
                         	</div>
                         </div>
 						<div class="control-group">
-							<label class="control-label" for="username"><?php echo $login->use_emails ? _('Email address') : _('Username'); ?></label>
+							<label class="control-label" for="username"><?php echo $login->use_emails ? _('Email address') : _('Email'); ?></label>
 							<div class="controls">
 								<input class="m-wrap" type="text" id="username" name="username" placeholder="Email">
 							</div>
@@ -32,8 +32,8 @@
 								<label class="checkbox">
 									<input type="checkbox" id="remember" name="remember"><?php _e('Stay signed in'); ?></label>
 								<input type="hidden" name="token" value="<?php echo $_SESSION['jigowatt']['token']; ?>"/>
-								<button type="submit" value="" class="btn black" id="login-submit" name="login"><?php _e('Sign In'); ?></button>
-								<a href="#"><button type="button" value="" class="btn black" id="forgate-password" name="forgate-password"><?php _e('Forgate Password'); ?></button></a>
+								<button type="submit" value="" class="btn btn-primary" id="login-submit" name="login"><?php _e('Sign In'); ?></button><br><br>
+								<a href="#" type="text" value="" class="forgt" id="forgate-password" name="forgate-password"><?php _e('Forgot Password'); ?></button></a>
 							</div>
 						</div>
 		<?php if ( !empty($jigowatt_integration->enabledMethods) ) : ?>

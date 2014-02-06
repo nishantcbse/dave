@@ -1,11 +1,20 @@
 <?php ob_start(); ?>
 <?php include_once('classes/translate.class.php'); ?>
-<?php if (!isset($_SESSION)) session_start(); ?>
+<?php 
+if (!isset($_SESSION)) session_start(); 
+
+if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gravatar'])){
+  $avatar = 'documents/avatar/'.$_SESSION['jigowatt']['user_id'].'/'.$_SESSION['jigowatt']['gravatar'];
+}else{
+  $avatar = 'documents/avatar/default.png';
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title> Dave </title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
@@ -32,6 +41,7 @@
     <link href="assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>    
     <link rel="shortcut icon" href="favicon.ico" />
     <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+    <link href="css/ravi.css" rel="stylesheet" type="text/css"/>
 	<!-- Upload --> 
 	<link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
 	<link href="assets/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />
@@ -40,6 +50,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.css"/>
 	<link href="assets/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css"/>
 	<!-- End Model Box --> 
+    
+    <link href="assets/css/pages/search.css" rel="stylesheet" type="text/css"/>
     
 	<!-- Le javascript -->
     <script src="assets/plugins/jquery-1.10.1.min.js" type="text/javascript"></script>
@@ -53,7 +65,8 @@
     <script type="text/javascript" src="assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
 	<script type="text/javascript" src="assets/plugins/select2/select2.min.js"></script>
-    <script src="js/jquery.validate.js"></script>
+<!--	<script type="text/javascript" src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+-->    <script src="js/jquery.validate.js"></script>
     <!-- END CORE PLUGINS -->
     <script src="assets/scripts/app.js"></script>         
     <script src="assets/scripts/index.js"></script> 
@@ -68,7 +81,10 @@
 	<!-- Model Box --> 
 	<script src="assets/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript" ></script>
 	<script src="assets/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript" ></script>
-	<script src="assets/scripts/ui-modals.js"></script>     
+	<script src="assets/scripts/ui-modals.js"></script> 
+    <script type="text/javascript" src="js/universal.js"></script>    
+    <script type="text/javascript" src="js/header.js"></script>    
+    
 	<!-- End Model Box --> 
     <script type="text/javascript">
         jQuery(document).ready(function() {
@@ -85,12 +101,6 @@
 
 	<body>
 
-<!-- Navigation
-================================================== -->
-
-<body>
-	<!-- BEGIN STYLE CUSTOMIZER -->
-	<!-- END BEGIN STYLE CUSTOMIZER -->    
 
     <!-- BEGIN HEADER -->
     <div class="front-header">
@@ -137,7 +147,7 @@
 	<?php if(isset($_SESSION['jigowatt']['username'])) { ?>
                     <li class="dropdown" style="margin-top: 17px;">
                         <p class="navbar-text dropdown-toggle" data-toggle="dropdown" id="userDrop">
-                            <span style="float:left"><?php echo $_SESSION['jigowatt']['gravatar']; ?></span>
+                            <span style="float:left"><img src="<?php echo $avatar ; ?>" width="40px"></span>
                             <span style="float:left"><a href="#"><?php echo $_SESSION['jigowatt']['username']; ?></a></span>
                            <span style="float:left; margin-top: 10px;"> <b class="caret"></b></span>
                         </p>
@@ -145,7 +155,7 @@
                         <ul class="dropdown-menu">
                 <?php if(in_array(1, $_SESSION['jigowatt']['user_level'])) { ?>
 <!--                            <li><a href="admin/index.php"><i class="icon-home"></i> <?php _e('Control Panel'); ?></a></li>
--->                            <li><a href="profile.php"><i class="icon-cog"></i> <?php _e('Settings'); ?></a></li> <?php } ?>
+-->                            <li><a href="user_s.php"><i class="icon-cog"></i> <?php _e('Settings'); ?></a></li> <?php } ?>
 <!--                            <li><a href="profile.php"><i class="icon-user"></i> <?php _e('My Account'); ?></a></li>
 -->                            <li class="divider"></li>
                             <li><a href="logout.php"><?php _e('Sign out'); ?></a></li>
@@ -163,8 +173,8 @@
         </div>
            <div class="input-append search">
                 <form>
-                    <input style="background:#fff;" class="m-wrap" type="text" placeholder="Search" />
-                    <button type="submit" class="btn theme-btn">Go</button>
+                    <input style="background:#fff;" class="m-wrap" type="text" id="searchText" placeholder="Search" />
+                    <button type="submit" class="btn theme-btn" onClick="getSearch()">Go</button>
                 </form>
             </div>
 

@@ -1,8 +1,5 @@
 				
 <?php include_once('header.php'); ?>
-
-
-
  <div class="container min-hight">
  						<div class="row-fluid">
 									<div class="span12">
@@ -22,9 +19,6 @@
               </div>                               
                                                 
             <div class="tab-pane" id="tab_3_1">
-                                                
-                                                
-                                                
                <!-- BEGIN EXAMPLE TABLE PORTLET-->
 						<div class="portlet box light-grey">
 							<div class="portlet-title">

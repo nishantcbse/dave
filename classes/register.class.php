@@ -13,11 +13,6 @@ class Register extends Generic {
 			foreach ($_POST as $key => $value)
 				$this->options[$key] = parent::secure($value);
 
-            if (!empty($_POST['setfor-delete'])){
-                $this->flag();
-                echo $this->result;
-
-            } else {
 
                 $this->validate();
                     $this->add();
@@ -29,7 +24,7 @@ class Register extends Generic {
     	            echo $this->result;
                 }
 
-            }
+          
 
            exit;
 
@@ -68,13 +63,12 @@ class Register extends Generic {
         $answer     	 	= $this->options['answer'];
 
 
-			$sql = "INSERT INTO user_profiles (first_name, last_name, address, city, email, security_question, answer)
+	    $sql = "INSERT INTO user_profiles (first_name, last_name, address, city, email, security_question, answer)
 						VALUES 						('$first_name','$last_name','$address','$city','$email','$security_question','$answer');";
 
-			//$sql->query($sql);
-
 		parent::query($sql);
-		
+		$id = parent::$dbh->lastInsertId();
+		$_SESSION['user_profile_id'] = $id;
 		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
 
 	}

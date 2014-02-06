@@ -1,6 +1,6 @@
 <?php 
 include_once('classes/check.class.php'); 
-protect("1,2");
+//protect("1,2");
 ?>
 
 <?php
