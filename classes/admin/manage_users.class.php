@@ -59,6 +59,7 @@ class Users extends Generic {
 						VALUES 			('$name','$username','$email','$password');";
 
 		parent::query($sql);
+		//print_r($sql);die();
 		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
 
 	}
@@ -76,7 +77,7 @@ class Users extends Generic {
 
 	    foreach ($stmt->fetch(PDO::FETCH_ASSOC) as $field => $value)
 		    $this->options[$field] = $value;
-            //print_r($this->options); 
+           // print_r($this->options); 
 	}
 
 	public function getField($field) {

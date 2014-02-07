@@ -51,36 +51,6 @@
         </div>
 											</div>
 											<!--end span8-->
-											<div class="span4">
-												<div class="portlet sale-summary">
-													<div class="portlet-title">
-														<div class="caption">Sales Summary</div>
-														<div class="tools">
-															<a class="reload" href="javascript:;"></a>
-														</div>
-													</div>
-													<div class="portlet-body">
-														<ul class="unstyled">
-															<li>
-																<span class="sale-info">TODAY SOLD <i class="icon-img-up"></i></span> 
-																<span class="sale-num">23</span>
-															</li>
-															<li>
-																<span class="sale-info">WEEKLY SALES <i class="icon-img-down"></i></span> 
-																<span class="sale-num">87</span>
-															</li>
-															<li>
-																<span class="sale-info">TOTAL SOLD</span> 
-																<span class="sale-num">2377</span>
-															</li>
-															<li>
-																<span class="sale-info">EARNS</span> 
-																<span class="sale-num">$37.990</span>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
 											<!--end span4-->
 										</div>
 										<!--end row-fluid-->
