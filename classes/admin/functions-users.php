@@ -23,24 +23,15 @@ function list_manageusers() {
     $sql = 'SELECT * FROM login_users WHERE flag = 0 ORDER BY user_id DESC';
 	$query = $generic->query($sql);
 	//print_r($query);
-
 	?>
 	<table class="table table-hover table-nomargin dataTable table-bordered">
 		<thead>
 			<tr>
                 <th>name</th>
                 <th>username</th>
-<!--                <th>user_level</th>
-                <th>restricted</th>
--->                <th>email</th>
+                <th>email</th>
                <th>password</th>
-<!--                 <th>timestamp</th>
-                <th>avatar</th>
-                <th>user_profile_id</th>
-                <th>is_varified</th>
-                <th>created</th>
-                <th>updated</th>
--->			</tr>
+		</tr>
 		</thead>
 		<tbody>
 		<?php
