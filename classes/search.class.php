@@ -26,6 +26,7 @@ class Search extends Generic {
 		
 		$sql = "SELECT *
 				FROM `candidate_profiles`
+				LEFT JOIN `settings_party_symbols` ON  `settings_party_symbols`.id = `candidate_profiles`.`candidate_party_symbol`
 				WHERE
 				candidate_profiles.candidate_first_name LIKE '%$sval%' OR
 				candidate_profiles.candidate_middle_name LIKE '%$sval%' OR
@@ -45,10 +46,22 @@ class Search extends Generic {
 		while($row = $query->fetch(PDO::FETCH_ASSOC)){
            
                // print_r($row);
+			   if(!empty($row['candidate_avatar'])){
+			        $avatar = 'document/avatar/'.$row['candidate_avatar'];
+			   }else{
+					$avatar = 'documents/avatar/default.png';
+			   }
+			   
+				if( !empty($row['party_symbols'])){
+					$party_symbol = 'documents/party_symbols/'.$row['party_symbols'];
+				}else{
+					$party_symbol = '';
+				}
+			   
 				$search_result 	.=   '<tr>
-										<td><img src="document/avatar/'.$row['candidate_avatar'].'" alt="" /></td>
-										<td class="hidden-phone"><a href="candidate-profile.php?id='.$row['candidate_id'].'">'.$row['candidate_first_name'].' '.$row['candidate_middle_name'].' '.$row['candidate_last_name'].'</a></td>
-										<td>'.$row['candidate_political_party'].'</td>
+										<td><img src="'.$avatar.'" alt="" height="26px" width="26px"/></td>
+										<td class="hidden-phone"><a href="profile.php?id='.$row['candidate_id'].'">'.$row['candidate_first_name'].' '.$row['candidate_middle_name'].' '.$row['candidate_last_name'].'</a></td>
+										<td><img src="'.$party_symbol.'" alt="" height="20px" width="20px"/>'.$row['candidate_political_party'].'</td>
 										<td class="hidden-phone">'.$row['candidate_city'].'</td>
 									</tr>';
          }

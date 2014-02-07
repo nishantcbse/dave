@@ -171,9 +171,9 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
             </ul>
         </div>
            <div class="input-append search">
-                <form>
-                    <input style="background:#fff;" class="m-wrap" type="text" id="searchText" placeholder="Search" />
-                    <button type="submit" class="btn theme-btn" onClick="getSearch()">Go</button>
+                <form method="get" action="search.php">
+                    <input style="background:#fff;" class="m-wrap" type="text" id="searchText" name="search" placeholder="Search" />
+                    <button type="submit" class="btn theme-btn" onClick="">Go</button>
                </form>
             </div>
 

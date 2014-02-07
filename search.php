@@ -1,6 +1,5 @@
 <?php
 include_once('classes/check.class.php');
-
 $title = 'search';
 $label = '';
 include_once('header.php');
