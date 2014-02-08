@@ -1,6 +1,12 @@
-	<style>
+<style>
 	.red{height:34px !important;}
-	</style>
+	.uploadImagePreview{
+		border: 1px solid #000000;
+		margin-bottom: 5px;
+		padding: 11px 3px 8px;
+		margin-left:0px !important;
+		}
+</style>
     
     <link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
 	<link href="assets/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />
@@ -60,25 +66,10 @@
             
 				<div class="row-fluid">
 					<div class="span12">
-                    
-                       
-                       
                        <div id="uplaodedImage">
                        
-                        <div class="row-fluid">
-                            <div class="span1">
-                                <img src="http://localhost/dave/documents/media/files/thumbnail/1512760_261772880641407_1772739902_a.png"></div>
-                            <div class="span7">
-                                <span>The Most Complete & Popular Admin & Frontend Theme</span>
-                            </div>
-                            <div class="span2">
-                                <a href="#responsive" data-toggle="modal" class="btn green submit-btn" onclick="">Edit</a>
-                            </div>
-                            <div class="span2">
-                                <div class="submit-btn"> <a href="#" class="btn green" onclick="">Submit</a></div>
-                            </div>
-                        </div>
                        
+                        <?php  $setting->uploadImagePreview() ?>
                        
                        </div>
                     
@@ -157,7 +148,7 @@
   <div id="responsive" class="modal hide fade" tabindex="-1" data-width="550">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                <h3>Responsive & Scrollable</h3>
+                <h3>Media Edit</h3>
             </div>
             <div class="modal-body">
                 <div class="scroller" style="height:auto;" data-always-visible="1" data-rail-visible1="1">

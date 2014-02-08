@@ -36,11 +36,27 @@ $(document).ready(function(){
 								 $.get('classes/settings.class.php',{media:true,name:name,type:type}).done(function(data){
 									 
 										var jsonData = JSON.parse(data);
+										var image = '';
 										for (var i in jsonData) {
 											var rec = jsonData[i];
-											var image = '<image src="documents/media/files/thumbnail/'+rec.name+'" class="previewimage"><a href="#" onclick="deleteImage(\'.previewimage\','+rec.id+',\''+rec.name+'\')" >delete</a>';
-											$('#uplaodedImage').append(image);
+											
+											image +=  '<div class="row-fluid uploadImagePreview span12">'+
+															'<div class="span1">'+
+															   '<img src="documents/media/files/thumbnail/'+rec.name+'" alt=""></div>'+
+															'<div class="span7">'+
+																'<span class="mediadetail">'+rec.detail+'</span>'+
+															'</div>'+
+															'<div class="span2">'+
+															   ' <a href="#responsive" data-toggle="modal" class="btn green submit-btn" onclick="mediaDetailEdit(\'.mediadetail\','+rec.id+')">Edit</a>'+
+															'</div>'+
+															'<div class="span2">'+
+																'<div class="submit-btn"> <a href="#" class="btn green" onclick="deleteImage(\'.uploadImagePreview\','+rec.id+',\''+rec.name+'\')">Delete</a></div>'+
+															'</div>'+
+														'</div>';
+											
 										}
+										$('#uplaodedImage').prepend(image);
+										
 									 })
 							      
 							})
@@ -102,9 +118,10 @@ $(document).ready(function(){
 });
 
 function deleteImage(a,b,c){
+	console.log();
 	
 	$.get('classes/settings.class.php',{deleteMedia:true,mediaid:b,medianame:c}).done(function(data){
-		   $(a).remove();
+		   a.parent().parent().parent().remove();
 	});
     
 }
