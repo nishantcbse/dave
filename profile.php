@@ -44,6 +44,10 @@ $spartyList              = $listbox->getPolitical_Party_List();
 $sdistrict 				 = $listbox->getDistrict();
 $sprovince			     = $listbox->getProvince();
 ?>
+    <link rel="stylesheet" href="assets/plugins/fancybox/source/jquery.fancybox.css">               
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link href="assets/css/pages/portfolio.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/pages/profile.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/style_profile.css" rel="stylesheet" type="text/css"/>
 <script src="js/profile.js"></script>
@@ -144,8 +148,13 @@ $sprovince			     = $listbox->getProvince();
 													<div class="tab-pane active" id="tab_1_1_1">
 
 
-				<div class="row-fluid">
-				</div>
+                                                <div class="row-fluid">
+                                                    <div class="filter-v1 margin-bottom-40 span12">
+                                                    
+                                                          <?php   $profile->mediaView() ; ?>  
+                                                          
+                                                    </div>
+                                                </div>
 
 
 													</div>
@@ -166,7 +175,10 @@ $sprovince			     = $listbox->getProvince();
 			<!-- END PAGE CONTAINER--> 
 		</div>
 		<!-- END PAGE --> 
-          
+    <script src="assets/plugins/jquery.mixitup.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/hover-dropdown.js"></script>                
+    <script src="assets/scripts/app.js"></script>      
+    <script src="js/admin/media_view.js"></script>      
 	<script>
 		jQuery(document).ready(function() {       
 		   App.init();
