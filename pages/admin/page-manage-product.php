@@ -186,12 +186,6 @@
                                                     <input type="password" name="image" id="image" class="input-large span7">
                                                 </div>
                                             </div>
-                                            <div class="control-group">
-                                                <label for="textfield" class="control-label">Sell</label>
-                                                <div class="controls">
-                                                    <input type="password" name="sell" id="sell" class="input-large span7">
-                                                </div>
-                                            </div>
                                             
 <!--                                            <div class="check-col" id="record-delete" style="margin-top:10px; margin-left:102px;" >
                                                  <div class="check-line " >
