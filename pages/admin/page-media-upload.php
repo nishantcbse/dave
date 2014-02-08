@@ -60,7 +60,15 @@
             
 				<div class="row-fluid">
 					<div class="span12">
+                    
+                       <div id="uplaodedImage">
+                       
+                       </div>
+                    
+                    
+                    
 						<script id="template-upload" type="text/x-tmpl">
+						/*
 							{% for (var i=0, file; file=o.files[i]; i++) { %}
 							    <tr class="template-upload fade">
 							        <td class="preview"><span class="fade"></span></td>
@@ -89,9 +97,10 @@
 							        {% } %}</td>
 							    </tr>
 							{% } %}
+						*/	
 						</script>
 						<!-- The template to display files available for download -->
-						<script id="template-download" type="text/x-tmpl">
+						<!--<script id="template-download" type="text/x-tmpl">
 							{% for (var i=0, file; file=o.files[i]; i++) { %}
 							    <tr class="template-download fade">
 							        {% if (file.error) { %}
@@ -109,7 +118,7 @@
 							            <td class="name">
 							                <a href="{%=file.url%}" title="{%=file.name%}" data-gallery="{%=file.thumbnail_url&&'gallery'%}" download="{%=file.name%}">{%=file.name%}</a>
 							            </td>
-							            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+							            <td class="size edit"><span>{%=o.formatFileSize(file.size)%}</span></td>
 							            <td colspan="2"></td>
 							        {% } %}
 							        <td class="delete">
@@ -121,7 +130,7 @@
 							        </td>
 							    </tr>
 							{% } %}
-						</script>
+						</script>-->
 					</div>
 				</div>
 
@@ -130,7 +139,7 @@
 
 
 	<script src="assets/plugins/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
-	<script src="assets/plugins/jquery-file-upload/js/vendor/tmpl.min.js"></script>
+	
 	<script src="assets/plugins/jquery-file-upload/js/vendor/load-image.min.js"></script>
 	<script src="assets/plugins/jquery-file-upload/js/vendor/canvas-to-blob.min.js"></script>
 	<script src="assets/plugins/jquery-file-upload/js/jquery.iframe-transport.js"></script>

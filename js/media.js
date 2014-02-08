@@ -26,7 +26,24 @@ $(document).ready(function(){
 				},
 				 add: function (e, data) {
 						var jqXHR = data.submit()
-							.success(function (result, textStatus, jqXHR) {/* ... */ console.log(result)})
+							.success(function (result, textStatus, jqXHR) {/* ... */ 
+							      console.log(result.files[0]);
+								  //var resultid = result.files[0];
+								  var name = result.files[0].name;
+								  var type = result.files[0].type;
+								  //var name = result.files[0].name;
+								  
+								 $.get('classes/settings.class.php',{media:true,name:name,type:type}).done(function(data){
+									 
+										var jsonData = JSON.parse(data);
+										for (var i in jsonData) {
+											var rec = jsonData[i];
+											var image = '<image src="documents/media/files/thumbnail/'+rec.name+'" class="previewimage"><a href="#" onclick="deleteImage(\'.previewimage\','+rec.id+',\''+rec.name+'\')" >delete</a>';
+											$('#uplaodedImage').append(image);
+										}
+									 })
+							      
+							})
 							.error(function (jqXHR, textStatus, errorThrown) {/* ... */})
 							.complete(function (result, textStatus, jqXHR) {/* ... */});
 					}
@@ -34,7 +51,7 @@ $(document).ready(function(){
 
             // Load existing files:
             // Demo settings:
-            $.ajax({
+/*            $.ajax({
                 // Uncomment the following to send cross-domain cookies:
                 xhrFields: {withCredentials: true},
                 url: $('#fileupload').fileupload('option', 'url'),
@@ -62,9 +79,9 @@ $(document).ready(function(){
                     result: result
                 });
             });
-
+*/
             // Upload server status check for browsers with CORS support:
-            if ($.support.cors) {
+/*            if ($.support.cors) {
                 $.ajax({
                     url: 'documents/media/index.php',
                     type: 'HEAD'
@@ -75,7 +92,7 @@ $(document).ready(function(){
                         .appendTo('#fileupload');
                 }).done(function(data){console.log(data);});
             }
-
+*/
             // initialize uniform checkboxes  
             App.initUniform('.fileupload-toggle-checkbox');
 			
@@ -83,3 +100,11 @@ $(document).ready(function(){
 			console.log(overallProgress);
 			*/
 });
+
+function deleteImage(a,b,c){
+	
+	$.get('classes/settings.class.php',{deleteMedia:true,mediaid:b,medianame:c}).done(function(data){
+		   $(a).remove();
+	});
+    
+}

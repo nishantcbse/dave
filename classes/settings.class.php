@@ -9,12 +9,15 @@ class Settings extends Generic {
 
         $this->grab();
         $this->party_img();
+		
+		if(!empty($_GET['media'])) $this->addMedia();
+		if(!empty($_GET['deleteMedia'])) $this->deleteMedia();
 
 		if(!empty($_POST)) {
 				foreach ($_POST as $key => $value)
 				$this->options[$key] = parent::secure($value);
       
-                if ($this->options['action']== 'personal'){
+			    if ($this->options['action']== 'personal'){
 					$this->validate_personal();
 					$this->edit_personal();
 				}else if ($this->options['action']== 'candidate'){
@@ -87,7 +90,7 @@ class Settings extends Generic {
 	    $sql = "UPDATE candidate_profiles SET `candidate_avatar` = '$avatar' WHERE `user_profile_id` =".$user_profile_id;
 
 		parent::query($sql);
-		print_r($sql);
+		
 		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
 
 	}
@@ -143,6 +146,45 @@ class Settings extends Generic {
 		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
 
 	}
+	
+	
+   private function addMedia() {
+
+		if (!empty($this->error)) return false;
+
+        $name            	= $_GET['name'];
+        $type     	 	    = $_GET['type'];
+        $candidate     	 	= $this->getField('candidate_id');
+	    $sql = "INSERT INTO media (name, type, candidate_id) VALUES ('$name','$type','$candidate');";
+		parent::query($sql);
+		$id = parent::$dbh->lastInsertId();
+		
+		$sqlMedia = "SELECT * FROM media WHERE id=".$id;
+        $query = parent::query($sqlMedia);
+        
+		while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                $list[] = array(
+				    'id' 	     =>   $row['id'],
+					'name'       =>   $row['name'],
+					'type'       =>   $row['type'],
+                );
+            }
+		 echo json_encode($list);
+
+	}
+	
+  private function deleteMedia(){
+       $id   = $_GET['mediaid'];
+       $name = $_GET['medianame'];
+	   $thumbdir  = 'documents/media/files/thumbnail/'.$name;
+	   $dir       = 'documents/media/files/'.$name;
+	   $sql = "DELETE FROM media WHERE id =".$id;
+	   $query = parent::query($sql);
+       unlink($thumbdir);
+       unlink($dir);
+  
+  }
+	
 	
 	
     private function grab() {
