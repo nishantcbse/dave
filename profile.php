@@ -148,37 +148,13 @@ $sprovince			     = $listbox->getProvince();
 													<div class="tab-pane active" id="tab_1_1_1">
 
 
-				<div class="row-fluid">
-                
-        <div class="filter-v1 margin-bottom-40">
-            <ul class="grid-v1 thumbnails">
-                <li class="span3 mix category_10">
-                    <img src="assets/img/works/img1.jpg" alt="">
-                    <div class="hover-portfolio hover-portfolio-small">
-                        <h2>Cascusamus et iusto accusamus</h2>
-                        <a class="hover-portfolio-lft"><i class="icon-link"></i></a>
-                        <a class="hover-portfolio-rgt fancybox-button" href="assets/img/works/img1.jpg" title="Project Name" data-rel="fancybox-button"><i class="icon-search"></i></a>                            
-                    </div>                                        
-                </li>
-                <li class="span3 mix category11">
-                    <img src="assets/img/works/img2.jpg" alt="">
-                    <div class="hover-portfolio hover-portfolio-small">
-                        <h2>Cascusamus et iusto accusamus</h2>
-                        <a class="hover-portfolio-lft"><i class="icon-link"></i></a>
-                        <a class="hover-portfolio-rgt fancybox-button" href="assets/img/works/img2.jpg" title="Project Name" data-rel="fancybox-button"><i class="icon-search"></i></a>                            
-                    </div>                                        
-                </li>
-                <li class="span3 mix category_12">
-                    <img src="assets/img/works/img3.jpg" alt="">
-                    <div class="hover-portfolio hover-portfolio-small">
-                        <h2>Cascusamus et iusto accusamus</h2>
-                        <a class="hover-portfolio-lft"><i class="icon-link"></i></a>
-                        <a class="hover-portfolio-rgt fancybox-button" href="assets/img/works/img3.jpg" title="Project Name" data-rel="fancybox-button"><i class="icon-search"></i></a>                            
-                    </div>                    
-                </li>
-            </ul>
-        </div>
-				</div>
+                                                <div class="row-fluid">
+                                                    <div class="filter-v1 margin-bottom-40 span12">
+                                                    
+                                                          <?php   $profile->mediaView() ; ?>  
+                                                          
+                                                    </div>
+                                                </div>
 
 
 													</div>
