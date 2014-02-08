@@ -18,7 +18,7 @@ class Settings extends Generic {
 					$this->validate_personal();
 					$this->edit_personal();
 				}else if ($this->options['action']== 'candidate'){
-				     $this->edit_account_personam();
+				     $this->candidate_edit();
 				}else if ($this->options['action']== 'avatar'){
 				   $this->image_edit();
 				}
@@ -93,13 +93,6 @@ class Settings extends Generic {
 	}
 
     private function candidate_edit() {
-		
-		$id		=$_SESSION['jigowatt']['user_id'];
-		$sql = "SELECT user_profile_id FROM login_users WHERE user_id= ".$id;
-		$sql = parent::query($sql);
-		$row = $sql->fetch(PDO::FETCH_ASSOC);
-		$user_profile_id= $row['user_profile_id'];
-		
 		if (!empty($this->error)) return false;
 		
         $info     	 			= $this->options['info'];
@@ -117,8 +110,9 @@ class Settings extends Generic {
         $office_website     	= $this->options['office_website'];
         $office_fb_link     	= $this->options['office_fb_link'];
         $office_twitter_link    = $this->options['office_twitter_link'];
+		$id                 	= $this->options['candidate_id'];
 
-	    $sql = "UPDATE candidate_profiles SET `candidate_info` = '$info', `candidate_first_name` = '$first_name', `candidate_middle_name` = '$middle_name',`candidate_last_name` = '$last_name', `candidate_political_party` = '$political_party', `candidate_party_symbol` = '$party_symbol', `candidate_province` = '$province',`candidate_address` = '$office_address', `candidate_phone` = '$office_phone1',`candidate_city` = '$office_city',`candidate_email` = '$office_email', `candidate_website` = '$office_website', `candidate_fb_link` = '$office_fb_link', 'candidate_twitter_link' = '$office_twitter_link' WHERE `user_profile_id` =".$user_profile_id;
+	    $sql = "UPDATE candidate_profiles SET `candidate_info` = '$info', `candidate_first_name` = '$first_name', `candidate_middle_name` = '$middle_name',`candidate_last_name` = '$last_name', `candidate_political_party` = '$political_party', `candidate_party_symbol` = '$party_symbol', `candidate_province` = '$province',`candidate_address` = '$office_address', `candidate_phone` = '$office_phone1',`candidate_city` = '$office_city',`candidate_email` = '$office_email', `candidate_website` = '$office_website', `candidate_fb_link` = '$office_fb_link', `candidate_twitter_link` = '$office_twitter_link' WHERE `candidate_id` =".$id;
 
 		parent::query($sql);
 		print_r($sql);die();

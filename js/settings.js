@@ -1,8 +1,9 @@
 $(document).ready(function() {
     var register_edit = $("#register-edit-form");
 	
-	alert(USER_INFO_ID);
+	//alert(CANDIDATE_INFO_ID);
 	$('#personal-info-id').val(USER_INFO_ID ); //setting global candidate info id
+	$('#candidate-info-id').val(CANDIDATE_INFO_ID ); //setting global candidate info id
 	
 /*	if (register_edit.length > 0) {
 		
@@ -42,32 +43,6 @@ function Modify_info(type){
     $.post('classes/settings.class.php', post, function (data) {
         if (data.match('success') !== null) {
             location.reload();
-        } else {
-			$('#modal-title-error').html('System');
-			$('#modal-body-error').html(data);
-			$("#modal-error").modal();
-        }
-    });
-}
-
-
-function Modify_image(){
-    var post = $('#image-edit-form').serialize();
-    $.post('classes/settings.class.php', post, function (data) {
-        if (data.match('success') !== null) {
-            //location.reload();
-        } else {
-			$('#modal-title-error').html('System');
-			$('#modal-body-error').html(data);
-			$("#modal-error").modal();
-        }
-    });
-}
-function Modify_candidate(){
-    var post = $('#candidate-edit-form').serialize();
-    $.post('classes/settings.class.php', post, function (data) {
-        if (data.match('success') !== null) {
-            //location.reload();
         } else {
 			$('#modal-title-error').html('System');
 			$('#modal-body-error').html(data);
