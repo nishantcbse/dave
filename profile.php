@@ -44,6 +44,10 @@ $spartyList              = $listbox->getPolitical_Party_List();
 $sdistrict 				 = $listbox->getDistrict();
 $sprovince			     = $listbox->getProvince();
 ?>
+    <link rel="stylesheet" href="assets/plugins/fancybox/source/jquery.fancybox.css">               
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link href="assets/css/pages/portfolio.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/pages/profile.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/style_profile.css" rel="stylesheet" type="text/css"/>
 <script src="js/profile.js"></script>
@@ -145,6 +149,35 @@ $sprovince			     = $listbox->getProvince();
 
 
 				<div class="row-fluid">
+                
+        <div class="filter-v1 margin-bottom-40">
+            <ul class="grid-v1 thumbnails">
+                <li class="span3 mix category_10">
+                    <img src="assets/img/works/img1.jpg" alt="">
+                    <div class="hover-portfolio hover-portfolio-small">
+                        <h2>Cascusamus et iusto accusamus</h2>
+                        <a class="hover-portfolio-lft"><i class="icon-link"></i></a>
+                        <a class="hover-portfolio-rgt fancybox-button" href="assets/img/works/img1.jpg" title="Project Name" data-rel="fancybox-button"><i class="icon-search"></i></a>                            
+                    </div>                                        
+                </li>
+                <li class="span3 mix category11">
+                    <img src="assets/img/works/img2.jpg" alt="">
+                    <div class="hover-portfolio hover-portfolio-small">
+                        <h2>Cascusamus et iusto accusamus</h2>
+                        <a class="hover-portfolio-lft"><i class="icon-link"></i></a>
+                        <a class="hover-portfolio-rgt fancybox-button" href="assets/img/works/img2.jpg" title="Project Name" data-rel="fancybox-button"><i class="icon-search"></i></a>                            
+                    </div>                                        
+                </li>
+                <li class="span3 mix category_12">
+                    <img src="assets/img/works/img3.jpg" alt="">
+                    <div class="hover-portfolio hover-portfolio-small">
+                        <h2>Cascusamus et iusto accusamus</h2>
+                        <a class="hover-portfolio-lft"><i class="icon-link"></i></a>
+                        <a class="hover-portfolio-rgt fancybox-button" href="assets/img/works/img3.jpg" title="Project Name" data-rel="fancybox-button"><i class="icon-search"></i></a>                            
+                    </div>                    
+                </li>
+            </ul>
+        </div>
 				</div>
 
 
@@ -166,7 +199,10 @@ $sprovince			     = $listbox->getProvince();
 			<!-- END PAGE CONTAINER--> 
 		</div>
 		<!-- END PAGE --> 
-          
+    <script src="assets/plugins/jquery.mixitup.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/hover-dropdown.js"></script>                
+    <script src="assets/scripts/app.js"></script>      
+    <script src="js/admin/media_view.js"></script>      
 	<script>
 		jQuery(document).ready(function() {       
 		   App.init();
