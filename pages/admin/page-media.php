@@ -137,12 +137,12 @@
 	<script src="assets/plugins/jquery-file-upload/js/jquery.fileupload.js"></script>
 	<script src="assets/plugins/jquery-file-upload/js/jquery.fileupload-fp.js"></script>
 	<script src="assets/plugins/jquery-file-upload/js/jquery.fileupload-ui.js"></script>
-	<script src="assets/scripts/form-fileupload.js"></script>
+	<script src="js/media.js"></script>
 
 	<script>
 		jQuery(document).ready(function() {       
 		   App.init();
-		FormFileUpload.init();
+		  
 		});
 	</script>
 	<!-- END JAVASCRIPTS -->
