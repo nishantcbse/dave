@@ -135,9 +135,9 @@
     </div>
     <div class="control-group">
       <div class="controls">
+        <input type="hidden" name="candidate-info-id" id="candidate-info-id"  value="" />
          <input type="hidden" name="action"  value="candidate">
-        <input type="hidden" name="candidate-info-id" id="candidate-info-id"   />
-        <button type="submit" class="theme-btn btn" value="Submit" onclick="Modify_info('candidate')">Submit</button>
+        <a href="#" class="theme-btn btn" " onclick="Modify_info('candidate')">Submit</a>
         <button class="btn" type="reset">Clear</button>
       </div>
     </div>

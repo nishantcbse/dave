@@ -104,7 +104,7 @@ function list_manageproductslogin() {
 function list_manageproductcontact() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'contactus' ORDER BY label ASC";
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Contact Us' ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -188,7 +188,7 @@ function list_manageproductswelcome() {
 function list_manageproductsaccountsponser() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'accountsponser' ORDER BY label ASC";
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Account Sponser' ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -216,7 +216,7 @@ function list_manageproductsaccountsponser() {
 function list_manageproductscandidateinfo() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'candidateinfo' ORDER BY label ASC";
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Candidate Info' ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 

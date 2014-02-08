@@ -40,6 +40,9 @@ $user_address            = $setting->getField('address');
 $user_city               = $setting->getField('city');
 $user_email              = $setting->getField('email');
 
+
+$candidate_id = $setting->getField('candidate_id');
+//print_r($candidate_id);
 //candidate info
 $candidate_first_name    = $setting->getField('candidate_first_name');
 $candidate_middle_name   = $setting->getField('candidate_middle_name');
@@ -66,7 +69,7 @@ $sprovince			     = $listbox->getProvince();
 <script src="js/settings.js"></script>
 <script>
   var USER_INFO_ID      = <?php echo $user_profile_id; ?>;
-  var CANDIDATE_INFO_ID = 'a';
+  var CANDIDATE_INFO_ID = <?php echo $candidate_id; ?>;
 </script>
 
 

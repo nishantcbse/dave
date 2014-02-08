@@ -4,8 +4,7 @@
 
 <script src="js/admin/manage_product.js"></script>
 
-					<div id="product">
-                    <div class="row-fluid">
+                    <div class="row-fluid" id='products-list-home'>
 						<div class="span12">
                             <div class="box">
     							<div class="box-title">
@@ -16,7 +15,7 @@
                                         </a>
                                     </div>
 -->    							</div>
-    							<div class="box-content" id='products-list-home'>
+    							<div class="box-content">
                                     <?php list_manageproductshome(); ?>
     							</div>
   						    </div>
@@ -24,7 +23,7 @@
 						</div>
 					</div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid" id='products-list-register'>
 						<div class="span12">
                             <div class="box">
     							<div class="box-title">
@@ -35,7 +34,7 @@
                                         </a>
                                     </div>
 -->    							</div>
-    							<div class="box-content" id='products-list-register'>
+    							<div class="box-content">
                                     <?php list_manageproductsregister(); ?>
     							</div>
   						    </div>
@@ -43,7 +42,7 @@
 						</div>
 					</div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid" id='products-list-login'>
 						<div class="span12">
                             <div class="box">
     							<div class="box-title">
@@ -54,7 +53,7 @@
                                         </a>
                                     </div>
 -->    							</div>
-    							<div class="box-content" id='products-list-login'>
+    							<div class="box-content">
                                     <?php list_manageproductslogin(); ?>
     							</div>
   						    </div>
@@ -62,7 +61,7 @@
 						</div>
 					</div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid" id='products-list-contact'>
 						<div class="span12">
                             <div class="box">
     							<div class="box-title">
@@ -73,7 +72,7 @@
                                         </a>
                                     </div>
 -->    							</div>
-    							<div class="box-content" id='products-list-contact'>
+    							<div class="box-content">
                                     <?php list_manageproductcontact(); ?>
     							</div>
   						    </div>
@@ -81,7 +80,7 @@
 						</div>
 					</div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid" id='products-list-about'>
 						<div class="span12">
                             <div class="box">
     							<div class="box-title">
@@ -92,7 +91,7 @@
                                         </a>
                                     </div>
 -->    							</div>
-    							<div class="box-content" id='products-list-about'>
+    							<div class="box-content">
                                     <?php list_manageproductsabout(); ?>
     							</div>
   						    </div>
@@ -100,7 +99,7 @@
 						</div>
 					</div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid" id='products-list-welcome'>
 						<div class="span12">
                             <div class="box">
     							<div class="box-title">
@@ -111,7 +110,7 @@
                                         </a>
                                     </div>
 -->    							</div>
-    							<div class="box-content" id='products-list-welcome'>
+    							<div class="box-content">
                                     <?php list_manageproductswelcome(); ?>
     							</div>
   						    </div>
@@ -119,7 +118,7 @@
 						</div>
 					</div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid" id='products-list-accountsponser'>
 						<div class="span12">
                             <div class="box">
     							<div class="box-title">
@@ -130,7 +129,7 @@
                                         </a>
                                     </div>
 -->    							</div>
-    							<div class="box-content" id='products-list-accountsponser'>
+    							<div class="box-content">
                                     <?php list_manageproductsaccountsponser(); ?>
     							</div>
   						    </div>
@@ -138,7 +137,7 @@
 						</div>
 					</div>
 
-                    <div class="row-fluid">
+                    <div class="row-fluid" id='products-list-candidateinfo'>
 						<div class="span12">
                             <div class="box">
     							<div class="box-title">
@@ -149,7 +148,7 @@
                                         </a>
                                     </div>
 -->    							</div>
-    							<div class="box-content" id='products-list-candidateinfo'>
+    							<div class="box-content">
                                     <?php list_manageproductscandidateinfo(); ?>
     							</div>
   						    </div>
@@ -187,12 +186,6 @@
                                                     <input type="password" name="image" id="image" class="input-large span7">
                                                 </div>
                                             </div>
-                                            <div class="control-group">
-                                                <label for="textfield" class="control-label">Sell</label>
-                                                <div class="controls">
-                                                    <input type="password" name="sell" id="sell" class="input-large span7">
-                                                </div>
-                                            </div>
                                             
 <!--                                            <div class="check-col" id="record-delete" style="margin-top:10px; margin-left:102px;" >
                                                  <div class="check-line " >
@@ -209,4 +202,3 @@
                                 </div>
                             </div>
                         </div>                
-</div>

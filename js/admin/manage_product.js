@@ -8,25 +8,19 @@ $(document).ready(function() {
    $('#products-accountsponser-label').html('<i class="icon-list-alt"></i> Products: Account Sponser');
    $('#products-candidateinfo-label').html('<i class="icon-list-alt"></i> Products: Candidate Info');
         
-		$("#products-add").click(function(e){
-			e.preventDefault();
-            $("#product-delete").hide();
-            $("#products-term").val('0');
-            $("#products-delete").attr('checked', false);
-			$('#list-actions').hide();
-            $('#products-list').hide();
-            $('#record-delete').hide();
-            $('#products-label').html('<i class="icon-list-alt"></i> products - Add');
-            $('#products-box').show();
-            $('input[name=products-id]').val(-1);
-            $("#products-name").focus();
-		});
 
         $("#products-cancel").click(function(){
             $('#products-box').hide();
             $('#products-label').html('<i class="icon-list-alt"></i> products');
             $('#list-actions').show();
-            $('#products-list').show();
+            $("#products-list-home").show();
+            $("#products-list-register").show();
+            $("#products-list-login").show();
+            $("#products-list-contact").show();
+            $("#products-list-about").show();
+            $("#products-list-welcome").show();
+            $("#products-list-accountsponser").show();
+            $("#products-list-candidateinfo").show();
 		});
 
         $("#confirm-no").click(function(){
@@ -77,10 +71,16 @@ function Loadproductshome(id){
             $('#products-list').hide();
             $('#products-label').html('<i class="icon-list-alt"></i> productss - Edit');
             $('#products-box').show();
-            $('#product').hide();
             $("#record-delete").hide();
+            $("#products-list-home").hide();
+            $("#products-list-register").hide();
+            $("#products-list-login").hide();
+            $("#products-list-contact").hide();
+            $("#products-list-about").hide();
+            $("#products-list-welcome").hide();
+            $("#products-list-accountsponser").hide();
+            $("#products-list-candidateinfo").hide();
             $("#products-delete").attr('checked', false);
-            
             $('input[name=products-id]').val(id);
             $("#products-name").focus();
             }
