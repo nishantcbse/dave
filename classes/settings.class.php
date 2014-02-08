@@ -168,6 +168,7 @@ class Settings extends Generic {
 				    'id' 	     =>   $row['id'],
 					'name'       =>   $row['name'],
 					'type'       =>   $row['type'],
+					'detail'     =>   $row['detail']
                 );
             }
 		 echo json_encode($list);
@@ -256,6 +257,39 @@ LEFT JOIN candidate_profiles ON candidate_profiles.user_profile_id = user_profil
 		 echo $image;
 		 
 	}
+	
+	function uploadImagePreview(){
+	    
+		$candidate  =  $this->getField('candidate_id');
+	    $sql = "SELECT * FROM media WHERE candidate_id= '$candidate' ORDER BY created DESC ";
+        $query = parent::query($sql);
+        $i = 1;
+		$image = '';
+		 while($row = $query->fetch(PDO::FETCH_ASSOC)){
+			 
+			 
+            $image .=  '<div class="row-fluid uploadImagePreview span12">
+                            <div class="span1">
+                               <img src="documents/media/files/thumbnail/'. $row['name'] .'" alt=""></div>
+                            <div class="span7">
+                                <span class="mediadetail">'.$row['detail'].'</span>
+                            </div>
+                            <div class="span2">
+                                <a href="#responsive" data-toggle="modal" class="btn green submit-btn" onclick="mediaDetailEdit(\'.mediadetail\','.$row['id'].')">Edit</a>
+                            </div>
+                            <div class="span2">
+                                <div class="submit-btn"> <a href="#" class="btn green" onclick="deleteImage($(this),'.$row['id'].',\''. $row['name'] .'\')">Delete</a></div>
+                            </div>
+                        </div>';
+  
+	       $i++;
+		 }
+		 echo $image;
+		 
+	}
+	
+	
+	
 }
 
 $setting = new Settings();
