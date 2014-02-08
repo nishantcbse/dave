@@ -12,6 +12,7 @@ class Settings extends Generic {
 		
 		if(!empty($_GET['media'])) $this->addMedia();
 		if(!empty($_GET['deleteMedia'])) $this->deleteMedia();
+		//if(!empty($_GET['viewmedia'])) $this->mediaView();
 
 		if(!empty($_POST)) {
 				foreach ($_POST as $key => $value)
@@ -226,8 +227,35 @@ LEFT JOIN candidate_profiles ON candidate_profiles.user_profile_id = user_profil
 		    $this->options[$field] = $value;
             //print_r($this->options); 
 	}
+	
+	
+	function mediaView(){
+	    
+		$candidate  =  $this->getField('candidate_id');
+	    $sql = "SELECT * FROM media WHERE candidate_id= '$candidate' ORDER BY created DESC ";
+        $query = parent::query($sql);
+        $i = 1;
+		$image = '<ul class="grid-v1 thumbnails mediaview span12">';
+		 while($row = $query->fetch(PDO::FETCH_ASSOC)){
+	
+   
+          $image .= '<li class="span4 mix category_'.$i.'">
+                    <img src="documents/media/files/'. $row['name'] .'" alt="">
+                    <div class="hover-portfolio hover-portfolio-small">
+                        <h2>'.$row['detail'].'</h2>
+                        <a class="hover-portfolio-lft" href="'. $row['link'].'"><i class="icon-link"></i></a>
+                        <a class="hover-portfolio-rgt fancybox-button" href="documents/media/files/'. $row['name'] .'" title="name" data-rel="fancybox-button"><i class="icon-search"></i></a>                            
+                    </div>                                        
+                </li>';
 
 
+  
+	       $i++;
+		 }
+		 $image .= '</ul>';
+		 echo $image;
+		 
+	}
 }
 
 $setting = new Settings();

@@ -108,3 +108,13 @@ function deleteImage(a,b,c){
 	});
     
 }
+
+
+function viewMedia(){
+  
+  $.get('pages/ajax/admin-media-view.php',{viewmedia:true}).done(function(data){
+	  
+	      //.log();
+	      // $('.filter-v1').html(data);
+	  })
+}
