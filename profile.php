@@ -1,6 +1,6 @@
 <?php
 include_once('classes/check.class.php');
-protect("1,2");
+//protect("1,2");
 include_once('header.php');
 include_once('classes/profile.class.php');
 include_once('classes/listbox.class.php');
@@ -21,7 +21,7 @@ if( !empty($user_profile_id)){
 }
 $login_avatar = $profile->getField('avatar');
 if( !empty($login_avatar)){
-	$avatar = 'documents/avatar/'.$userid.'/'.$profile->getField('avatar');
+	$avatar = 'documents/avatar/'.$profile->getField('avatar');
 }else{
 	$avatar = 'documents/avatar/default.png';
 }
@@ -62,7 +62,7 @@ $sprovince			     = $listbox->getProvince();
 							<div class="tab-content">
 								<div class="tab-pane row-fluid active" id="tab_1_1">
 									<ul class="unstyled profile-nav span3">
-									<li><img src="assets/img/pics/img3-medium1.jpg" alt=""> <a href="#" class="profile-edit">edit</a></li>
+									<li><img src="<?php echo $avatar; ?>" alt=""></li>
 									</ul>
 									<div class="span9">
 										<div class="row-fluid">

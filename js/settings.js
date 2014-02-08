@@ -1,6 +1,10 @@
 $(document).ready(function() {
     var register_edit = $("#register-edit-form");
-	if (register_edit.length > 0) {
+	
+	alert(USER_INFO_ID);
+	$('#personal-info-id').val(USER_INFO_ID ); //setting global candidate info id
+	
+/*	if (register_edit.length > 0) {
 		
         $('#register_form').validate({
 				invalidHandler: function(event, validator) {
@@ -19,15 +23,25 @@ $(document).ready(function() {
 				});
 		
 		}
-		
+*/		
 });
 
 
-function Modify(){
-    var post = $('#register-edit-form').serializeAll();
+function Modify_info(type){
+	
+	if(type == 'personal'){
+       var post = $('#personal-info-form').serialize();
+	}else if(type == 'avatar'){
+		var post = $('#avatar-edit-form').serialize();
+	}else if(type == 'candidate'){
+		var post = $('#candidate-edit-form').serialize();
+	}else if(type == 'password'){
+		var post = $('#password-edit-form').serialize();
+	}
+	
     $.post('classes/settings.class.php', post, function (data) {
         if (data.match('success') !== null) {
-            //location.reload();
+            location.reload();
         } else {
 			$('#modal-title-error').html('System');
 			$('#modal-body-error').html(data);
@@ -35,6 +49,8 @@ function Modify(){
         }
     });
 }
+
+
 function Modify_image(){
     var post = $('#image-edit-form').serialize();
     $.post('classes/settings.class.php', post, function (data) {

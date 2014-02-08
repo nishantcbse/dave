@@ -11,15 +11,17 @@ class Settings extends Generic {
         $this->party_img();
 
 		if(!empty($_POST)) {
-				//print_r($_POST); 
 				foreach ($_POST as $key => $value)
 				$this->options[$key] = parent::secure($value);
       
-                $this->validate();
-				$this->add();
-				$this->edit_account_personam();
-				$this->image_edit();
-					
+                if ($this->options['action']== 'personal'){
+					$this->validate_personal();
+					$this->edit_personal();
+				}else if ($this->options['action']== 'candidate'){
+				     $this->edit_account_personam();
+				}else if ($this->options['action']== 'avatar'){
+				   $this->image_edit();
+				}
                 if(!empty($this->error)){
                     echo $this->error;
                 } else {
@@ -32,7 +34,7 @@ class Settings extends Generic {
 
         }
 
-	private function validate() {
+	private function validate_personal() {
 	    if(empty($this->options['answer'])) {
 			$this->error = '<div class="alert alert-error">'._('You must enter a Answer.').'</div>';
         }
@@ -50,13 +52,8 @@ class Settings extends Generic {
         }
 	}
 	
-    private function edit_account_personam() {
+    private function edit_personal() {
 		
-		$id		=$_SESSION['jigowatt']['user_id'];
-		$sql = "SELECT user_profile_id FROM login_users WHERE user_id= ".$id;
-		$sql = parent::query($sql);
-		$row = $sql->fetch(PDO::FETCH_ASSOC);
-		$user_profile_id= $row['user_profile_id'];
 		
 		if (!empty($this->error)) return false;
 		
@@ -65,12 +62,12 @@ class Settings extends Generic {
         $address     	 	= $this->options['address'];
         $city     	 		= $this->options['city'];
         $email     	 		= $this->options['email'];
-        $security_question 	= $this->options['security_question'];
-        $answer     	 	= $this->options['answer'];
+		$id                 = $this->options['personal-info-id'];
 
-	    $sql = "UPDATE user_profiles SET `first_name` = '$first_name',`last_name` = '$last_name',`address` = '$address',`city` = '$city',`email` = '$email', `security_question` = '$security_question', `answer` = '$answer' WHERE `id` =".$user_profile_id;
+	    $sql = "UPDATE user_profiles SET `first_name` = '$first_name',`last_name` = '$last_name',`address` = '$address',`city` = '$city',`email` = '$email' WHERE `id` =".$id;
 
 		parent::query($sql);
+		
 		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
 
 	}
@@ -167,7 +164,7 @@ LEFT JOIN candidate_profiles ON candidate_profiles.user_profile_id = user_profil
 
 	    foreach ($stmt->fetch(PDO::FETCH_ASSOC) as $field => $value)
 		    $this->options[$field] = $value;
-            //print_r($this->options); 
+            //echo '<pre>',print_r($this->options); 
 	}
 
 	public function getField($field) {
