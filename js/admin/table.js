@@ -81,6 +81,7 @@ function savepic(){
 
 
 function filechange(){
+	 document.getElementById('politicalparty').value = document.getElementById('fileToUpload').value ;
 	 document.getElementById('avatar').value = document.getElementById('fileToUpload').value ;
 	 
 	}

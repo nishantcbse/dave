@@ -71,7 +71,8 @@ $sprovince			     = $listbox->getProvince();
   var USER_INFO_ID      = <?php echo $user_profile_id; ?>;
   var CANDIDATE_INFO_ID = <?php echo $candidate_id; ?>;
 </script>
-
+	<script src="js/plugins/fileupload/bootstrap-fileupload.min.js"></script>
+    <script src="js/ajaxupload.js"></script>
 
 <div class="container-fluid">
   <div class="row-fluid">

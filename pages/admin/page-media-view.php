@@ -50,34 +50,9 @@ include_once('classes/listbox.class.php');
     <![endif]-->   
     <!-- END CORE PLUGINS -->
     <script src="assets/scripts/app.js"></script>      
+    <script src="js/admin/media_view.js"></script>      
     <script>
         jQuery(document).ready(function() {    
            App.init();
-          
-		   
-      
-            $('.bxslider').show();
-            $('.bxslider').bxSlider({
-                minSlides: 3,
-                maxSlides: 3,
-                slideWidth: 360,
-                slideMargin: 10
-            });
-
-            $('.bxslider1').show();            
-            $('.bxslider1').bxSlider({
-                minSlides: 6,
-                maxSlides: 6,
-                slideWidth: 360,
-                slideMargin: 2
-            });            
-     
-
-   
-            $(function(){
-                $('.grid-v1').mixitup();
-            });    
-       
-
         });
     </script>
