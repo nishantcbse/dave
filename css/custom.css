@@ -306,13 +306,8 @@ padding: 20px 16px 0px !important;
 	padding:0 14px !important;
 }
 /* End Of Vikas Css */
-<<<<<<< HEAD
 .searchbtn{
 	height:34px !important;
-=======
-.search{
- margin-bottom:0px !important;
->>>>>>> 0b9e5f0ac40c05c0dcb7a73715934e3db43bf5bb
 }
 .tickmark{
 	padding:0 22px;
@@ -414,6 +409,7 @@ padding: 20px 16px 0px !important;
 .dashboard-stat.green {
   background-color: #28b779;
 }
+
 
 .dashboard-stat.green .more { 
   background-color: #10a062;
