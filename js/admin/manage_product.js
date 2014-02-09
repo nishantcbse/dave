@@ -10,10 +10,13 @@ $(document).ready(function() {
         
 
         $("#products-cancel").click(function(){
+			alert('here');
             $('#products-box').hide();
+            $('.product-edit-form').hide();
             $('#products-label').html('<i class="icon-list-alt"></i> products');
             $('#list-actions').show();
             $("#products-list-home").show();
+            $(".products-list").show();
             $("#products-list-register").show();
             $("#products-list-login").show();
             $("#products-list-contact").show();
@@ -59,6 +62,7 @@ function Loadproductshome(id){
         dataType: "html",
         success: function(result){
         var $response=$(result);
+
         if (status != 'FAIL') {
             var label = $response.filter('#label').text();
             var name = $response.filter('#name').text();
@@ -66,13 +70,14 @@ function Loadproductshome(id){
             var image = $response.filter('#image').text();
             var sell = $response.filter('#sell').text();
 			
-			
             $('#list-actions').hide();
             $('#products-list').hide();
+            $('.products-list').hide();
             $('#products-label').html('<i class="icon-list-alt"></i> productss - Edit');
-            $('#products-box').show();
+		    $('#products-box').show();
+		    $('.product-edit-form').show();
             $("#record-delete").hide();
-            $("#products-list-home").hide();
+            $("#products-list-home1").hide();
             $("#products-list-register").hide();
             $("#products-list-login").hide();
             $("#products-list-contact").hide();
@@ -83,6 +88,7 @@ function Loadproductshome(id){
             $("#products-delete").attr('checked', false);
             $('input[name=products-id]').val(id);
             $("#products-name").focus();
+			
             }
         }
     });

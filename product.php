@@ -48,53 +48,53 @@ $shomeProduct = $product->homeProduct();
 
     <h2>Profile page Details</h2>
      <div class="border"></div>
-  <div class="margin-bottom-40 span6">
+  <div class="margin-bottom-40 span6 profileproduct">
     <div class="row-fluid span12">
       <div class="span8">
         <form action="#" class="form-horizontal">
           <div class="control-group">
             <label class="control-label leftalign">NAME</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">PARTY</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">NUMBER</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">PHOTO</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">DESCRIPTION ABOUT YOU</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">PHONE</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">FAX</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">ADDRESS</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">WEB ADDRESS</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">SOCIAL NETWORKING LINKS</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
             <label class="control-label leftalign">RECIEVE DIRECT MAIL</label>
-            <div class="controls"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
+            <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           
         </form>
@@ -209,28 +209,9 @@ $shomeProduct = $product->homeProduct();
           
           <div class="span6 homeProduct">
           	<h4>LOGIN PAGE</h4>
-              <div class="span4 homeProduct">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 1st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 2st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 3st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 4st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 5st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 6st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 7st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 8st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|login" class="Home"> 9st Image $1.00
-                </div> 
-              </div>
-              
+
+                  <?php  display_loginproduct(); ?>
+
                 <div class="buy1">
                 <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
                 </div>
@@ -238,27 +219,7 @@ $shomeProduct = $product->homeProduct();
           
           <div class="span6 homeProduct">
           	<h4>CONTACT US PAGE</h4>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 1st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 2st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 3st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 4st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 5st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 6st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 7st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 8st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|contact" class="Home"> 9st Image $1.00
-                </div> 
-              </div>
+                  <?php  display_contactusproduct(); ?>
               
                 <div class="buy1">
                 <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
@@ -267,28 +228,8 @@ $shomeProduct = $product->homeProduct();
           
           <div class="span6 homeProduct">
           	<h4>ABOUT PAGE</h4>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 1st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 2st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 3st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 4st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 5st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 6st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 7st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 8st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|about" class="Home"> 9st Image $1.00
-                </div> 
-              </div>
-              
+
+                  <?php  display_aboutproduct(); ?>
                 <div class="buy1">
                 <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
                 </div>
@@ -296,27 +237,7 @@ $shomeProduct = $product->homeProduct();
 
           <div class="span6 homeProduct">
           	<h4>WELCOME PAGE</h4>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 1st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 2st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 3st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 4st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 5st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 6st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 7st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 8st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|welcome" class="Home"> 9st Image $1.00
-                </div> 
-              </div>
+                  <?php  display_welcomeproduct(); ?>
               
                 <div class="buy1">
                 <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
@@ -325,28 +246,8 @@ $shomeProduct = $product->homeProduct();
 
           <div class="span6 homeProduct">
           	<h4>ACCOUNT SPONSOR INFO PAGE</h4>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 1st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 2st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 3st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 4st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 5st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 6st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 7st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 8st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|account_sponsor" class="Home"> 9st Image $1.00
-                </div> 
-              </div>
-              
+
+                  <?php  display_accountsponsorproduct(); ?>
                 <div class="buy1">
                 <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
                 </div>
@@ -354,28 +255,8 @@ $shomeProduct = $product->homeProduct();
 
           <div class="span6 homeProduct">
           	<h4>CANDIDATE INFO PAGE</h4>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 1st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 2st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 3st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 4st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 5st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 6st Image $1.00
-                </div> 
-              </div>
-              <div class="span4">
-                <div class="checkbox">
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 7st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 8st Image $1.00
-                  <input type="checkbox" value="1st Slide|1|candidate_info" class="Home"> 9st Image $1.00
-                </div> 
-              </div>
-              
+
+                  <?php  display_candidateinfoproduct(); ?>
                 <div class="buy1">
                 <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
                 </div>

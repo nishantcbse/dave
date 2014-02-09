@@ -118,6 +118,7 @@ $sprovince			     = $listbox->getProvince();
                   <li><a href="#media" data-toggle="tab">Media</a></li>
                   <li><a href="#manage" data-toggle="tab">Manage</a></li>
                   <li><a href="#table" data-toggle="tab">Table</a></li>
+                  <li><a href="#products" data-toggle="tab">Products</a></li>
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane row-fluid active" id="overview">
@@ -159,6 +160,11 @@ $sprovince			     = $listbox->getProvince();
                   <!--end tab-pane-->
                   <div class="tab-pane row-fluid" id="table">
                     <?php include_once('pages/admin/page-table.php'); ?>
+                  </div>
+                  <!--end tab-pane--> 
+                  
+                  <div class="tab-pane row-fluid" id="products">
+                    <?php include_once('pages/admin/page-product.php'); ?>
                   </div>
                   <!--end tab-pane--> 
                   

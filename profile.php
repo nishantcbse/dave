@@ -89,11 +89,12 @@ $sprovince			     = $listbox->getProvince();
 										<!--end row-fluid-->
 										<div class="tabbable tabbable-custom tabbable-custom-profile">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#tab_1_11" data-toggle="tab">Details</a></li>
-												<li ><a href="#tab_1_22" data-toggle="tab">Media</a></li>
+												<li class="active"><a href="#details" data-toggle="tab">Details</a></li>
+												<li ><a href="#image" data-toggle="tab">Image</a></li>
+												<li ><a href="#video" data-toggle="tab">Video</a></li>
 											</ul>
 											<div class="tab-content">
-												<div class="tab-pane active" id="tab_1_11">
+												<div class="tab-pane active" id="details">
 													<div class="portlet-body" style="display: block;">
 														<table class="table table-striped table-advance table-hover ">
 															<tbody>
@@ -144,15 +145,24 @@ $sprovince			     = $listbox->getProvince();
 													</div>
 												</div>
 												<!--tab-pane-->
-												<div class="tab-pane" id="tab_1_22">
+												<div class="tab-pane" id="image">
 													<div class="tab-pane active" id="tab_1_1_1">
-
-
+                                                <div class="row-fluid">
+                                                    <div class="filter-v1 margin-bottom-40 span12">
+                                                          <?php   $profile->mediaView() ; ?>  
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                                
+												<div class="tab-pane" id="video">
+													<div class="tab-pane active" id="tab_1_1_1">
                                                 <div class="row-fluid">
                                                     <div class="filter-v1 margin-bottom-40 span12">
                                                     
-                                                          <?php   $profile->mediaView() ; ?>  
-                                                          
+                                                           
+                                                    </div>
+                                                </div>
                                                     </div>
                                                 </div>
 

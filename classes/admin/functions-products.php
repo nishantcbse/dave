@@ -1,12 +1,117 @@
 <?php include_once('classes/generic.class.php'); ?>
 
 <?php
-function displaymanageproducts($row) {
+function displaymanageproductshome($row) {
 
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductshome(" . $row['id'] . ");'>" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproductshome(" . $row['id'] . ");' class='home' >" . $row['name'] ."</td>"; ?>
+        <td><?php echo $row['label']; ?></td>
+        <td><?php echo $row['price']; ?></td>
+        <td><?php echo $row['sell']; ?></td>
+	</tr>
+	<?php
+
+}
+?>
+<?php
+function displaymanageproductsregister($row) {
+
+	if(empty($row)) return false;
+	?>
+	<tr>
+        <?php echo "<td><a href='javascript:Loadproductsregister(" . $row['id'] . ");' class='register' >" . $row['name'] ."</td>"; ?>
+        <td><?php echo $row['label']; ?></td>
+        <td><?php echo $row['price']; ?></td>
+        <td><?php echo $row['sell']; ?></td>
+	</tr>
+	<?php
+
+}
+?>
+<?php
+function displaymanageproductslogin($row) {
+
+	if(empty($row)) return false;
+	?>
+	<tr>
+        <?php echo "<td><a href='javascript:Loadproductslogin(" . $row['id'] . ");' class='login' >" . $row['name'] ."</td>"; ?>
+        <td><?php echo $row['label']; ?></td>
+        <td><?php echo $row['price']; ?></td>
+        <td><?php echo $row['sell']; ?></td>
+	</tr>
+	<?php
+
+}
+?>
+<?php
+function displaymanageproductscontact($row) {
+
+	if(empty($row)) return false;
+	?>
+	<tr>
+        <?php echo "<td><a href='javascript:Loadproductscontact(" . $row['id'] . ");' class='contact' >" . $row['name'] ."</td>"; ?>
+        <td><?php echo $row['label']; ?></td>
+        <td><?php echo $row['price']; ?></td>
+        <td><?php echo $row['sell']; ?></td>
+	</tr>
+	<?php
+
+}
+?>
+<?php
+function displaymanageproductsabout($row) {
+
+	if(empty($row)) return false;
+	?>
+	<tr>
+        <?php echo "<td><a href='javascript:Loadproductsabout(" . $row['id'] . ");' class='about' >" . $row['name'] ."</td>"; ?>
+        <td><?php echo $row['label']; ?></td>
+        <td><?php echo $row['price']; ?></td>
+        <td><?php echo $row['sell']; ?></td>
+	</tr>
+	<?php
+
+}
+?>
+<?php
+function displaymanageproductswelcome($row) {
+
+	if(empty($row)) return false;
+	?>
+	<tr>
+        <?php echo "<td><a href='javascript:Loadproductswelcome(" . $row['id'] . ");' class='welcome' >" . $row['name'] ."</td>"; ?>
+        <td><?php echo $row['label']; ?></td>
+        <td><?php echo $row['price']; ?></td>
+        <td><?php echo $row['sell']; ?></td>
+	</tr>
+	<?php
+
+}
+?>
+<?php
+function displaymanageproductsaccountsponser($row) {
+
+	if(empty($row)) return false;
+	?>
+	<tr>
+        <?php echo "<td><a href='javascript:Loadproductsaccountsponser(" . $row['id'] . ");' class='accountsponser' >" . $row['name'] ."</td>"; ?>
+        <td><?php echo $row['label']; ?></td>
+        <td><?php echo $row['price']; ?></td>
+        <td><?php echo $row['sell']; ?></td>
+	</tr>
+	<?php
+
+}
+?>
+<?php
+function displaymanageproductscandidateinfo($row) {
+
+	if(empty($row)) return false;
+	?>
+	<tr>
+        <?php echo "<td><a href='javascript:Loadproductscandidateinfo(" . $row['id'] . ");' class='candidateinfo' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>
@@ -37,7 +142,7 @@ function list_manageproductshome() {
 		<tbody>
 		<?php
 		while($row = $query->fetch(PDO::FETCH_ASSOC))
-			echo displaymanageproducts($row);
+			echo displaymanageproductshome($row);
 		?>
 		</tbody>
         <tfoot>
@@ -65,7 +170,7 @@ function list_manageproductsregister() {
 		<tbody>
 		<?php
 		while($row = $query->fetch(PDO::FETCH_ASSOC))
-			echo displaymanageproducts($row);
+			echo displaymanageproductsregister($row);
 		?>
 		</tbody>
         <tfoot>
@@ -93,7 +198,7 @@ function list_manageproductslogin() {
 		<tbody>
 		<?php
 		while($row = $query->fetch(PDO::FETCH_ASSOC))
-			echo displaymanageproducts($row);
+			echo displaymanageproductslogin($row);
 		?>
 		</tbody>
         <tfoot>
@@ -121,7 +226,7 @@ function list_manageproductcontact() {
 		<tbody>
 		<?php
 		while($row = $query->fetch(PDO::FETCH_ASSOC))
-			echo displaymanageproducts($row);
+			echo displaymanageproductscontact($row);
 		?>
 		</tbody>
         <tfoot>
@@ -149,7 +254,7 @@ function list_manageproductsabout() {
 		<tbody>
 		<?php
 		while($row = $query->fetch(PDO::FETCH_ASSOC))
-			echo displaymanageproducts($row);
+			echo displaymanageproductsabout($row);
 		?>
 		</tbody>
         <tfoot>
@@ -177,7 +282,7 @@ function list_manageproductswelcome() {
 		<tbody>
 		<?php
 		while($row = $query->fetch(PDO::FETCH_ASSOC))
-			echo displaymanageproducts($row);
+			echo displaymanageproductswelcome($row);
 		?>
 		</tbody>
         <tfoot>
@@ -205,7 +310,7 @@ function list_manageproductsaccountsponser() {
 		<tbody>
 		<?php
 		while($row = $query->fetch(PDO::FETCH_ASSOC))
-			echo displaymanageproducts($row);
+			echo displaymanageproductsaccountsponser($row);
 		?>
 		</tbody>
         <tfoot>
@@ -233,7 +338,7 @@ function list_manageproductscandidateinfo() {
 		<tbody>
 		<?php
 		while($row = $query->fetch(PDO::FETCH_ASSOC))
-			echo displaymanageproducts($row);
+			echo displaymanageproductscandidateinfo($row);
 		?>
 		</tbody>
         <tfoot>
