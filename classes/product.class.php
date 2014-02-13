@@ -4,6 +4,7 @@ include_once( 'generic.class.php' );
 class Product extends Generic {
 
     function __construct() {
+		
 		if(!empty($_GET['cart'])) $this->addCartSession();
 		
 	 }
@@ -20,7 +21,7 @@ class Product extends Generic {
 				$pos = explode("-", $position);
 				
 				
-				 $posX[$pos[0]][$pos[1]] = array(
+				 $posX[$pos[0]][$pos[1]] = array(   
 				                            'id'    => $row['id'],
 				                            'label' => $row['label'],
 											'name'  => $row['name'],
@@ -36,8 +37,11 @@ class Product extends Generic {
 	public function addCartSession(){
 	    $price = $_GET['price'];
 		$count = $_GET['count'];
+		$selectedProductArray = $_GET['selectedProductArray'];
 		$_SESSION['cart']['price'] = $price;
 		$_SESSION['cart']['productCount'] = $count;
+		$_SESSION['cart']['productArray'] = $selectedProductArray;
+		
 		
 	}
 	

@@ -7,7 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Jigowatt: PHP Login</title>
+		<title>Dave</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Jigowatt PHP Login script">
@@ -19,8 +19,8 @@
 		<![endif]-->
 
 		<!-- Le styles -->
-		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../assets/css/jigowatt.css" rel="stylesheet">
+		<link href="../admin-assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../admin-assets/css/jigowatt.css" rel="stylesheet">
 		<link href="assets/css/datepicker.css" rel="stylesheet">
 		<link href="assets/js/select2/select2.css" rel="stylesheet">
 		<link href="assets/css/prettify.css" rel="stylesheet">
@@ -48,7 +48,7 @@
 					<span class="icon-bar"></span>
 				</a>
 
-				<a class="brand" href="../home.php">Jigowatt</a>
+				<a class="brand" href="../home.php">Dave</a>
 				<div class="nav-collapse">
 					<ul class="nav" id="findme">
 						<li><a href="../home.php"><?php _e('Home'); ?></a></li>

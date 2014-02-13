@@ -5,7 +5,7 @@
 
 <div class="modal-header">
 	<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-	<h3>Conferm</h3>
+	<h3>Confirm</h3>
 </div>
 <div class="modal-body">
 	<div class="tab-content">

@@ -68,6 +68,7 @@ class Register extends Generic {
 
 		parent::query($sql);
 		$id = parent::$dbh->lastInsertId();
+		
 		$_SESSION['user_profile_id'] = $id;
 		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
 

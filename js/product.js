@@ -29,17 +29,18 @@ function addtocart(){
 	var totalProductSelected = $('.homeProduct').find('.Home:checked').length;
 	$('.productCount').html(totalProductSelected);
 	var price = 0;
+	var selectedProductArray = new Array();
 	$('.homeProduct').find('.Home:checked').each(function(){
 		var productVal = $(this).val();
 		//alert(productVal); 
 		var value = productVal.split('|');
 		console.log(parseFloat(value[1]) + parseFloat(value[1]) );
 		price +=  parseFloat(value[1]);
-		
+		selectedProductArray.push(value[3]);
 	});
 	price =  formatDollar(price);
 	$('#totalProductPrice').html(price);
 	
-	$.get('classes/product.class.php',{cart:true,price:price,count:totalProductSelected});
+	$.get('classes/product.class.php',{cart:true,price:price,count:totalProductSelected,selectedProductArray:selectedProductArray});
 }
 

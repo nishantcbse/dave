@@ -8,7 +8,7 @@ class Settings extends Generic {
 	function __construct() {
 
         $this->grab();
-        $this->party_img();
+        //$this->
 		
 		if(!empty($_GET['media'])) $this->addMedia();
 		if(!empty($_GET['deleteMedia'])) $this->deleteMedia();
@@ -193,7 +193,48 @@ class Settings extends Generic {
 
         $id = $_SESSION['jigowatt']['user_id'];
 		
-		$query = "SELECT login_users.*,candidate_profiles.*,user_profiles.* FROM `login_users` INNER JOIN user_profiles ON user_profiles.id = `login_users`.user_profile_id 
+		$query = "SELECT 
+					login_users.user_id,
+					login_users.user_level,
+					login_users.restricted,
+					login_users.username,
+					login_users.`name`,
+					login_users.email,
+					login_users.`password`,
+					login_users.`timestamp`,
+					login_users.avatar,
+					login_users.user_profile_id,
+					login_users.is_varified,
+					login_users.created,
+					user_profiles.first_name,
+					user_profiles.middle_name,
+					user_profiles.last_name,
+					user_profiles.address,
+					user_profiles.city,
+					user_profiles.email,
+					user_profiles.security_question,
+					user_profiles.answer,
+					candidate_profiles.candidate_id,
+					candidate_profiles.candidate_first_name,
+					candidate_profiles.candidate_middle_name,
+					candidate_profiles.candidate_last_name,
+					candidate_profiles.candidate_political_party,
+					candidate_profiles.candidate_party_symbol,
+					candidate_profiles.candidate_province,
+					candidate_profiles.candidate_address,
+					candidate_profiles.candidate_city,
+					candidate_profiles.candidate_phone,
+					candidate_profiles.candidate_fax,
+					candidate_profiles.candidate_email,
+					candidate_profiles.candidate_website,
+					candidate_profiles.candidate_fb_link,
+					candidate_profiles.candidate_twitter_link,
+					candidate_profiles.candidate_avatar,
+					candidate_profiles.candidate_info,
+					candidate_profiles.flag,
+					candidate_profiles.created,
+					candidate_profiles.updated							
+		            FROM `login_users` INNER JOIN user_profiles ON user_profiles.id = `login_users`.user_profile_id 
 LEFT JOIN candidate_profiles ON candidate_profiles.user_profile_id = user_profiles.id  WHERE `login_users`.`user_id`=".$id;
 		
 		$stmt   = parent::query($query);

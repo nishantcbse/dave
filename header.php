@@ -152,22 +152,19 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
                         </p>
                         
                         <ul class="dropdown-menu">
-                <?php if(in_array(1, $_SESSION['jigowatt']['user_level'])) { ?>
 <!--                            <li><a href="admin/index.php"><i class="icon-home"></i> <?php _e('Control Panel'); ?></a></li>
--->                            <li><a href="user_s.php"><i class="icon-cog"></i> <?php _e('Settings'); ?></a></li> <?php } ?>
+-->                            <li><a href="user_s.php"><i class="icon-cog"></i> <?php _e('Settings'); ?></a></li> 
 <!--                            <li><a href="profile.php"><i class="icon-user"></i> <?php _e('My Account'); ?></a></li>
 -->                            <li class="divider"></li>
                             <li><a href="logout.php"><?php _e('Sign out'); ?></a></li>
                         </ul>
                         
                     </li>                           
-             <?php }else{ ?>
-             
-                        <li><a  href="product.php"  class="loginnav">Register</a></li>
-                        <li><a  href="login.php" class="loginnav">Login</a></li>
-                        <br><br><br>
-     <?php } ?>                 
-    
+    <?php }else{ ?>
+                    <li><a href="product.php" class="loginnav">Register</a></li>
+                    <li><a href="login.php" class="loginnav">Login</a></li>
+                    <br><br><br>
+    <?php } ?>
             </ul>
         </div>
            <div class="input-append search">

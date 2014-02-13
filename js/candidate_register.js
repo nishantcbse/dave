@@ -32,12 +32,20 @@ function confirm(){
 		     $modal.load('pages/modals_payment1.php', '', function(){
 		      $modal.modal().on("hidden", function() {
               	$modal.empty();
-				Modify();
+				
               });
 		    });
 		  }, 1000);
        
 }
+
+function redirect1(){
+	Modify(); 
+	setTimeout(function(){
+      window.location.href = "integration/paypal/sample/payments/CreatePaymentUsingPayPal.php";
+	},2000);
+}
+
 
 
 function format(state) {

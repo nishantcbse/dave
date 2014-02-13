@@ -33,7 +33,7 @@ function display_registerproduct() {
                                 <div class="checkbox">
                                      <?php  foreach($registers as $register){ ?>
                 
-                                        <input type="checkbox" value="1st Slide|1|register|id" class="Home"> 1st Image $1.00
+                                        <input type="checkbox" value="<?php echo $register['name'];?>|<?php echo $register['price'];?>|register|<?php echo $register['id'];?>" class="Home"> <?php echo $register['name']; ?>  &nbsp; $<?php echo $register['price']; ?>
                                       
                                       <?php } ?>
                                
@@ -82,7 +82,7 @@ function display_loginproduct() {
                                 <div class="checkbox">
                                      <?php  foreach($login as $login){ ?>
                 
-                                        <input type="checkbox" value="1st Slide|1|register|id" class="Home"> 1st Image $1.00
+                                        <input type="checkbox" value="<?php echo $login['name'];?>|<?php echo $login['price'];?>|login|<?php echo $login['id'];?>" class="Home"> <?php echo $login['name']; ?>  &nbsp; $<?php echo $login['price']; ?>
                                       
                                       <?php } ?>
                                
@@ -131,7 +131,7 @@ function display_contactusproduct() {
                                 <div class="checkbox">
                                      <?php  foreach($contactus as $contactus){ ?>
                 
-                                        <input type="checkbox" value="1st Slide|1|contactus|id" class="Home"> 1st Image $1.00
+                                        <input type="checkbox" value="<?php echo $contactus['name'];?>|<?php echo $contactus['price'];?>|contactus|<?php echo $contactus['id'];?>" class="Home"> <?php echo $contactus['name']; ?>  &nbsp; $<?php echo $contactus['price']; ?>
                                       
                                       <?php } ?>
                                
@@ -180,7 +180,7 @@ function display_aboutproduct() {
                                 <div class="checkbox">
                                      <?php  foreach($aboutus as $aboutus){ ?>
                 
-                                        <input type="checkbox" value="1st Slide|1|aboutus|id" class="Home"> 1st Image $1.00
+                                        <input type="checkbox" value="<?php echo $aboutus['name'];?>|<?php echo $aboutus['price'];?>|aboutus|<?php echo $aboutus['id'];?>" class="Home"> <?php echo $aboutus['name']; ?>  &nbsp; $<?php echo $aboutus['price']; ?>
                                       
                                       <?php } ?>
                                
@@ -229,7 +229,7 @@ function display_welcomeproduct() {
                                 <div class="checkbox">
                                      <?php  foreach($welcome as $welcome){ ?>
                 
-                                        <input type="checkbox" value="1st Slide|1|welcome|id" class="Home"> 1st Image $1.00
+                                        <input type="checkbox" value="<?php echo $welcome['name'];?>|<?php echo $welcome['price'];?>|welcome|<?php echo $welcome['id'];?>" class="Home"> <?php echo $welcome['name']; ?>  &nbsp; $<?php echo $welcome['price']; ?>
                                       
                                       <?php } ?>
                                
@@ -278,7 +278,7 @@ function display_accountsponsorproduct() {
                                 <div class="checkbox">
                                      <?php  foreach($accountsponser as $accountsponser){ ?>
                 
-                                        <input type="checkbox" value="1st Slide|1|accountsponser|id" class="Home"> 1st Image $1.00
+                                        <input type="checkbox" value="<?php echo $accountsponser['name'];?>|<?php echo $accountsponser['price'];?>|accountsponser|<?php echo $accountsponser['id'];?>" class="Home"> <?php echo $accountsponser['name']; ?>  &nbsp; $<?php echo $accountsponser['price']; ?>
                                       
                                       <?php } ?>
                                
@@ -327,7 +327,7 @@ function display_candidateinfoproduct() {
                                 <div class="checkbox">
                                      <?php  foreach($candidateinfo as $candidateinfo){ ?>
                 
-                                        <input type="checkbox" value="1st Slide|1|candidateinfo|id" class="Home"> 1st Image $1.00
+                                        <input type="checkbox" value="<?php echo $candidateinfo['name'];?>|<?php echo $candidateinfo['price'];?>|candidateinfo|<?php echo $candidateinfo['id'];?>" class="Home"> <?php echo $candidateinfo['name']; ?>  &nbsp; $<?php echo $candidateinfo['price']; ?>
                                       
                                       <?php } ?>
                                

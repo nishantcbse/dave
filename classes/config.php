@@ -12,7 +12,7 @@ if($_SERVER[ 'HTTP_HOST' ] == 'localhost'){
 	$dbUser = "root"; // Username
 	$dbPass = ""; // Password
 
-}else if($_SERVER[ 'HTTP_HOST' ] == 'http://nwareindia.com'){
+}else if($_SERVER[ 'HTTP_HOST' ] == 'www.nwareindia.com' || $_SERVER[ 'HTTP_HOST' ] == 'nwareindia.com'){
 
 	$host = "localhost"; // If you don't know what your host is, it's safe to leave it localhost
 	$dbName = "nwareind_dave"; // Database name

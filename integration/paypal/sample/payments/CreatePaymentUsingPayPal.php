@@ -72,7 +72,7 @@ $transaction->setAmount($amount)
 // payment approval/ cancellation.
 $baseUrl = getBaseUrl();
 $redirectUrls = new RedirectUrls();
-$redirectUrls->setReturnUrl("$baseUrl/ExecutePayment.php?success=true")
+$redirectUrls->setReturnUrl("http://www.nwareindia.com/dave/payment_confirm.php?success=true")
 	->setCancelUrl("$baseUrl/ExecutePayment.php?success=false");
 
 // ### Payment

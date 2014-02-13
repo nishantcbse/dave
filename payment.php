@@ -1,6 +1,8 @@
 <?php 
 include_once('classes/check.class.php'); 
 //protect("1,2");
+error_reporting(E_ALL);
+
 ?>
 
 <?php
@@ -12,7 +14,7 @@ include_once('classes/check.class.php');
 // PayPal Account based Payment.
 // API used: /v1/payments/payment
 
-require __DIR__ . '/integration/paypal/sample/bootstrap.php';
+require 'integration/paypal/sample/bootstrap.php';
 use PayPal\Api\Amount;
 use PayPal\Api\Details;
 use PayPal\Api\Item;
@@ -21,6 +23,8 @@ use PayPal\Api\Payer;
 use PayPal\Api\Payment;
 use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
+dei
+
 //session_start();
 
 // ### Payer
@@ -35,14 +39,14 @@ $payer->setPaymentMethod("paypal");
 // information
 $item1 = new Item();
 $item1->setName('Ground Coffee 40 oz')
-	->setCurrency('USD')
-	->setQuantity(1)
-	->setPrice('7.50');
+	  ->setCurrency('USD')
+	  ->setQuantity(1)
+	  ->setPrice('7.50');
 $item2 = new Item();
 $item2->setName('Granola bars')
-	->setCurrency('USD')
-	->setQuantity(5)
-	->setPrice('2.00');
+	  ->setCurrency('USD')
+	  ->setQuantity(5)
+	  ->setPrice('2.00');
 
 $itemList = new ItemList();
 $itemList->setItems(array($item1, $item2));
@@ -79,7 +83,7 @@ $transaction->setAmount($amount)
 // payment approval/ cancellation.
 $baseUrl = getBaseUrl();
 $redirectUrls = new RedirectUrls();
-$redirectUrls->setReturnUrl("$baseUrl/ExecutePayment.php?success=true")
+$redirectUrls->setReturnUrl("$baseUrl/payment_confirm.php?success=true")
 	->setCancelUrl("$baseUrl/ExecutePayment.php?success=false");
 
 // ### Payment

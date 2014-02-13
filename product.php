@@ -167,7 +167,7 @@ $shomeProduct = $product->homeProduct();
  				<h4>Tile <?php echo $i+1 ; ?></h4>
                 <div class="checkbox">
                    <?php  foreach($posx as $posx){ ?>
-                    <input type="checkbox" value="<?php echo $posx['name']; ?>|<?php echo $posx['price']; ?>|home" class="<?php echo $posx['label']; ?>"    <?php echo $posx['sell'] == 1 ?'disabled=disabled' : ''; ?> > <label><?php echo $posx['name']; ?>  &nbsp; $<?php echo $posx['price']; ?></label>
+                    <input type="checkbox" value="<?php echo $posx['name']; ?>|<?php echo $posx['price']; ?>|home|<?php echo $posx['id']; ?>" class="<?php echo $posx['label']; ?>"    <?php echo $posx['sell'] == 1 ?'disabled=disabled' : ''; ?> > <label><?php echo $posx['name']; ?>  &nbsp; $<?php echo $posx['price']; ?></label>
                    <?php  } ?>
                 </div>
               </div>

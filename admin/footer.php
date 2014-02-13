@@ -6,7 +6,7 @@
 	<footer>
 		<hr>
 		<p>
-			<a href="http://jigowatt.co.uk" target="_TOP">&copy; Jigowatt 2009-2012</a>
+			<a href="" target="_TOP">&copy; Dave</a>
 			<?php
 				if ( empty($setTranslate) ) $setTranslate = new Translate();
 				$setTranslate->languageSelector();
@@ -17,18 +17,18 @@
 </div> <!-- /.container -->
 
 	<!-- Le javascript -->
-	<script src="../assets/js/bootstrap-transition.js"></script>
-	<script src="../assets/js/bootstrap-collapse.js"></script>
-	<script src="../assets/js/bootstrap-modal.js"></script>
-	<script src="../assets/js/bootstrap-dropdown.js"></script>
-	<script src="../assets/js/bootstrap-button.js"></script>
-	<script src="../assets/js/bootstrap-tab.js"></script>
-	<script src="../assets/js/bootstrap-alert.js"></script>
-	<script src="../assets/js/bootstrap-tooltip.js"></script>
-	<script src="../assets/js/jquery.ba-hashchange.min.js"></script>
-	<script src="../assets/js/jquery.validate.min.js"></script>
-	<script src="../assets/js/jquery.placeholder.min.js"></script>
-	<script src="../assets/js/jquery.jigowatt.js"></script>
+	<script src="../admin-assets/js/bootstrap-transition.js"></script>
+	<script src="../admin-assets/js/bootstrap-collapse.js"></script>
+	<script src="../admin-assets/js/bootstrap-modal.js"></script>
+	<script src="../admin-assets/js/bootstrap-dropdown.js"></script>
+	<script src="../admin-assets/js/bootstrap-button.js"></script>
+	<script src="../admin-assets/js/bootstrap-tab.js"></script>
+	<script src="../admin-assets/js/bootstrap-alert.js"></script>
+	<script src="../admin-assets/js/bootstrap-tooltip.js"></script>
+	<script src="../admin-assets/js/jquery.ba-hashchange.min.js"></script>
+	<script src="../admin-assets/js/jquery.validate.min.js"></script>
+	<script src="../admin-assets/js/jquery.placeholder.min.js"></script>
+	<script src="../admin-assets/js/jquery.jigowatt.js"></script>
 
 	<!-- admin only -->
 

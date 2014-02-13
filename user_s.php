@@ -1,13 +1,14 @@
 <?php
 include_once('classes/check.class.php');
-protect("1,2");
+protect("*");
 include_once('header.php');
 include_once('classes/settings.class.php');
 include_once('classes/listbox.class.php');
-$title = 'settings';
+$title = 'settings';  
 $label = '';
 
 $userid = $setting->getField('user_id');
+
 $candidateinfo = $setting->getField('candidate_info');
 $name = $setting->getField('name');
 $user_profile_id = $setting->getField('user_profile_id');
@@ -40,9 +41,18 @@ $user_address            = $setting->getField('address');
 $user_city               = $setting->getField('city');
 $user_email              = $setting->getField('email');
 
+$candidate_id_check = $setting->getField('candidate_id');
 
-$candidate_id = $setting->getField('candidate_id');
-//print_r($candidate_id);
+if(!empty($candidate_id_check)){
+	$setting->party_img();
+	$candidate_id = $setting->getField('candidate_id');
+
+}else{
+	$candidate_id = '';
+
+}
+
+//print_r($candidate_id.'id');
 //candidate info
 $candidate_first_name    = $setting->getField('candidate_first_name');
 $candidate_middle_name   = $setting->getField('candidate_middle_name');
@@ -69,7 +79,12 @@ $sprovince			     = $listbox->getProvince();
 <script src="js/settings.js"></script>
 <script>
   var USER_INFO_ID      = <?php echo $user_profile_id; ?>;
+  <?php if( !empty($candidate_id_check)){ ?>
+
   var CANDIDATE_INFO_ID = <?php echo $candidate_id; ?>;
+  <?php }else{ ?>
+  var CANDIDATE_INFO_ID = '';
+  <?php } ?>
 </script>
 	<script src="js/plugins/fileupload/bootstrap-fileupload.min.js"></script>
     <script src="js/ajaxupload.js"></script>
@@ -116,8 +131,8 @@ $sprovince			     = $listbox->getProvince();
 -->
                   <li class="active"><a href="#account" data-toggle="tab">Account</a></li>
                   <li><a href="#media" data-toggle="tab">Media</a></li>
-                  <li><a href="#manage" data-toggle="tab">Manage</a></li>
-                  <li><a href="#table" data-toggle="tab">Table</a></li>
+<!--                  <li><a href="#manage" data-toggle="tab">Manage</a></li>
+-->                  <li><a href="#table" data-toggle="tab">Table</a></li>
                   <li><a href="#products" data-toggle="tab">Products</a></li>
                 </ul>
                 <div class="tab-content">
@@ -139,7 +154,10 @@ $sprovince			     = $listbox->getProvince();
                             <li class="active"> <a data-toggle="tab" href="#tab_1-1"> <i class="icon-cog"></i> Personal info </a> <span class="after"></span> </li>
                             <li ><a data-toggle="tab" href="#tab_2-2"><i class="icon-picture"></i> Change Avatar</a></li>
                             <li ><a data-toggle="tab" href="#tab_3-3"><i class="icon-lock"></i> Change Password</a></li>
+                              <?php if( !empty($candidate_id_check)){ ?>
+
                             <li ><a data-toggle="tab" href="#tab_4-4"><i class="icon-eye-open"></i> Candidate Info</a></li>
+                              <?php } ?>
                           </ul>
                         </div>
                         <?php include_once('pages/admin/page-account.php'); ?>

@@ -45,10 +45,6 @@ function checkRegistrationType(){
 			}else if(registrationType == 'profle'){
 				 Modify(type)
 			}
-			
-
-     
-
 }
 
 function confirm(){
@@ -58,12 +54,21 @@ function confirm(){
 		     $modal.load('pages/modals_payment.php', '', function(){
 		      $modal.modal().on("hidden", function() {
               	$modal.empty();
-				Modify(type);
+				
               });
 		    });
 		  }, 1000);
        
 }
+
+
+function redirect1(){
+	Modify(); 
+	setTimeout(function(){
+      window.location.href = "integration/paypal/sample/payments/CreatePaymentUsingPayPal.php";
+	},2000);
+}
+
 
 function Modify(){
     var post = $('#register-form').serialize();

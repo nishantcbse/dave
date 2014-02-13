@@ -67,7 +67,12 @@ include_once('header.php');
           <label class="control-label">Security Question</label>
           <div class="controls">
             <select class="select2 span12 m-wrap" tabindex="1" id="security_question" name="security_question" required="required">
-             <option value="a" >a</option>
+            
+             <option value="What was your childhood nickname" >What was your childhood nickname?‏</option>
+             <option value="What was your dream job as a child" >What was your dream job as a child?‏</option>
+             <option value="What was your favorite sport in high school" >What was your favorite sport in high school?‏</option>
+             <option value="What is your pet name" >What is your pet name?‏</option>
+             <option value="What is the name of your hometown" >What is the name of your hometown?‏</option>
             </select>
           </div>
         </div>
