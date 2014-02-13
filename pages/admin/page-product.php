@@ -1,3 +1,10 @@
+<?php include_once('classes/generic.class.php'); ?>
+<?php include_once('classes/admin/manage_products.class.php'); ?>
+<?php include_once('classes/admin/functions-products.php'); ?>
+
+<script src="js/admin/manage_product.js"></script>
+           
+           
             <div class="row-fluid">
               <div class="span12">
                 <div class="span2">
@@ -94,10 +101,10 @@
                                                     <img id="uploadPreviewProductImage" class="thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;" />
                                                     <input id="uploadImageProduct" type="file" name="fileToUpload" onchange="PreviewImageProduct();" style="display:none" />
                                                     <span class="btn btn-file">
-                                                          <span class="fileupload-new" onclick="selectImage()"> Select image </span> 
+                                                          <span class="fileupload-new" onclick="selectImag()"> Select image </span> 
                                                     </span>
                                                     <span class="btn btn-file" id="image-upload-product" style="display:none">
-                                                             <span class="fileupload-exists" onclick="savePic()">Upload</span>
+                                                             <span class="fileupload-exists" onclick="savePicture()">Upload</span>
                                                     </span>
                                                     
                                                     

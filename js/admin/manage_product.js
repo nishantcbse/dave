@@ -57,7 +57,7 @@ $(document).ready(function() {
 function Loadproductshome(id){
     $.ajax({
         type: "GET",
-        url: "classes/admin/manage_products.class.php?id="+id,
+        url: "classes/admin/manage_products.class.php?productid="+id,
         dataType: "html",
         success: function(result){
         var $response=$(result);
@@ -112,7 +112,7 @@ function Modifyproducts(type){
     });
 	
 	
-	function savePic(){
+	function savePicture(){
 		$.ajaxFileUpload({
 			url:'documents/profile-upload.php',
 			secureuri:false,
@@ -140,7 +140,7 @@ function Modifyproducts(type){
 	   //setTimeout(function(){document.getElementById("isForm").submit()}, 1000); 
 }
 
-function selectImage(){
+function selectImag(){
    $('#uploadImageProduct').trigger('click');
    $('#image-upload-product').show();
 
