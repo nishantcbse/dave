@@ -50,3 +50,57 @@ function Modify_info(type){
         }
     });
 }
+
+
+	function saveProfilePicture(){
+		$.ajaxFileUpload({
+			url:'documents/profile-upload.php',
+			secureuri:false,
+			fileElementId:'uploadImageProfile',
+			
+			success: function (data, status){
+				var imageName = $('#uploadImageProfile').val();
+				//$('#product-image1').val(imageName);
+				
+				ModifyAvtar(imageName);
+				if(typeof(data.error) != 'undefined'){
+						if(data.error != ''){
+							alert(data.error);
+						}else{
+						alert(msg); // returns location of uploaded file
+						}
+				  }
+			  },
+			error: function (data, status, e){
+					alert(e);
+					}
+				}
+			)
+}
+
+function ModifyAvtar(imageName){
+	   
+		$.post('classes/settings.class.php',{action:'changeavtar',avatar:imageName}).done(function(data){
+			   location.reload();
+			})
+
+}
+
+
+ function PreviewImageProfile() {
+				var oFReader = new FileReader();
+				oFReader.readAsDataURL(document.getElementById("uploadImageProfile").files[0]);
+				
+				oFReader.onload = function (oFREvent) {
+				             document.getElementById("uploadPreviewProfileImage").src = oFREvent.target.result;
+		};
+   };
+
+
+
+
+function selectImgProfile(){
+   $('#uploadImageProfile').trigger('click');
+   $('#image-upload-profile').show();
+
+}

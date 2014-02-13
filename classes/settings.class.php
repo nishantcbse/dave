@@ -6,10 +6,8 @@ class Settings extends Generic {
 	private $options = array();
     
 	function __construct() {
-
+       // print_r($_SESSION['jigowatt']);
         $this->grab();
-        //$this->
-		
 		if(!empty($_GET['media'])) $this->addMedia();
 		if(!empty($_GET['deleteMedia'])) $this->deleteMedia();
 		//if(!empty($_GET['viewmedia'])) $this->mediaView();
@@ -27,6 +25,17 @@ class Settings extends Generic {
 				   $this->image_edit();
 				}else if($this->options['action']== 'editproduct'){
 				    $this->edit_product();
+				}else if($this->options['action']== 'password'){
+					$this->currentpassword  = parent::secure($_POST['CurrentPass']);
+					$this->password 	 = parent::secure($_POST['password']);
+					$this->confirmpw 	 = parent::secure($_POST['password_confirm']);
+					$this->pid   	     = parent::secure($_POST['password-info-id']);
+					
+				    $this->validatepasswordfield();
+					$this->checkCurrentPassword();
+					$this->edit_password();
+				}else if($this->options['action']== 'changeavtar'){
+				    $this->change_avatar();
 				}
 				
 				
@@ -41,6 +50,112 @@ class Settings extends Generic {
            
 
         }
+		
+	public function validatepasswordfield() {
+			if(!empty($this->options['password'])){
+				if(empty($this->options['password_confirm'])) {
+				$this->error = '<div class="alert alert-error">You must enter confirm password</div>';
+				 }
+	
+			}
+			
+			if(!empty($this->options['password_confirm'])) {
+			  
+				if(empty($this->options['password'])) {
+					$this->error = '<div class="alert alert-error">You must enter password</div>';
+			}
+		  }
+		  
+		   if(!empty($this->options['password_confirm']) && !empty($this->options['password'])){
+		   
+			if($this->options['password'] != $this->options['password_confirm']) {
+				$this->error = '<div class="alert alert-error"> Password not Matched</div>';
+			}
+	     }
+		 
+	  
+	}
+	
+	
+	private function checkCurrentPassword() {
+		
+		
+		  if(empty($this->currentpassword )){
+		  
+			  $this->error = '<div class="alert alert-error">'._('Current Password is empty.').'</div>';
+		 
+		  }else{
+	
+			global $generic;
+			
+			$sql = $sql = "SELECT * FROM login_users WHERE user_id = '" . $this->pid . "' ";
+			$query = $generic->query($sql);
+	
+			if( $query->rowCount() > 0 ){
+				while($row = $query->fetch(PDO::FETCH_ASSOC)){
+					if($row['password'] != md5($this->currentpassword)){
+					
+						$this->error = '<div class="alert alert-error">'._('Current Password not matched.').'</div>';
+					}else{
+					
+					
+					}
+				
+				}
+			}
+		  }
+		}
+		
+		
+    private function change_avatar(){
+	   
+	   $params = array(
+			
+			':image'     	     => $this->options['avatar'],
+			':id'       	     => $_SESSION['jigowatt']['user_id']
+		);
+		
+		$sql = "UPDATE `login_users` SET `avatar` = :image WHERE `user_id` = :id;";
+		$stmt = parent::query($sql, $params);
+		$_SESSION['jigowatt']['gravatar'] = $this->options['avatar'];
+        $this->result = '<div class="alert alert-success">Successfully edited record</div>';
+
+	}
+	
+    private function edit_password() {
+
+		if(!empty($this->error))
+			return false;
+        
+		$this->id = $this->pid;
+		$params1 = array( ':id' => $this->id );
+		$stmt1   = parent::query("SELECT * FROM login_users WHERE user_id = :id;", $params1);
+       
+        if( $stmt1->rowCount() < 1 ) parent::displayMessage("<div class='alert alert-error'>No such record</div>");
+
+	    foreach ($stmt1->fetch(PDO::FETCH_ASSOC) as $field => $value){
+		    $this->optionsdata[$field] = $value;
+		}
+		   
+		   //print_r($this->optionsdata);
+
+		if(isset($this->options['password']) && $this->options['password'] != ''){
+		   $password = md5($this->options['password']);
+		}else{
+		   $password     = $this->optionsdata['password'];
+		}
+
+		$params = array(
+			
+			':password'     	 =>$password,
+			':id'       	     => $this->pid
+		);
+		
+		$sql = "UPDATE `login_users` SET `password` = :password WHERE `user_id` = :id;";
+		$stmt = parent::query($sql, $params);
+        $this->result = '<div class="alert alert-success">Successfully edited record</div>';
+
+	}
 
 	private function validate_personal() {
 	    if(empty($this->options['answer'])) {
