@@ -46,7 +46,7 @@ $file_avatar = 'default.png'; ?>
                                             <div class="control-group">
                                                 <label for="textfield" class="control-label">Political Party List</label>
                                                 <div class="controls">
-                                                    <input type="text" name="table-name" id="table-name" class="input-large span7" value="<?php echo $table->getField('party_name'); ?>">
+                                                    <input type="text" name="table-name" id="table-name" class="input-large span7" value="">
                                                 </div>
                                             </div>
                                             
@@ -55,16 +55,34 @@ $file_avatar = 'default.png'; ?>
                                                     <?php _e('Party Symbol'); ?>
                                                   </label>
                                                   <div class="controls">
-                                                <div class="fileupload fileupload-new" data-provides="fileupload">
-                                                 <input type="hidden" name="party_symbol" id="avatar-politicalparty" value=""/>
-                                                    <div class="fileupload-new thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;"><img src="<?php echo $avatar; ?>" /></div>
-                                                        <div class="fileupload-preview fileupload-exists thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px; line-height: 20px;"></div>
-                                                            <div>
-                                                                <span class="btn btn-file"><span class="fileupload-new">Select image</span>
-                                                                <span class="fileupload-exists" >Change</span><input type="file"  name="party_symbol" id="party_symbol" onchange="filechange()"/></span>
-                                                                <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-                                                            </div>
-                                                        </div>
+                                                    <div style="height: auto;" id="accordion2-3" class="accordion collapse">
+                                                    <img id="uploadPreviewPartySymbol" class="thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;" />
+                                                    <input id="uploadImagePartySymbol" type="file" name="fileToUpload" onchange="PreviewImagePartySymbol();" style="display:none" />
+                                                    <span class="btn btn-file">
+                                                          <span class="fileupload-new" onclick="selectImage()"> Select image </span> 
+                                                    </span>
+                                                    <span class="btn btn-file" id="image-upload-party-symbol" style="display:none">
+                                                             <span class="fileupload-exists" onclick="savePic()">Upload</span>
+                                                    </span>
+                                                    
+                                                    
+                                                    <script type="text/javascript">
+                                                    
+                                                        function PreviewImagePartySymbol() {
+                                                            var oFReader = new FileReader();
+                                                            oFReader.readAsDataURL(document.getElementById("uploadImagePartySymbol").files[0]);
+                                                    
+                                                            oFReader.onload = function (oFREvent) {
+                                                                document.getElementById("uploadPreviewPartySymbol").src = oFREvent.target.result;
+                                                            };
+                                                        };
+                                                    
+                                                    </script>
+                                                      
+  
+  
+  
+</div>
                                                 </div>
         									</div>
                                             

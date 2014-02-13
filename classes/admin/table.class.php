@@ -6,11 +6,11 @@ class Table extends Generic {
 	private $options = array();
     
 	function __construct() {
-
+        if(!empty( $_GET['politicalpartyid'])) $this->getPoliticalPartyDetail();
         $this->grab();
 
 		if(!empty($_POST)) {
-				print_r($_POST); 
+				//print_r($_POST); 
 				foreach ($_POST as $key => $value)
 				$this->options[$key] = parent::secure($value);
       
@@ -85,6 +85,37 @@ class Table extends Generic {
 			return $this->options[$field];
 	}
 	
+    public function getPoliticalPartyDetail() {
+		
+		$id = $_GET['politicalpartyid'];
+
+
+	$sql = "SELECT *
+			FROM settings_political_party_list
+			INNER JOIN settings_party_symbols ON settings_political_party_list.id = settings_party_symbols.id 
+			WHERE settings_political_party_list.flag = 0 AND settings_party_symbols.flag = 0 AND settings_political_party_list.id=".$id;
+	
+
+  $stmt = parent::query($sql);
+        $rcount = $stmt->rowCount();
+        if( $rcount < 1 ) {
+            echo '<h5 id="error">No records found in search.  Please modify your search.</h5>';
+        } else if( $rcount > 30 ) {
+            echo '<h5 id="error">Records found exceeds limit.  Please narrow your search.</h5>';
+        } else {
+
+            while( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
+    $arr[] = array(
+      'id'  			     => $row['id'],
+      'political_party_list' => $row['political_party_list'],
+      'party_symbols' 		 => $row['party_symbols'],
+     );
+
+    }
+
+    echo json_encode($arr);
+   }
+ }	
 	
 
 
