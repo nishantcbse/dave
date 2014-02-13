@@ -41,9 +41,9 @@ function display_homeproduct() {
                 
 						   <?php  foreach($pos as $pos){ 
 						         if(!empty($pos['image'])){
-						           $image = 'documents/home/'.$pos['image'];
+						           $image = 'documents/product/'.$_SESSION['jigowatt']['user_id'].'/'.$pos['image'];
 								 }else{
-								    $image = 'documents/home/default.jpg';
+								    $image = 'documents/product/default.jpg';
 								 }
 						   ?>
                                 <li data-transition="fade" data-slotamount="8" onClick="getProductPage()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb= ""> 
