@@ -25,7 +25,11 @@ class Settings extends Generic {
 				     $this->candidate_edit();
 				}else if ($this->options['action']== 'avatar'){
 				   $this->image_edit();
+				}else if($this->options['action']== 'editproduct'){
+				    $this->edit_product();
 				}
+				
+				
                 if(!empty($this->error)){
                     echo $this->error;
                 } else {
@@ -270,6 +274,33 @@ LEFT JOIN candidate_profiles ON candidate_profiles.user_profile_id = user_profil
             //print_r($this->options); 
 	}
 	
+	
+   private function edit_product(){
+	   
+		if (!empty($this->error)) return false;
+		
+        $label          	= $this->options['product-label'];
+        $name     	    	= $this->options['product-name'];
+        $price     	    	= $this->options['product-price'];
+        $image     	 		= $this->options['product-image'];
+		$id                 = $this->options['products-id'];
+		$stamp              = date('Y-m-d H:i:s');
+
+	    $sql = "UPDATE advertisement_products SET `label` = '$label',`name` = '$name',`image` = '$image',`price` = '$price',`updated` = '$stamp' WHERE `id` =".$id;
+
+		parent::query($sql);
+		
+		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
+	
+	
+	}
+	
+	
+
+
+
+	
+//##################################html functions####################################################################3
 	
 	function mediaView(){
 	    

@@ -1,8 +1,3 @@
-<?php include_once('classes/generic.class.php'); ?>
-<?php include_once('classes/admin/manage_products.class.php'); ?>
-<?php include_once('classes/admin/functions-products.php'); ?>
-
-<script src="js/admin/manage_product.js"></script>
 
 
                     <div class="row-fluid products-list" id='products-list-welcome'>
