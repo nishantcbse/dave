@@ -43,7 +43,7 @@ $(document).ready(function() {
 });
 
 
-function Loadproductshome(id){
+function Loadproducts(id){
 	
 	$.get('classes/admin/manage_products.class.php',{productid:id}).done(function(data){
            var jsonData = JSON.parse(data);

@@ -4,7 +4,7 @@ include_once( 'generic.class.php' );
 class Home extends Generic {
 
     function __construct() {
-		
+           if(!empty($_GET['mediaid']))$this->getMediaDetail();
 		if(!empty($_POST)) {
 
 			foreach ($_POST as $key => $value)
@@ -42,6 +42,20 @@ class Home extends Generic {
 		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
 
 	}
+    private function EditMediaDetail() {
+
+		if (!empty($this->error)) return false;
+        $link            	= $this->options['link'];
+        $detail     	 	= $this->options['detail'];
+
+
+	    $sql = "UPDATE user_profiles SET `link` = '$link',`detail` = '$detail' WHERE `id` =".$id;
+
+		parent::query($sql);
+		print_r($sql);
+		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
+
+	}
 	
 	
 	
@@ -66,7 +80,34 @@ LEFT JOIN candidate_profiles ON candidate_profiles.user_profile_id = user_profil
 		if (!empty($this->options[$field]))
 			return $this->options[$field];
 	}
-
+	
+    public function getMediaDetail() {
+		
+		$id = $_GET['mesiaid'];
+		$sql = "SELECT *
+				FROM media
+				WHERE media.flag = 0 AND media.id=".$id;
+		
+		$stmt = parent::query($sql);
+			$rcount = $stmt->rowCount();
+			if( $rcount < 1 ) {
+				echo '<h5 id="error">No records found in search.  Please modify your search.</h5>';
+			} else if( $rcount > 30 ) {
+				echo '<h5 id="error">Records found exceeds limit.  Please narrow your search.</h5>';
+			} else {
+		
+				while( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
+						$arr[] = array(
+						  'id'  	      => $row['id'],
+						  'link'         => $row['link'],
+						  'detail' 		  => $row['detail'],
+						 );
+					
+				 }
+		
+	  	         echo json_encode($arr);
+            }
+   }	
 }
 
 $home = new Home();

@@ -6,7 +6,7 @@ function displaymanageproductshome($row) {
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductshome(" . $row['id'] . ");' class='home' >" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproducts(" . $row['id'] . ");' class='home' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>
@@ -21,7 +21,7 @@ function displaymanageproductsregister($row) {
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductsregister(" . $row['id'] . ");' class='register' >" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproducts(" . $row['id'] . ");' class='register' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>
@@ -36,7 +36,7 @@ function displaymanageproductslogin($row) {
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductslogin(" . $row['id'] . ");' class='login' >" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproducts(" . $row['id'] . ");' class='login' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>
@@ -51,7 +51,7 @@ function displaymanageproductscontact($row) {
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductscontact(" . $row['id'] . ");' class='contact' >" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproducts(" . $row['id'] . ");' class='contact' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>
@@ -66,7 +66,7 @@ function displaymanageproductsabout($row) {
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductsabout(" . $row['id'] . ");' class='about' >" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproducts(" . $row['id'] . ");' class='about' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>
@@ -81,7 +81,7 @@ function displaymanageproductswelcome($row) {
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductswelcome(" . $row['id'] . ");' class='welcome' >" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproducts(" . $row['id'] . ");' class='welcome' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>
@@ -96,7 +96,7 @@ function displaymanageproductsaccountsponser($row) {
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductsaccountsponser(" . $row['id'] . ");' class='accountsponser' >" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproducts(" . $row['id'] . ");' class='accountsponser' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>
@@ -111,7 +111,7 @@ function displaymanageproductscandidateinfo($row) {
 	if(empty($row)) return false;
 	?>
 	<tr>
-        <?php echo "<td><a href='javascript:Loadproductscandidateinfo(" . $row['id'] . ");' class='candidateinfo' >" . $row['name'] ."</td>"; ?>
+        <?php echo "<td><a href='javascript:Loadproducts(" . $row['id'] . ");' class='candidateinfo' >" . $row['name'] ."</td>"; ?>
         <td><?php echo $row['label']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td><?php echo $row['sell']; ?></td>

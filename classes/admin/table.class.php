@@ -30,9 +30,6 @@ class Table extends Generic {
         }
 
 	private function validate() {
-	    if(empty($this->options['password'])) {
-			$this->error = '<div class="alert alert-error">'._('You must enter a Password.').'</div>';
-        }
 	    if(empty($this->options['email'])) {
 			$this->error = '<div class="alert alert-error">'._('You must enter a Email.').'</div>';
         }
