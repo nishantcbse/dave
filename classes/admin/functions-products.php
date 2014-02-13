@@ -125,7 +125,8 @@ function displaymanageproductscandidateinfo($row) {
 function list_manageproductshome() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Home' ORDER BY label ASC";
+	$user_profile_id = $_SESSION['jigowatt']['user_profile_id'];
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Home' AND `user_profile_id` = '$user_profile_id' AND `sell` = 1 ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -153,7 +154,8 @@ function list_manageproductshome() {
 function list_manageproductsregister() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Register' ORDER BY label ASC";
+	$user_profile_id = $_SESSION['jigowatt']['user_profile_id'];
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Register' AND `user_profile_id` = '$user_profile_id' AND `sell` = 1 ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -181,7 +183,9 @@ function list_manageproductsregister() {
 function list_manageproductslogin() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Login' ORDER BY label ASC";
+    $user_profile_id = $_SESSION['jigowatt']['user_profile_id'];
+
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Login' AND `user_profile_id` = '$user_profile_id' AND `sell` = 1 ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -209,7 +213,8 @@ function list_manageproductslogin() {
 function list_manageproductcontact() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Contact Us' ORDER BY label ASC";
+	$user_profile_id = $_SESSION['jigowatt']['user_profile_id'];
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Contact Us' AND `user_profile_id` = '$user_profile_id' AND `sell` = 1 ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -237,7 +242,8 @@ function list_manageproductcontact() {
 function list_manageproductsabout() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'About' ORDER BY label ASC";
+	$user_profile_id = $_SESSION['jigowatt']['user_profile_id'];
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'About' AND `user_profile_id` = '$user_profile_id' AND `sell` = 1 ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -265,7 +271,8 @@ function list_manageproductsabout() {
 function list_manageproductswelcome() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Welcome' ORDER BY label ASC";
+	$user_profile_id = $_SESSION['jigowatt']['user_profile_id'];
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Welcome' AND `user_profile_id` = '$user_profile_id' AND `sell` = 1 ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -293,7 +300,9 @@ function list_manageproductswelcome() {
 function list_manageproductsaccountsponser() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Account Sponser' ORDER BY label ASC";
+	$user_profile_id = $_SESSION['jigowatt']['user_profile_id'];
+	
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Account Sponser' AND `user_profile_id` = '$user_profile_id' AND `sell` = 1 ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 
@@ -321,7 +330,8 @@ function list_manageproductsaccountsponser() {
 function list_manageproductscandidateinfo() {
 
 	global $generic;
-    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Candidate Info' ORDER BY label ASC";
+	$user_profile_id = $_SESSION['jigowatt']['user_profile_id'];
+    $sql = "SELECT * FROM advertisement_products WHERE flag = 0 AND `label` = 'Candidate Info' AND `user_profile_id` = '$user_profile_id' AND `sell` = 1 ORDER BY label ASC";
 	$query = $generic->query($sql);
 	//print_r($query);
 

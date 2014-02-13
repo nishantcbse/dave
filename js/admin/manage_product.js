@@ -55,7 +55,7 @@ function Loadproducts(id){
 			    $('#product-price').val(rec.price);
 			    $('#products-id1').val(rec.id);
 				
-				var productImage = '<img  src="documents/product/'+PRODUCT_USER_ID+'/'+rec.image+'" id="uploadPreviewProductImage" class="thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;" />';
+				var productImage = '<img  src="documents/product/'+rec.image+'" id="uploadPreviewProductImage" class="thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;" />';
 				$('#product-image-preview').html(productImage);
 			}
 		   
@@ -67,6 +67,7 @@ function Loadproducts(id){
 
 function Modifyproducts(){
     var post = $('#products-form1').serialize();
+	setTimeout(function(){
     $.post('classes/settings.class.php', post, function (data) {
         if (data.match('success') !== null) {
 		    
@@ -83,6 +84,7 @@ function Modifyproducts(){
             }
         }
     });
+	},1000);
 }
 	
 	function saveProductPicture(){

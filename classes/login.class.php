@@ -215,6 +215,7 @@ class Login extends jigowatt_integration {
 		$_SESSION['jigowatt']['user_level'] = $user_level;
 
 		$_SESSION['jigowatt']['email'] = $this->result['email'];
+		$_SESSION['jigowatt']['user_profile_id'] = $this->result['user_profile_id'];
 
 		//$_SESSION['jigowatt']['gravatar'] = parent::get_gravatar($this->result['email'], true, 26);
 		$_SESSION['jigowatt']['gravatar'] = $this->result['avatar'];

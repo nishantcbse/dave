@@ -89,7 +89,8 @@ function viewMedia(){
 
 function Modifymedia(){
     var post = $('#media-edit-form').serialize();
-    $.post('classes/media.class.php', post, function (data) {
+	//alert(post);
+	 $.post('classes/settings.class.php',post).done(function(data){
         if (data.match('success') !== null) {
 		    
         } else {
@@ -98,4 +99,19 @@ function Modifymedia(){
             $("#modal-error").modal();
         }
     });
+}
+
+function mediaDetailEdit(clas,id){
+	 $.get('classes/settings.class.php',{grabmedia:true,mediaid:id}).done(function(data){
+				var jsonData = JSON.parse(data);
+				for (var i in jsonData) {
+					var rec = jsonData[i];
+					console.log(rec);
+					$('#media-detail').val(rec.detail);
+					$('#media-url').val(rec.link);
+					$('#media-id').val(rec.id);
+					$(clas).html(rec.detail);
+					
+				}
+	  })
 }

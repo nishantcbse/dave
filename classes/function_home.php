@@ -41,7 +41,7 @@ function display_homeproduct() {
                 
 						   <?php  foreach($pos as $pos){ 
 						         if(!empty($pos['image'])){
-						           $image = 'documents/product/'.$_SESSION['jigowatt']['user_id'].'/'.$pos['image'];
+						           $image = 'documents/product/'.$pos['image'];
 								 }else{
 								    $image = 'documents/product/default.jpg';
 								 }

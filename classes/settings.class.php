@@ -6,8 +6,9 @@ class Settings extends Generic {
 	private $options = array();
     
 	function __construct() {
-       // print_r($_SESSION['jigowatt']);
+      // print_r($_SESSION['jigowatt']);
         $this->grab();
+		if(!empty($_GET['grabmedia'])) $this->grabMedia();
 		if(!empty($_GET['media'])) $this->addMedia();
 		if(!empty($_GET['deleteMedia'])) $this->deleteMedia();
 		//if(!empty($_GET['viewmedia'])) $this->mediaView();
@@ -36,6 +37,8 @@ class Settings extends Generic {
 					$this->edit_password();
 				}else if($this->options['action']== 'changeavtar'){
 				    $this->change_avatar();
+				}else if($this->options['action']== 'edit-media-detail'){
+				    $this->editMedia();
 				}
 				
 				
@@ -268,6 +271,25 @@ class Settings extends Generic {
 	}
 	
 	
+  public function grabMedia(){
+	    $id = $_GET['mediaid'];
+		$sqlMedia = "SELECT * FROM media WHERE id=".$id;
+        $query = parent::query($sqlMedia);
+        
+		while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                $list[] = array(
+				    'id' 	     =>   $row['id'],
+					'name'       =>   $row['name'],
+					'type'       =>   $row['type'],
+					'detail'     =>   $row['detail'],
+					'link'        =>   $row['link']
+                );
+            }
+		 echo json_encode($list);
+  
+  }
+	
+	
    private function addMedia() {
 
 		if (!empty($this->error)) return false;
@@ -275,6 +297,8 @@ class Settings extends Generic {
         $name            	= $_GET['name'];
         $type     	 	    = $_GET['type'];
         $candidate     	 	= $this->getField('candidate_id');
+		
+		
 	    $sql = "INSERT INTO media (name, type, candidate_id) VALUES ('$name','$type','$candidate');";
 		parent::query($sql);
 		$id = parent::$dbh->lastInsertId();
@@ -294,16 +318,27 @@ class Settings extends Generic {
 
 	}
 	
+	 private function editMedia() {
+         die('here');
+		if (!empty($this->error)) return false;
+
+        $id            	= $_POST['media-id'];
+        $detail     	    = $_POST['detail'];
+        $link     	 	    = $_POST['link'];
+		$stamp              = date('Y-m-d H:i:s');
+	    $sql = "UPDATE media SET `detail` = '$detail',`link` = '$link',`updated` = '$stamp' WHERE `id` =".$id;
+	    
+		parent::query($sql);
+		
+
+	}
+	
+	
+	
   private function deleteMedia(){
        $id   = $_GET['mediaid'];
-       $name = $_GET['medianame'];
-	   $thumbdir  = 'documents/media/files/thumbnail/'.$name;
-	   $dir       = 'documents/media/files/'.$name;
 	   $sql = "DELETE FROM media WHERE id =".$id;
 	   $query = parent::query($sql);
-       unlink($thumbdir);
-       unlink($dir);
-  
   }
 	
 	

@@ -1,7 +1,6 @@
 <?php
 
 include_once(dirname(dirname(__FILE__)) . '/classes/check.class.php');
-$id = $_SESSION['jigowatt']['user_id'] ;
 	$error = "";
 	$msg = "";
 	$fileElementName = 'fileToUpload';
@@ -42,12 +41,12 @@ $id = $_SESSION['jigowatt']['user_id'] ;
 	}else 
 	{
 
-$directory = dirname(dirname(__FILE__)) ."/documents/product/".$id;
+$directory = dirname(dirname(__FILE__)) ."/documents/product";
 
 if(!is_dir( $directory)) {
     mkdir($directory . "/");
 }
-$path = dirname(dirname(__FILE__)) ."/documents/product/".$id."/"; 
+$path = dirname(dirname(__FILE__)) ."/documents/product/"; 
 
 $location = $path . $_FILES['fileToUpload']['name'];
 

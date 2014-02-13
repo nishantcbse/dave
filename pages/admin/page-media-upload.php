@@ -82,7 +82,7 @@
 
 
   <div id="responsive" class="modal hide fade" tabindex="-1" data-width="550">
-                  <form method="POST" class='' id='media-edit-form'>
+     <form method="POST" class='' id='media-edit-form'>
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
                 <h3>Media Edit</h3>
@@ -92,11 +92,11 @@
                     <div class="row-fluid">
                         <div class="span12">
         <div class="control-group">
-          <label class="control-label" for="firstname">
+          <label class="control-label" for="Detail">
             <?php _e('Detail'); ?>
           </label>
           <div class="controls">
-            <input type="text" placeholder="" class="m-wrap span12" id="first_name" name="first_name" required="required"/>
+            <input type="text" placeholder="" class="m-wrap span12" id="media-detail" name="media-detail" required="required"/>
           </div>
         </div>
         <div class="control-group">
@@ -104,19 +104,21 @@
             <?php _e('URL'); ?>
           </label>
           <div class="controls">
-            <input type="text" placeholder="" class="m-wrap span12" id="last_name" name="last_name" required="required"/>
+            <input type="text" placeholder="" class="m-wrap span12" id="media-url" name="media-url" required="required"/>
           </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
+                <input type="hidden" id="media-id" name="media-id"  value="" />
+                <input type="hidden"  name="action"  value="edit-media-detail" />
                 <button type="button" data-dismiss="modal" class="btn">Close</button>
                 <button type="button" class="btn blue" id="mediaSave" onclick="Modifymedia()">Save changes</button>
             </div>
             
         </div>
-        		  </form>
+     </form>
 </div>
 
 	<script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>

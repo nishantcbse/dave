@@ -10,19 +10,27 @@ class Payment_confirm extends Generic {
 	public function payment_success($result){
 	    $productArray     	= $_SESSION['cart']['productArray'];
 		$productId 			= '';
-        foreach($productArray as $productIds){
-		   $productId .=  $productIds.'|';
-		}
-	    
-        $price	     		= $_SESSION['cart']['price'];
+		$price	     		= $_SESSION['cart']['price'];
 		$productid          = $productId;
         $user_profile_id    = $_SESSION['user_profile_id'];
         $paymentId     	 	= $_SESSION['paymentId'];
-        $created            = date('Y-m-d  H:i:s');
+        $created            = date('Y-m-d H:i:s');
+        $from               = date('Y-m-d');
+        foreach($productArray as $productIds){
+		    $productId .=  $productIds.'|';
+			$sql1 = "UPDATE `advertisement_products` SET `user_profile_id` = '$user_profile_id',`sell` = 1 ,`period_from` = $from,`updated` = '$created'  WHERE `id` = '$productIds';";
+			$stmt = parent::query($sql1);
+
+		}
+	    
 
 	    $sql = "INSERT INTO payments (txnid, payment_amount, itemid, user_id, created)
 						VALUES 	('$paymentId','$price','$productid','$user_profile_id','$created');";
 		parent::query($sql);
+		
+		
+		
+		
 	    $this->createUser();
 	}
 	
