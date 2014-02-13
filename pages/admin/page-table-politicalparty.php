@@ -56,7 +56,9 @@ $file_avatar = 'default.png'; ?>
                                                   </label>
                                                   <div class="controls">
                                                     <div style="height: auto;" id="accordion2-3" class="accordion collapse">
-                                                    <img id="uploadPreviewPartySymbol" class="thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;" />
+                                                    <span id="previewImageSpan">
+                                                        <img id="uploadPreviewPartySymbol" class="thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;" />
+                                                    </span>
                                                     <input id="uploadImagePartySymbol" type="file" name="fileToUpload" onchange="PreviewImagePartySymbol();" style="display:none" />
                                                     <span class="btn btn-file">
                                                           <span class="fileupload-new" onclick="selectImage()"> Select image </span> 

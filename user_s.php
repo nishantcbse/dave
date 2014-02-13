@@ -176,10 +176,10 @@ $sprovince			     = $listbox->getProvince();
                   </div>
                   
                   <!--end tab-pane-->
-                  <div class="tab-pane row-fluid" id="table">
+<!--                  <div class="tab-pane row-fluid" id="table">
                     <?php include_once('pages/admin/page-table.php'); ?>
                   </div>
-                  <!--end tab-pane--> 
+-->                  <!--end tab-pane--> 
                   
                   <div class="tab-pane row-fluid" id="products">
                     <?php include_once('pages/admin/page-product.php'); ?>
@@ -199,4 +199,35 @@ $sprovince			     = $listbox->getProvince();
     </div>
   </div>
 </div>
+
+<div id="modal-confirm" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<form method="post" id="confirm-form">
+    <div class="modal-header">
+	    <h3 id="modal-title"></h3>
+	</div>
+	<div class="modal-body">
+        <p><strong>Confirm</strong></p>
+        <p>Are you certain you want to continue?</p>
+        <input type="hidden" name="forfeiture-action" id="forfeiture-action" value="">
+        <input type="hidden" name="forfeiture-id" id="forfeiture-id" value="<?php echo $id; ?>">
+    </div>
+    <div class="modal-footer">
+	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">No</button>
+		<button type="submit" id="confirm-save" class="btn" data-dismiss="modal">Yes</button>
+	</div>
+</form>
+</div>
+<div id="modal-error" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<form method="post" id="error-form">
+    <div class="modal-header">
+	    <h3 id="modal-title-error"></h3>
+	</div>
+	<div id="modal-body-error">
+    </div>
+    <div class="modal-footer">
+	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+	</div>
+</form>
+</div>
+
 <?php include_once('footer.php'); ?>

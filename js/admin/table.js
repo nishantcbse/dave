@@ -101,7 +101,7 @@ function Loadtable(id){
 				var partyid = rec.id;
 			
       
-          
+            var partyImage = '<img id="uploadPreviewPartySymbol" src="document/party_symbols/'+partysymbol+'" class="thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;" />' ;
             $('#list-actions').hide();
             $('#table-list').hide();
             $('#table-label').html('<i class="icon-list-alt"></i> tables - Edit');

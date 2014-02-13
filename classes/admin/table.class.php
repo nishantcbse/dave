@@ -52,10 +52,8 @@ class Table extends Generic {
         $party_name     	= $this->options['name'];
         $party_image     	= $this->options['party_symbol'];
 
-	    $sql = "INSERT INTO settings_party_symbols (party_symbols)
-						VALUES 			('$party_image');";
-	    $sql1 = "INSERT INTO settings_political_party_list (political_party_list)
-						VALUES 			('$party_name');";
+	    $sql = "INSERT INTO settings_party_symbols (party_symbols) VALUES ('$party_image');";
+	    $sql1 = "INSERT INTO settings_political_party_list (political_party_list) VALUES  ('$party_name');";
 
 		parent::query($sql);
 		parent::query($sql1);
