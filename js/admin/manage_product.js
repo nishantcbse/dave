@@ -110,4 +110,40 @@ function Modifyproducts(type){
             }
         }
     });
+	
+	
+	function savePic(){
+		$.ajaxFileUpload({
+			url:'documents/profile-upload.php',
+			secureuri:false,
+			fileElementId:'uploadImage',
+			
+			success: function (data, status){
+				console.log(data); console.log(status);
+				//document.getElementById("isForm").submit();
+				alert($('#uploadImage').val());
+				
+				
+				if(typeof(data.error) != 'undefined'){
+						if(data.error != ''){
+							alert(data.error);
+						}else{
+						alert(msg); // returns location of uploaded file
+						}
+				  }
+			  },
+			error: function (data, status, e){
+					alert(e);
+					}
+				}
+			)
+	   //setTimeout(function(){document.getElementById("isForm").submit()}, 1000); 
+}
+
+function selectImage(){
+   $('#uploadImageProduct').trigger('click');
+   $('#image-upload-product').show();
+
+}
+
 }
