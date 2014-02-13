@@ -110,7 +110,7 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
                     <!-- END LOGO -->
                     
                     
-    <div style="width:800px">
+    <div style="width:800px">  
         <div style="float:left">
                 <a class="brand logo-v1" href="index.php">
                     <img src="assets/img/logo_blue.png" id="logoimg" alt="">

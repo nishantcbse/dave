@@ -451,3 +451,8 @@ padding: 20px 16px 0px !important;
 .pad{
 	padding:1px;
 }
+.btn{
+	background-color: #4D90FE !important;
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}

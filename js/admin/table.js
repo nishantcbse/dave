@@ -89,14 +89,19 @@ function filechange(){
 function Loadtable(id){
     $.ajax({
         type: "GET",
-        url: "classes/admin/table.class.php?id="+id,
+        url: "classes/admin/table.class.php?politicalpartyid="+id,
         dataType: "html",
         success: function(result){
-        var $response=$(result);
-        if (status != 'FAIL') {
-            var name = $response.filter('#name').text();
-            var status = $response.filter('#status').text();
+
+            var jsonData = JSON.parse(result);
+            for (var i in jsonData) {
+                var rec = jsonData[i];
+				var partyname = rec.political_party_list;
+				var partysymbol = rec.party_symbols;
+				var partyid = rec.id;
 			
+      
+          
             $('#list-actions').hide();
             $('#table-list').hide();
             $('#table-label').html('<i class="icon-list-alt"></i> tables - Edit');
@@ -104,8 +109,8 @@ function Loadtable(id){
             $("#record-delete").show();
             $("#table-delete").attr('checked', false);
             $('#table-add').hide();
-            $("#table-name").val(name);
-            $('input[name=table-id]').val(id);
+            $("#table-name").val(partyname);
+            $('input[name=table-id]').val(partyid);
             $("#table-name").focus();
             }
         }
@@ -114,7 +119,7 @@ function Loadtable(id){
 
 function Modifytable(type){
     var post = $('#table-form').serialize();
-    $.post('classes/settings_table.class.php', post, function (data) {
+    $.post('classes/table.class.php', post, function (data) {
         if (data.match('success') !== null) {
            // $('#jqxWindow-table').jqxWindow('close');
             location.reload();
@@ -160,8 +165,8 @@ function savePic(){
 }
 
 function selectImage(){
-   $('#uploadImage').trigger('click');
-   $('#image-upload').show();
+   $('#uploadImagePartySymbol').trigger('click');
+   $('#image-upload-party-symbol').show();
 
 }
 

@@ -10,7 +10,6 @@ $(document).ready(function() {
         
 
         $("#products-cancel").click(function(){
-			alert('here');
             $('#products-box').hide();
             $('.product-edit-form').hide();
             $('#products-label').html('<i class="icon-list-alt"></i> products');
