@@ -47,12 +47,10 @@ $(document).ready(function(){
 															
 											if(imageType[1] == 'image'){				
 												image +=    '<img src="documents/media/files/thumbnail/'+rec.name+'" alt="">';
-												}else{
+											}else{
 												image +=    '<div style="background:#000000;height:40px;width:55px;color:#fff">'+imageType[1]+'</div>';
 												
 												}
-															   
-															   
 															   
 												image +=			'</div><div class="span7">'+
 																'<span class="mediadetail">click edit to add detail<br /></span>'+

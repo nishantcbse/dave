@@ -89,9 +89,9 @@ $sprovince			     = $listbox->getProvince();
 										<!--end row-fluid-->
 										<div class="tabbable tabbable-custom tabbable-custom-profile">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#details" data-toggle="tab">Details</a></li>
-												<li ><a href="#image" data-toggle="tab">Image</a></li>
-												<li ><a href="#video" data-toggle="tab">Video</a></li>
+												<li class="active"><a href="#details" data-toggle="tab" onclick="location.replace('#details')">Details</a></li>
+												<li ><a href="#image" data-toggle="tab" onclick="location.replace('#image')">Image</a></li>
+												<li ><a href="#video" data-toggle="tab"  onclick="location.replace('#video')">Video</a></li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane active" id="details">
@@ -159,8 +159,8 @@ $sprovince			     = $listbox->getProvince();
 													<div class="tab-pane active" id="tab_1_1_1">
                                                 <div class="row-fluid">
                                                     <div class="filter-v1 margin-bottom-40 span12">
-                                                    
-                                                           
+																																								                                                         <?php   $profile->videoView(); ?>  
+  
                                                     </div>
                                                 </div>
                                                     </div>
