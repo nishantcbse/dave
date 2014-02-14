@@ -4,10 +4,11 @@
  padding:10px !important;
 }
 </style>
-
-
+<?php
+include_once('classes/function_register.php');
+?>
 <div class="span8 front-carousel pull-right">
-            <div class="row-fluid">
+<!--            <div class="row-fluid">
                 <div class="span4 advertise">
                     <div class="fullwidthbanner-container slider-main margin-bottom-10" >
                         <div class="fullwidthabnner1">
@@ -171,9 +172,10 @@
                     </div>
                 </div> 
            </div>
+-->
 
 
-
+				 <?php echo display_registerproduct() ?>
 
 
 
