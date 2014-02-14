@@ -456,3 +456,7 @@ padding: 20px 16px 0px !important;
     color: #FFFFFF !important;
     text-shadow: none !important;
 }
+
+form .error{
+   color:red !important;
+}

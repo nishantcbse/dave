@@ -1,5 +1,11 @@
 $(document).ready(function() {
     var register_form = $("#candidate-register-form");
+	$('.select2').select2({
+                placeholder: "Select an Option",
+                allowClear: true
+            })
+			
+			
 	if (register_form.length > 0) {
 		
         $(register_form).validate({
@@ -13,17 +19,29 @@ $(document).ready(function() {
 								},
 				submitHandler: function() {
 									 var id = $("#user-id").val();
-										confirm()
-										Modify();
+										confirm();
+										
 									}
 			 
 				});
 		
 		}
 		
+			$("#select2_partysymbol").select2({
+			   allowClear: true,
+			   formatResult: format,
+			   formatSelection: format,
+			   escapeMarkup: function (m) {
+				return m;
+			   }
+			  });		
+		
 });
 
-
+function format(state) {
+		 if (!state.id) return state.text; // optgroup
+		 return "<img class='flag' src='documents/party_symbols/" + state.id.toLowerCase() + ".png'    width='16px' height='11px' />&nbsp;&nbsp;" + state.text;
+}
 
 function confirm(){
        	var $modal = $('#conferm');
@@ -107,8 +125,6 @@ function savepic(){
 			success: function (data, status){
 				var imageName = $('#fileToUpload').val();
 				$('#candidate-image-reg').val(imageName);
-				alert($('#uploadImageCandidate').val());
-				document.getElementById("isForm").submit();
 				if(typeof(data.error) != 'undefined'){
 						if(data.error != ''){
 							alert(data.error);
@@ -122,7 +138,6 @@ function savepic(){
 					}
 				}
 			)
-	   setTimeout(function(){document.getElementById("isForm").submit()}, 1000); 
 }
 
 
