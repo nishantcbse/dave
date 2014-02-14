@@ -236,16 +236,17 @@ class Settings extends Generic {
         $office_website     	= $this->options['office_website'];
         $office_fb_link     	= $this->options['office_fb_link'];
         $office_twitter_link    = $this->options['office_twitter_link'];
+		$image					= $this->options['candidate-image'];
 		$id                 	= $this->options['candidate_id'];
 
-	    $sql = "UPDATE candidate_profiles SET `candidate_info` = '$info', `candidate_first_name` = '$first_name', `candidate_middle_name` = '$middle_name',`candidate_last_name` = '$last_name', `candidate_political_party` = '$political_party', `candidate_party_symbol` = '$party_symbol', `candidate_province` = '$province',`candidate_address` = '$office_address', `candidate_phone` = '$office_phone1',`candidate_city` = '$office_city',`candidate_email` = '$office_email', `candidate_website` = '$office_website', `candidate_fb_link` = '$office_fb_link', `candidate_twitter_link` = '$office_twitter_link' WHERE `candidate_id` =".$id;
+	    $sql = "UPDATE candidate_profiles SET `candidate_info` = '$info', `candidate_first_name` = '$first_name', `candidate_middle_name` = '$middle_name',`candidate_last_name` = '$last_name', `candidate_political_party` = '$political_party', `candidate_party_symbol` = '$party_symbol', `candidate_province` = '$province',`candidate_address` = '$office_address', `candidate_phone` = '$office_phone1',`candidate_city` = '$office_city',`candidate_email` = '$office_email', `candidate_website` = '$office_website', `candidate_fb_link` = '$office_fb_link', `candidate_twitter_link` = '$office_twitter_link', `candidate_avatar` = '$image' WHERE `candidate_id` =".$id;
 
 		parent::query($sql);
 		print_r($sql);die();
 		$this->result = '<div class="alert alert-success">' ._('Successfully added record.').'</div>';
 
 	}
-
+	
 
     private function add() {
 
@@ -517,7 +518,6 @@ LEFT JOIN candidate_profiles ON candidate_profiles.user_profile_id = user_profil
 		 echo $image;
 		 
 	}
-	
 	
 	
 }
