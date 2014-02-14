@@ -4,34 +4,49 @@ include_once( 'generic.class.php' );
 class Register extends Generic {
 
 
-    function __construct() {
+function __construct() {
+  
+	if(!empty($_GET['id'])) $this->grab();
+	if(!empty($_GET['checkUserEmail'])) $this->uniqueUserName();
+	if(!empty($_POST)) {
 
-        if(!empty($_GET['id'])) $this->grab();
+		foreach ($_POST as $key => $value)
+			$this->options[$key] = parent::secure($value);
 
-		if(!empty($_POST)) {
+			   $this->uniqueUserName();   
+			   $this->validate();
+			   $this->add();
+			} 
 
-			foreach ($_POST as $key => $value)
-				$this->options[$key] = parent::secure($value);
+			if(!empty($this->error)){
+				echo $this->error;
+			} else {
+				echo $this->result;
+			}
+	   exit;
+	}
+	
+	private function uniqueUserName() {
+       
+	    global $generic;
+		
+		$this->username = $_GET['email'];
+		
+        $sql = $sql = "SELECT * FROM login_users WHERE email = '" . $this->username . "' ";
+        $query = $generic->query($sql);
+
+		if( $query->rowCount() > 0 ){
+            $this->error = '<div class="alert alert-error">'._('Email already exists.').'</div>';
+        }else{
+		    $this->result = '<div class="alert alert-success">' ._('no.').'</div>';
+		}
+    }
 
 
-                $this->validate();
-                    $this->add();
-                } 
-
-                if(!empty($this->error)){
-                    echo $this->error;
-                } else {
-    	            echo $this->result;
-                }
-
-          
-
-           exit;
-
-        }
 
 
 	private function validate() {
+		
 	    if(empty($this->options['answer'])) {
 			$this->error = '<div class="alert alert-error">'._('You must enter a Answer.').'</div>';
         }

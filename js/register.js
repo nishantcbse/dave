@@ -21,7 +21,8 @@ $(document).ready(function() {
 										Modify();
 										
 									}else if(registrationType == 'advertisement'){
-										confirm()
+										checkUniqueUser();
+										
 									}
 			 
 		 }
@@ -58,7 +59,20 @@ function confirm(){
               });
 		    });
 		  }, 1000);
-       
+}
+
+
+function checkUniqueUser(){
+	var email = $('#email').val();
+    $.get('classes/register.class.php',{checkUserEmail:true,email:email}, function (data) {
+        if (data.match('success') !== null) {
+            confirm();
+        } else {
+			$('#modal-title-error').html('System');
+			$('#modal-body-error').html(data);
+			$("#modal-error").modal();
+        }
+    });
 }
 
 
@@ -72,6 +86,7 @@ function redirect1(){
 
 function Modify(){
     var post = $('#register-form').serialize();
+	
     $.post('classes/register.class.php', post, function (data) {
         if (data.match('success') !== null) {
             //location.reload();
