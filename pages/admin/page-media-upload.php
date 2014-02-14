@@ -28,6 +28,11 @@
 									<span>Add files...</span>
 									<input type="file" name="files[]" multiple>
 									</span>
+									<span class="btn green fileinput-button"  onclick="addYouTubeURL()">
+									<i class="icon-plus icon-white"></i>
+									<span>Add YouTube Video</span>
+									<input type="button" value="" id="">
+									</span>
 									
 								</div>
 								<!-- The global progress information -->

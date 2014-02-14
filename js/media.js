@@ -96,6 +96,11 @@ function viewMedia(){
 	  })
 }
 
+function addYouTubeURL(){
+	alert('mintu or rani');
+  $('#responsive').modal();
+}
+
 function Modifymedia(){
     var post = $('#media-edit-form').serialize();
 	//alert(post);
