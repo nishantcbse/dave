@@ -28,19 +28,7 @@
 									<span>Add files...</span>
 									<input type="file" name="files[]" multiple>
 									</span>
-									<button type="submit" class="btn blue start">
-									<i class="icon-upload icon-white"></i>
-									<span>Start upload</span>
-									</button>
-									<button type="reset" class="btn yellow cancel">
-									<i class="icon-ban-circle icon-white"></i>
-									<span>Cancel upload</span>
-									</button>
-									<button type="button" class="btn red delete" style="height:34px;">
-									<i class="icon-trash icon-white"></i>
-									<span>Delete</span>
-									</button>
-									<input type="checkbox" class="toggle fileupload-toggle-checkbox">
+									
 								</div>
 								<!-- The global progress information -->
 								<div class="span5 fileupload-progress fade">

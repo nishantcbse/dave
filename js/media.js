@@ -39,15 +39,26 @@ $(document).ready(function(){
 										var image = '';
 										for (var i in jsonData) {
 											var rec = jsonData[i];
-											
+											var type = rec.type
+											var imageType = type.split('/');
 											image +=  '<div class="row-fluid uploadImagePreview span12">'+
-															'<div class="span1">'+
-															   '<img src="documents/media/files/thumbnail/'+rec.name+'" alt=""></div>'+
-															'<div class="span7">'+
-																'<span class="mediadetail">'+rec.detail+'</span>'+
+															'<div class="span1">';
+															
+															
+											if(imageType[1] == 'image'){				
+												image +=    '<img src="documents/media/files/thumbnail/'+rec.name+'" alt="">';
+												}else{
+												image +=    '<div style="background:#000000;height:40px;width:55px;color:#fff">'+imageType[1]+'</div>';
+												
+												}
+															   
+															   
+															   
+												image +=			'</div><div class="span7">'+
+																'<span class="mediadetail">click edit to add detail<br /></span>'+
 															'</div>'+
 															'<div class="span2">'+
-															   ' <a href="#responsive" data-toggle="modal" class="btn green submit-btn" onclick="mediaDetailEdit(\'.mediadetail\','+rec.id+')">Edit</a>'+
+															   ' <a href="#responsive" data-toggle="modal" class="btn green submit-btn" onclick="mediaDetailEdit($(this),'+rec.id+')">Edit</a>'+
 															'</div>'+
 															'<div class="span2">'+
 																'<div class="submit-btn"> <a href="#" class="btn green" onclick="deleteImage(\'.uploadImagePreview\','+rec.id+',\''+rec.name+'\')">Delete</a></div>'+
@@ -92,7 +103,7 @@ function Modifymedia(){
 	//alert(post);
 	 $.post('classes/settings.class.php',post).done(function(data){
         if (data.match('success') !== null) {
-		    
+		    location.reload();
         } else {
             $('#modal-title-error').html('System');
             $('#modal-body-error').html(data);
@@ -101,7 +112,7 @@ function Modifymedia(){
     });
 }
 
-function mediaDetailEdit(clas,id){
+function mediaDetailEdit(a,id){
 	 $.get('classes/settings.class.php',{grabmedia:true,mediaid:id}).done(function(data){
 				var jsonData = JSON.parse(data);
 				for (var i in jsonData) {
@@ -110,7 +121,8 @@ function mediaDetailEdit(clas,id){
 					$('#media-detail').val(rec.detail);
 					$('#media-url').val(rec.link);
 					$('#media-id').val(rec.id);
-					$(clas).html(rec.detail);
+					var detail = $('#media-detail').val();
+					
 					
 				}
 	  })

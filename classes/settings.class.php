@@ -319,18 +319,18 @@ class Settings extends Generic {
 	}
 	
 	 private function editMedia() {
-         die('here');
+         
 		if (!empty($this->error)) return false;
-
-        $id            	= $_POST['media-id'];
-        $detail     	    = $_POST['detail'];
-        $link     	 	    = $_POST['link'];
+        
+        $id         	   	= $_POST['media-id'];
+        $detail     	    = $_POST['media-detail'];
+        $link     	 	    = $_POST['media-url'];
 		$stamp              = date('Y-m-d H:i:s');
 	    $sql = "UPDATE media SET `detail` = '$detail',`link` = '$link',`updated` = '$stamp' WHERE `id` =".$id;
 	    
 		parent::query($sql);
 		
-
+        $this->result = 'record edited successfully';
 	}
 	
 	
@@ -489,10 +489,18 @@ LEFT JOIN candidate_profiles ON candidate_profiles.user_profile_id = user_profil
 		$image = '';
 		 while($row = $query->fetch(PDO::FETCH_ASSOC)){
 			 
+			 $type = explode("/", $row['type']);
 			 
             $image .=  '<div class="row-fluid uploadImagePreview span12">
-                            <div class="span1">
-                               <img src="documents/media/files/thumbnail/'. $row['name'] .'" alt=""></div>
+                            <div class="span1">';
+			if($type[0] == 'image'){				
+             $image .=    ' <img src="documents/media/files/thumbnail/'. $row['name'] .'" alt="">';
+			}else{
+			
+			   $image .=   '<div style="background:#000000;height:40px;width:55px;color:#fff">'.$type[0].'</div>';
+			}
+			
+			 $image .=		' </div>
                             <div class="span7">
                                 <span class="mediadetail">'.$row['detail'].'</span>
                             </div>

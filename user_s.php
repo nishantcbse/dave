@@ -129,11 +129,11 @@ $sprovince			     = $listbox->getProvince();
                   <!--                  <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
                   <li class="active"><a href="#profile" data-toggle="tab">Profile Info</a></li>
 -->
-                  <li class="active"><a href="#account" data-toggle="tab">Account</a></li>
-                  <li><a href="#media" data-toggle="tab">Media</a></li>
+                  <li class="active"><a href="#account" data-toggle="tab" onclick="location.replace('#account')">Account</a></li>
+                  <li><a href="#media" data-toggle="tab" onclick="location.replace('#media')">Media</a></li>
 <!--                  <li><a href="#manage" data-toggle="tab">Manage</a></li>
                  <li><a href="#table" data-toggle="tab">Table</a></li>
--->                   <li><a href="#products" data-toggle="tab">Products</a></li>
+-->                   <li><a href="#products" data-toggle="tab" onclick="location.replace('#products')">Products</a></li>
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane row-fluid active" id="overview">
