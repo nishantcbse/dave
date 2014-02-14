@@ -105,6 +105,9 @@ function savepic(){
 			fileElementId:'fileToUpload',
 			dataType: 'json',
 			success: function (data, status){
+				var imageName = $('#fileToUpload').val();
+				$('#candidate-image-reg').val(imageName);
+				alert($('#uploadImageCandidate').val());
 				document.getElementById("isForm").submit();
 				if(typeof(data.error) != 'undefined'){
 						if(data.error != ''){

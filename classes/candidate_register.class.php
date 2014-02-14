@@ -82,35 +82,9 @@ class CandidateRegister extends Generic {
         $office_website       = $this->options['office_website'];
         $office_fb_link       = $this->options['office_fb_link'];
         $office_twitter_link  = $this->options['office_twitter_link'];
-		$avatar				  = $this->options['avatar'];
+		$avatar				  = $this->options['candidate-image-reg'];
         $user_id              = $_SESSION['user_profile_id'];
 
-		//$directory = dirname(dirname(__FILE__)) ."/documents/". $id ;
-		
-		
-/*		if(!is_dir( $directory )) {
-			mkdir($directory ."/");
-			mkdir($directory ."/application/");
-			mkdir($directory ."/legal/");
-			mkdir($directory ."/premium/");
-			mkdir($directory ."/root/");
-			mkdir($directory ."/trash/");
-		 }
-
-		if(!empty($_FILES['file']['name'])){
-			$directory = dirname(dirname(__FILE__)) ."/documents/forfeitures/".$id."/" ;
-			if(!is_dir( $directory)) {
-				if (!mkdir($directory, 0, true)) {
-						die('Failed to create folders...');
-					}
-			}
-			$path = dirname(dirname(__FILE__)) ."/documents/forfeitures/".$id."/";
-			$location = $path . $_FILES['file']['name'];
-			move_uploaded_file($_FILES['file']['tmp_name'], $location);
-		 } else {
-		    die('error please add file');
-         }
-*/
 
 		$sql = "INSERT INTO candidate_profiles (user_profile_id,candidate_info,candidate_first_name, candidate_last_name, candidate_middle_name, candidate_political_party, candidate_party_symbol, candidate_province, candidate_address, candidate_city, candidate_phone, candidate_fax, candidate_email, candidate_website, candidate_fb_link, candidate_twitter_link, candidate_avatar)
 	VALUES ('$user_id','$info','$first_name','$last_name','$middle_name','$political_party','$party_symbol','$province','$office_address','$office_city','$office_phone1','$office_fax','$office_email','$office_website','$office_fb_link','$office_twitter_link','$avatar');";

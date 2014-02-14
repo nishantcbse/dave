@@ -104,3 +104,47 @@ function selectImgProfile(){
    $('#image-upload-profile').show();
 
 }
+
+function saveCandidateImage(){
+		$.ajaxFileUpload({
+			url:'documents/candidate-upload.php',
+			secureuri:false,
+			fileElementId:'uploadImageCandidate',
+			
+			success: function (data, status){
+				var imageName = $('#uploadImageCandidate').val();
+				$('#candidate-image').val(imageName);
+				//alert($('#uploadImageCandidate').val());
+				
+				
+				if(typeof(data.error) != 'undefined'){
+						if(data.error != ''){
+							alert(data.error);
+						}else{
+						alert(msg); // returns location of uploaded file
+						}
+				  }
+			  },
+			error: function (data, status, e){
+					alert(e);
+					}
+				}
+			)
+	   //setTimeout(function(){document.getElementById("isForm").submit()}, 1000); 
+}
+
+            function PreviewImageCandidateImage() {
+                var oFReader = new FileReader();
+                oFReader.readAsDataURL(document.getElementById("uploadImageCandidate").files[0]);
+        
+                oFReader.onload = function (oFREvent) {
+                    document.getElementById("uploadPreviewCandidateImage").src = oFREvent.target.result;
+                };
+            };
+
+function selectCandidateImage(){
+   $('#uploadImageCandidate').trigger('click');
+   $('#image-upload-candidate-image').show();
+
+}
+

@@ -160,6 +160,7 @@ $sprovince  = $listbox->getProvince();
                 
                 <div class="control-group">
                     <div class="controls">
+        			<input type="hidden" name="candidate-image-reg" id="candidate-image-reg"  value="" />
                     <button type="submit" class="theme-btn btn" value="Submit" onclick=" savepic()">Submit</button>
                     <button class="btn" type="reset">Clear</button>
                     </div>

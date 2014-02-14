@@ -1,3 +1,4 @@
+<h2>Candidate Info</h2>
 <div style="height: auto;" id="accordion4-4" class="accordion collapse">
   <form action="" method="post" class="form-horizontal" id="candidate-edit-form">
     <div class="control-group">
@@ -134,7 +135,25 @@
       </div>
     </div>
     <div class="control-group">
+      <label class="control-label" for="image">
+        <?php _e('Candidate Image'); ?>
+      </label>
       <div class="controls">
+        <span id="previewImageSpan">
+            <img id="uploadPreviewCandidateImage" class="thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;" />
+        </span>
+        <input id="uploadImageCandidate" type="file" name="fileToUpload" onchange="PreviewImageCandidateImage();" style="display:none" />
+        <span class="btn btn-file">
+              <span class="fileupload-new" onclick="selectCandidateImage()"> Select image </span> 
+        </span>
+        <span class="btn btn-file" id="image-upload-candidate-image" style="display:none">
+                 <span class="fileupload-exists" onclick="saveCandidateImage()">Upload</span>
+        </span>
+    </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <input type="hidden" name="candidate-image" id="candidate-image"  value="" />
         <input type="hidden" name="candidate-info-id" id="candidate-info-id"  value="" />
          <input type="hidden" name="action"  value="candidate">
         <a href="#" class="theme-btn btn" " onclick="Modify_info('candidate')">Submit</a>
