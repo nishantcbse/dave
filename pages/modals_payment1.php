@@ -16,5 +16,5 @@
 </div>
 <div class="modal-footer">
 	<button type="button" data-dismiss="modal" class="btn">No</button>
-	<button type="button" data-dismiss="modal" class="btn" onclick="redirect1()">Bye Now</button>
+	<button type="button" data-dismiss="modal" class="btn" onclick="redirect1()">Buy Now</button>
 </div>
