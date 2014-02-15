@@ -173,7 +173,7 @@ $sprovince  = $listbox->getProvince();
             <!-- END INFO BLOCK -->   
 
     <!-- BEGIN ADVERTISE -->
-       <?php include 'pages/right_advertise.php'; ?>
+       <?php include 'pages/right_advertise_candidate.php'; ?>
     <!-- END ADVERTISE --> 
         </div>
         <!-- END ABOUT INFO --> 

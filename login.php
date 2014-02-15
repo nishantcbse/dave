@@ -50,7 +50,7 @@
             </div>
             <!-- END INFO BLOCK -->   
 
-       <?php include 'pages/right_advertise.php'; ?>
+       <?php include 'pages/right_advertise_login.php'; ?>
 
 
          </div>

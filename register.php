@@ -114,7 +114,7 @@ include_once('header.php');
     </div>
     
     <!-- BEGIN ADVERTISE -->
-       <?php include 'pages/right_advertise.php'; ?>
+       <?php include 'pages/right_advertise_register.php'; ?>
     <!-- END ADVERTISE --> 
   </div>
   
