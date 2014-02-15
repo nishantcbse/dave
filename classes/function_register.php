@@ -47,15 +47,8 @@ function display_registerproduct() {
 								 }
 						   ?>
                                 <li data-transition="fade" data-slotamount="8" onClick="getProductPage()" class="pointer" data-masterspeed="700" data-delay="2400" data-thumb= ""> 
-                                  <img src="<?php echo $image; ?>" alt=""> 
-                                                 <a class="caption fade btn blue slide_btn slide_item_left pricetag" href=""
-                                                     data-x="0"
-                                                     data-y="850"
-                                                     data-speed="100"
-                                                     data-start="100"
-                                                     data-easing="easeOutExpo"> 
-                                                     click to Buy!
-                                                    </a>
+                                  <img src="<?php echo $image; ?>" alt="" style="width:358px"> 
+                                                 
                                      </li>
                            <?php  } ?>
                         </ul>
