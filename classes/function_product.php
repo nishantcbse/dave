@@ -376,3 +376,180 @@ function display_loginproduct1() {
 
 
 ?>
+
+<?php
+function display_register_product() {
+
+	    global $generic;
+
+		$sql = "SELECT * FROM advertisement_products WHERE label ='Register' AND flag = 0 ORDER BY position ASC ";
+		$stmt = $generic->query($sql);
+		// $stmt->rowCount(); (this is for getting no of row) 
+		if ($stmt->rowCount() > 0) {
+			$i= 1;
+			$posX = '';
+			while( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
+				//print_r($row);
+				$position = $row['position'];
+				$pos = explode("-", $position);
+				
+				
+				 $posX[$pos[0]][$pos[1]] = array(
+				                            'id'    => $row['id'],
+				                            'label' => $row['label'],
+											'name'  => $row['name'],
+											'price' => $row['price'],
+											'sell'  => $row['sell'],
+											'image' => $row['image'],
+										    );
+			}
+            
+		
+		//print_r($posX);
+	   $i = 0;
+       foreach($posX as $pos){
+		  
+	?>
+						   <?php  foreach($pos as $pos){ 
+						         if(!empty($pos['image'])){
+						           $image = 'documents/product/'.$pos['image'];
+								 }else{
+								    $image = 'documents/product/default.jpg';
+								 }
+						   ?>
+                           
+                                   <div class="span4 advertise ">
+                                        <a href="product.php">
+                                           <img src="<?php echo $image; ?>" alt="">
+                                         </a> 
+                                     </div>
+                                                   
+                           <?php  } ?>
+        <?php 
+	     $i++;
+	   }
+	?>
+             
+<?php		
+		}
+} // display home product function end
+?>
+
+
+<?php
+function display_candidate_product() {
+
+	    global $generic;
+
+		$sql = "SELECT * FROM advertisement_products WHERE label ='Candidate Info' AND flag = 0 ORDER BY position ASC ";
+		$stmt = $generic->query($sql);
+		// $stmt->rowCount(); (this is for getting no of row) 
+		if ($stmt->rowCount() > 0) {
+			$i= 1;
+			$posX = '';
+			while( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
+				//print_r($row);
+				$position = $row['position'];
+				$pos = explode("-", $position);
+				
+				
+				 $posX[$pos[0]][$pos[1]] = array(
+				                            'id'    => $row['id'],
+				                            'label' => $row['label'],
+											'name'  => $row['name'],
+											'price' => $row['price'],
+											'sell'  => $row['sell'],
+											'image' => $row['image'],
+										    );
+			}
+            
+		
+		//print_r($posX);
+	   $i = 0;
+       foreach($posX as $pos){
+		  
+	?>
+						   <?php  foreach($pos as $pos){ 
+						         if(!empty($pos['image'])){
+						           $image = 'documents/product/'.$pos['image'];
+								 }else{
+								    $image = 'documents/product/default.jpg';
+								 }
+						   ?>
+                           
+                                   <div class="span4 advertise ">
+                                        <a href="product.php">
+                                           <img src="<?php echo $image; ?>" alt="">
+                                         </a> 
+                                     </div>
+                                                   
+                           <?php  } ?>
+        <?php 
+	     $i++;
+	   }
+	?>
+             
+<?php		
+		}
+} // display home product function end
+?>
+
+
+<?php
+function display_login_product() {
+
+	    global $generic;
+
+		$sql = "SELECT * FROM advertisement_products WHERE label ='Login' AND flag = 0 ORDER BY position ASC ";
+		$stmt = $generic->query($sql);
+		// $stmt->rowCount(); (this is for getting no of row) 
+		if ($stmt->rowCount() > 0) {
+			$i= 1;
+			$posX = '';
+			while( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
+				//print_r($row);
+				$position = $row['position'];
+				$pos = explode("-", $position);
+				
+				
+				 $posX[$pos[0]][$pos[1]] = array(
+				                            'id'    => $row['id'],
+				                            'label' => $row['label'],
+											'name'  => $row['name'],
+											'price' => $row['price'],
+											'sell'  => $row['sell'],
+											'image' => $row['image'],
+										    );
+			}
+            
+		
+		//print_r($posX);
+	   $i = 0;
+       foreach($posX as $pos){
+		  
+	?>
+						   <?php  foreach($pos as $pos){ 
+						         if(!empty($pos['image'])){
+						           $image = 'documents/product/'.$pos['image'];
+								 }else{
+								    $image = 'documents/product/default.jpg';
+								 }
+						   ?>
+                           
+                                   <div class="span4 advertise ">
+                                        <a href="product.php">
+                                           <img src="<?php echo $image; ?>" alt="">
+                                         </a> 
+                                     </div>
+                                                   
+                           <?php  } ?>
+        <?php 
+	     $i++;
+	   }
+	?>
+             
+<?php		
+		}
+} // display home product function end
+?>
+

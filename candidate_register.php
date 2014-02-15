@@ -35,33 +35,33 @@ $sprovince  = $listbox->getProvince();
             <div class="control-group">
                     <label class="control-label" for="firstname"><?php _e('Info'); ?></label>
                     <div class="controls">
-                        <textarea type="text" class="m-wrap span8"  id="info" name="info" ></textarea>
+                        <textarea type="text" class="m-wrap span"  id="info" name="info" ></textarea>
                     </div>
                 </div>            
             
                 <div class="control-group">
                     <label class="control-label" for="firstname"><?php _e('First name'); ?></label>
                     <div class="controls">
-                        <input type="text" class="m-wrap span8"  id="first_name" name="first_name" placeholder="" required="required"/>
+                        <input type="text" class="m-wrap span"  id="first_name" name="first_name" placeholder="" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label"for="middlename"><?php _e('Middle name'); ?></label>
                     <div class="controls">
-                        <input type="text" class="m-wrap span8"  id="middle_name" name="middle_name" placeholder=""/>
+                        <input type="text" class="m-wrap span"  id="middle_name" name="middle_name" placeholder=""/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="lastname"><?php _e('Last name'); ?>  </label>
                     <div class="controls">
-                        <input type="text" class="m-wrap span8"  id="last_name" name="last_name" placeholder="" required="required"/>
+                        <input type="text" class="m-wrap span"  id="last_name" name="last_name" placeholder="" required="required"/>
                     </div>
                 </div>
                 
                 <div class="control-group">
                     <label class="control-label" for="politicalpratner"><?php _e('Political Party'); ?></label>
                     <div class="controls">
-                        <select class="span8 m-wrap select2" tabindex="1" id="political_party" name="political_party" placeholder="" required="required">
+                        <select class="span m-wrap select2" tabindex="1" id="political_party" name="political_party" placeholder="" required="required">
                          <?php echo $spartyList; ?>  
                         </select>
                     </div>
@@ -69,7 +69,8 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="partysymbol"><?php _e('Party Symbol'); ?></label>
                     <div class="controls">
-                        <select name="party_symbol" id="select2_partysymbol" class="span8 " required="required">
+                    
+                        <select name="party_symbol" id="select2_partysymbol" class="select2 span m-wrap" tabindex="1" required="required">
                             <option value="1">UNITED PEOPLE'S FREEDOM ALLIANCE</option>
                             <option value="2">UNITED NATIONAL PARTY</option>
                             <option value="3">PEOPLE'S LIBERATION FRONT (JVP)</option>
@@ -81,7 +82,7 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="provinces"><?php _e('Provinces'); ?></label>
                     <div class="controls">
-                        <select class="span8 m-wrap select2" tabindex="1" id="province" name="province" placeholder="" required="required"/>
+                        <select class="span m-wrap select2" tabindex="1" id="province" name="province" placeholder="" required="required"/>
                           <?php echo $sprovince; ?> 
                         </select>
                     </div>
@@ -89,13 +90,13 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="officeaddress"><?php _e('Office address'); ?></label>
                     <div class="controls">
-                        <textarea class="span8 m-wrap" rows="3" name="office_address" id="office_address" required="required"></textarea>
+                        <textarea class="span m-wrap" rows="3" name="office_address" id="office_address" required="required"></textarea>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="officecity"><?php _e('Office city'); ?></label>
                     <div class="controls">
-                        <select class="span8 m-wrap select2" tabindex="1" id="office_city" name="office_city" required="required">
+                        <select class="span m-wrap select2" tabindex="1" id="office_city" name="office_city" required="required">
                          <?php echo $sdistrict ?>
                         </select>
                     </div>
@@ -103,13 +104,13 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="officephone"><?php _e('Office phone'); ?></label>
                     <div class="controls">
-                        <input type="text" placeholder="" id="office_phone1" name="office_phone1" class="m-wrap span8" required="required"/>
+                        <input type="text" placeholder="" id="office_phone1" name="office_phone1" class="m-wrap span" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="officefax"><?php _e('Office fax'); ?></label>
                     <div class="controls">
-                        <input type="text" placeholder="" id="office_fax" name="office_fax" class="m-wrap span8" required="required"/>
+                        <input type="text" placeholder="" id="office_fax" name="office_fax" class="m-wrap span" required="required"/>
                     </div>
                 </div>
                 
@@ -117,25 +118,25 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <label class="control-label" for="officemail"><?php _e('Email'); ?></label>
                     <div class="controls">
-                        <input class="m-wrap span8" type="email" id="office_email" name="office_email" placeholder="" required="required"/>
+                        <input class="m-wrap span" type="email" id="office_email" name="office_email" placeholder="" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label"><?php _e('Website URL'); ?></label>
                     <div class="controls">
-                        <input type="text" placeholder="" id="office_website" name="office_website" class="m-wrap span8" />
+                        <input type="text" placeholder="" id="office_website" name="office_website" class="m-wrap span" />
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label"><?php _e('Facebool Link'); ?></label>
                     <div class="controls">
-                        <input type="text" placeholder="" id="office_fb_link" name="office_fb_link" class="m-wrap span8" />
+                        <input type="text" placeholder="" id="office_fb_link" name="office_fb_link" class="m-wrap span" />
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label"><?php _e('Twitter Link'); ?></label>
                     <div class="controls">
-                        <input type="text" placeholder="" id="office_twitter_link" name="office_twitter_link" class="m-wrap span8" />
+                        <input type="text" placeholder="" id="office_twitter_link" name="office_twitter_link" class="m-wrap span" />
                     </div>
                 </div>
  
@@ -172,7 +173,7 @@ $sprovince  = $listbox->getProvince();
             <!-- END INFO BLOCK -->   
 
     <!-- BEGIN ADVERTISE -->
-       <?php include 'pages/right_advertise.php'; ?>
+       <?php include 'pages/right_advertise_candidate.php'; ?>
     <!-- END ADVERTISE --> 
         </div>
         <!-- END ABOUT INFO --> 
