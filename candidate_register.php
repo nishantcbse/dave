@@ -33,33 +33,33 @@ $sprovince  = $listbox->getProvince();
             <form  enctype="multipart/form-data"   class="form-horizontal" id="candidate-register-form">
            
             <div class="control-group">
-                    <label class="control-label" for="firstname"><?php _e('Info'); ?></label>
+                    <label class="control-label" for="firstname"><?php echo CANDIDATE_INFO ?></label>
                     <div class="controls">
                         <textarea type="text" class="m-wrap span"  id="info" name="info" ></textarea>
                     </div>
                 </div>            
             
                 <div class="control-group">
-                    <label class="control-label" for="firstname"><?php _e('First name'); ?></label>
+                    <label class="control-label" for="firstname"><?php echo FIRST_NAME ?></label>
                     <div class="controls">
                         <input type="text" class="m-wrap span"  id="first_name" name="first_name" placeholder="" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label"for="middlename"><?php _e('Middle name'); ?></label>
+                    <label class="control-label"for="middlename"><?php echo MIDDLE_NAME ?></label>
                     <div class="controls">
                         <input type="text" class="m-wrap span"  id="middle_name" name="middle_name" placeholder=""/>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="lastname"><?php _e('Last name'); ?>  </label>
+                    <label class="control-label" for="lastname"><?php echo LAST_NAME ?></label>
                     <div class="controls">
                         <input type="text" class="m-wrap span"  id="last_name" name="last_name" placeholder="" required="required"/>
                     </div>
                 </div>
                 
                 <div class="control-group">
-                    <label class="control-label" for="politicalpratner"><?php _e('Political Party'); ?></label>
+                    <label class="control-label" for="politicalpratner"><?php echo CANDIDATE_POLITICAL_PARTY ?></label>
                     <div class="controls">
                         <select class="span m-wrap select2" tabindex="1" id="political_party" name="political_party" placeholder="" required="required">
                          <?php echo $spartyList; ?>  
@@ -67,7 +67,7 @@ $sprovince  = $listbox->getProvince();
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="partysymbol"><?php _e('Party Symbol'); ?></label>
+                    <label class="control-label" for="partysymbol"><?php echo CANDIDATE_PARTY_SYMBLO ?></label>
                     <div class="controls">
                     
                         <select name="party_symbol" id="select2_partysymbol" class="select2 span m-wrap" tabindex="1" required="required">
@@ -80,7 +80,7 @@ $sprovince  = $listbox->getProvince();
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="provinces"><?php _e('Provinces'); ?></label>
+                    <label class="control-label" for="provinces"><?php echo CANDIDATE_PROVINCES ?></label>
                     <div class="controls">
                         <select class="span m-wrap select2" tabindex="1" id="province" name="province" placeholder="" required="required"/>
                           <?php echo $sprovince; ?> 
@@ -88,13 +88,13 @@ $sprovince  = $listbox->getProvince();
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="officeaddress"><?php _e('Office address'); ?></label>
+                    <label class="control-label" for="officeaddress"><?php echo CANDIDATE_OFFICE_ADDRESS ?></label>
                     <div class="controls">
                         <textarea class="span m-wrap" rows="3" name="office_address" id="office_address" required="required"></textarea>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="officecity"><?php _e('Office city'); ?></label>
+                    <label class="control-label" for="officecity"><?php echo CANDIDATE_OFFICE_CITY ?></label>
                     <div class="controls">
                         <select class="span m-wrap select2" tabindex="1" id="office_city" name="office_city" required="required">
                          <?php echo $sdistrict ?>
@@ -102,13 +102,13 @@ $sprovince  = $listbox->getProvince();
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="officephone"><?php _e('Office phone'); ?></label>
+                    <label class="control-label" for="officephone"><?php echo CANDIDATE_OFFICE_PHONR ?></label>
                     <div class="controls">
                         <input type="text" placeholder="" id="office_phone1" name="office_phone1" class="m-wrap span" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="officefax"><?php _e('Office fax'); ?></label>
+                    <label class="control-label" for="officefax"><?php echo CANDIDATE_OFFICE_FAX ?></label>
                     <div class="controls">
                         <input type="text" placeholder="" id="office_fax" name="office_fax" class="m-wrap span" required="required"/>
                     </div>
@@ -116,25 +116,25 @@ $sprovince  = $listbox->getProvince();
                 
                 
                 <div class="control-group">
-                    <label class="control-label" for="officemail"><?php _e('Email'); ?></label>
+                    <label class="control-label" for="officemail"><?php echo CANDIDATE_EMAIL ?></label>
                     <div class="controls">
                         <input class="m-wrap span" type="email" id="office_email" name="office_email" placeholder="" required="required"/>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label"><?php _e('Website URL'); ?></label>
+                    <label class="control-label"><?php echo CANDIDATE_WEBSITE_URL ?></label>
                     <div class="controls">
                         <input type="text" placeholder="" id="office_website" name="office_website" class="m-wrap span" />
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label"><?php _e('Facebool Link'); ?></label>
+                    <label class="control-label"><?php echo CANDIDATE_FACEBOOK_LINK ?></label>
                     <div class="controls">
                         <input type="text" placeholder="" id="office_fb_link" name="office_fb_link" class="m-wrap span" />
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label"><?php _e('Twitter Link'); ?></label>
+                    <label class="control-label"><?php echo CANDIDATE_TWITTER_LINK ?></label>
                     <div class="controls">
                         <input type="text" placeholder="" id="office_twitter_link" name="office_twitter_link" class="m-wrap span" />
                     </div>
@@ -142,7 +142,7 @@ $sprovince  = $listbox->getProvince();
  
         <div class="control-group">
           <label class="control-label" for="image">
-            <?php _e('Uplode Image'); ?>
+            <?php echo CANDIDATE_UPLODE_IMAGE ?>
           </label>
           <div class="controls">
         <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -150,10 +150,10 @@ $sprovince  = $listbox->getProvince();
             <div class="fileupload-new thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px;"><img src="<?php echo $user_avatar; ?>" /></div>
                 <div class="fileupload-preview fileupload-exists thumbnail" style="width:200px; height:150px; max-width: 200px; max-height: 150px; line-height: 20px;"></div>
                     <div>
-                        <span class="btn btn-file"><span class="fileupload-new">Select image</span>
-                        <span class="fileupload-exists" >Change</span>
+                        <span class="btn btn-file"><span class="fileupload-new"><?php echo SELECT_IMAGE ?></span>
+                        <span class="fileupload-exists" ><?php echo CHANGE ?></span>
                         <input type="file"  name="fileToUpload" id="fileToUpload" onchange="filechange()"/></span>
-                        <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                        <a href="#" class="btn fileupload-exists" data-dismiss="fileupload"><?php echo REMOVE ?></a>
                     </div>
                 </div>
         </div>
@@ -162,8 +162,8 @@ $sprovince  = $listbox->getProvince();
                 <div class="control-group">
                     <div class="controls">
         			<input type="hidden" name="candidate-image-reg" id="candidate-image-reg"  value="" />
-                    <button type="submit" class="theme-btn btn" value="Submit" onclick=" savepic()">Submit</button>
-                    <button class="btn" type="reset">Clear</button>
+                    <button type="submit" class="theme-btn btn" value="Submit" onclick=" savepic()"><?php echo SUBMIT ?></button>
+                    <button class="btn" type="reset"><?php echo CLEAR ?></button>
                     </div>
                 </div>
                 
@@ -188,7 +188,7 @@ $sprovince  = $listbox->getProvince();
 	<div id="modal-body-error">
     </div>
     <div class="modal-footer">
-	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true"><?php echo OK ?></button>
 	</div>
 </form>
 </div>

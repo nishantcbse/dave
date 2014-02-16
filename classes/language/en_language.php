@@ -60,6 +60,11 @@ define('REGISTER_ADDRESS','Address');
 define('REGISTER_CITY','City');
 define('REGISTER_EMAIL','Email');
 define('REGISTER_SECURITY_QUESTION','Security Question');
+define('REGISTER_SECURITY_QUESTION1','What was your childhood nickname?');
+define('REGISTER_SECURITY_QUESTION2','What was your dream job as a child?');
+define('REGISTER_SECURITY_QUESTION3','What was your favorite sport in high school?‏');
+define('REGISTER_SECURITY_QUESTION4','What is your pet name?');
+define('REGISTER_SECURITY_QUESTION5','What is the name of your hometown?');
 define('REGISTER_ANSWER','Answer');
 define('REGISTER_CATEGORY',' Registration Category');
 define('REGISTER_ADVERTISEMENT','Advertisement');
@@ -119,6 +124,7 @@ define('SETTINGS_STATUS','Status');
 
 //profile regiswter section
 define('SETTINGS_INFO','Info');
+define('SETTINGS_ADDRESS','Address');
 define('SETTINGS_PHONE','Phone');
 define('SETTINGS_FAX','Fax');
 define('SETTINGS_IMAGE','Image');
@@ -147,6 +153,7 @@ define('REMOVE','Remove');
 define('DELETE','Delete');
 define('EDIT','Edit');
 define('SELECT_AN_OPTION','Select an Option');
+define('OK','Ok');
 // the whole file with the labels of your system
 
 ?>

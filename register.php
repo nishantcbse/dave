@@ -24,7 +24,7 @@ include_once('header.php');
       <input type="hidden" name="user-id"  val="-1" />
         <div class="control-group">
           <label class="control-label" for="firstname">
-            <?php _e('First name'); ?>
+            <?php echo FIRST_NAME ?>
           </label>
           <div class="controls">
             <input type="text" placeholder="" class="m-wrap span12" id="first_name" name="first_name" required="required"/>
@@ -32,7 +32,7 @@ include_once('header.php');
         </div>
         <div class="control-group">
           <label class="control-label" for="lastname">
-            <?php _e('Last name'); ?>
+            <?php echo LAST_NAME ?>
           </label>
           <div class="controls">
             <input type="text" placeholder="" class="m-wrap span12" id="last_name" name="last_name" required="required"/>
@@ -40,7 +40,7 @@ include_once('header.php');
         </div>
         <div class="control-group">
           <label class="control-label" for="address">
-            <?php _e('Address'); ?>
+            <?php echo REGISTER_ADDRESS ?>
           </label>
           <div class="controls">
             <textarea class="span12 m-wrap" rows="3" id="address" name="address" required="required"></textarea>
@@ -48,7 +48,7 @@ include_once('header.php');
         </div>
         <div class="control-group">
           <label class="control-label" for="city">
-            <?php _e('City'); ?>
+            <?php echo REGISTER_CITY ?>
           </label>
           <div class="controls">
             <input type="text" class="span12 m-wrap" tabindex="1" id="city" name="city" required="required"/>
@@ -56,7 +56,7 @@ include_once('header.php');
         </div>
         <div class="control-group">
           <label class="control-label" for="email" data-required="1">
-            <?php _e('Email'); ?>
+            <?php echo REGISTER_EMAIL ?>
           </label>
           <div class="controls">
             <input class="m-wrap span12" type="email" id="email" name="email" required="required">
@@ -64,36 +64,36 @@ include_once('header.php');
         </div>
         
         <div class="control-group">
-          <label class="control-label">Security Question</label>
+          <label class="control-label"><?php echo REGISTER_SECURITY_QUESTION ?></label>
           <div class="controls">
             <select class="select2 span12 m-wrap" tabindex="1" id="security_question" name="security_question" required="required">
              <option>‏</option>
-             <option value="What was your childhood nickname" >What was your childhood nickname?‏</option>
-             <option value="What was your dream job as a child" >What was your dream job as a child?‏</option>
-             <option value="What was your favorite sport in high school" >What was your favorite sport in high school?‏</option>
-             <option value="What is your pet name" >What is your pet name?‏</option>
-             <option value="What is the name of your hometown" >What is the name of your hometown?‏</option>
+             <option value="<?php echo REGISTER_SECURITY_QUESTION1 ?>" ><?php echo REGISTER_SECURITY_QUESTION1 ?>‏</option>
+             <option value="<?php echo REGISTER_SECURITY_QUESTION2 ?>" ><?php echo REGISTER_SECURITY_QUESTION2 ?>‏</option>
+             <option value="<?php echo REGISTER_SECURITY_QUESTION3 ?>" ><?php echo REGISTER_SECURITY_QUESTION3 ?>‏</option>
+             <option value="<?php echo REGISTER_SECURITY_QUESTION4 ?>" ><?php echo REGISTER_SECURITY_QUESTION4 ?></option>
+             <option value="<?php echo REGISTER_SECURITY_QUESTION5 ?>‏" ><?php echo REGISTER_SECURITY_QUESTION5 ?>‏</option>
             </select>
           </div>
         </div>
         <div class="control-group">
           <label class="control-label" for="answer">
-            <?php _e('Answer'); ?>
+            <?php echo REGISTER_ANSWER ?>
           </label>
           <div class="controls">
-            <input type="text" id="answer" name="answer" class="m-wrap span8" required="required"/>
+            <input type="text" id="answer" name="answer" class="m-wrap span" required="required"/>
           </div>
         </div>
         
         
         <div class="control-group">
           <label class="control-label" for="Registration Category">
-            <?php _e('Registration Category'); ?>
+            <?php echo REGISTER_CATEGORY ?>
           </label>
           <div class="controls">
             <select class="select2 span12 m-wrap" tabindex="1" id="registration_category" name="registration_category" required="required">
-             <option value="advertisement">Advertisement</option>
-             <option value="profile">Profile</option>
+             <option value="advertisement"><?php echo REGISTER_ADVERTISEMENT ?></option>
+             <option value="profile"><?php echo REGISTER_PROFILE ?></option>
             </select>
             
           </div>
@@ -104,8 +104,8 @@ include_once('header.php');
         
         <div class="control-group">
           <div class="controls">
-            <button type="submit" class="btn btn-primary" value="Submit" id="submit" onclick="">Submit</button>
-            <button class="btn btn-info" type="reset">Clear</button>
+            <button type="submit" class="btn btn-primary" value="Submit" id="submit" onclick=""><?php echo SUBMIT ?></button>
+            <button class="btn btn-info" type="reset"><?php echo CLEAR ?></button>
           </div>
         </div>
       </form>
@@ -128,7 +128,7 @@ include_once('header.php');
 	<div id="modal-body-error">
     </div>
     <div class="modal-footer">
-	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true"><?php echo OK ?></button>
 	</div>
 </form>
 </div>

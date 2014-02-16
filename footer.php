@@ -5,8 +5,8 @@
             <div class="row-fluid">
                 <div class="span8">
                     <p>
-                        <span class="margin-right-10">ALL Rights Reserved.</span> 
-                        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                        <span class="margin-right-10"><?php echo FOOTER_ALL_RIGHTS_RESERVER ?></span> 
+                        <a href="#"><?php echo MENU_POLICY ?></a> | <a href="#"><?php echo FOOTER_TERMS_OF_SERVICES ?></a>
                     </p>
                 </div>
                 <div class="span4">

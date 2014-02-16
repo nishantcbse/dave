@@ -90,10 +90,10 @@ $sprovince			     = $listbox->getProvince();
 										<!--end row-fluid-->
 										<div class="tabbable tabbable-custom tabbable-custom-profile">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#info" data-toggle="tab" onclick="location.replace('#info')">Info</a></li>
-												<li ><a href="#contact" data-toggle="tab" onclick="location.replace('#contact')">Contact</a></li>
-												<li ><a href="#image" data-toggle="tab" onclick="location.replace('#image')">Image</a></li>
-												<li ><a href="#video" data-toggle="tab"  onclick="location.replace('#video')">Video</a></li>
+												<li class="active"><a href="#info" data-toggle="tab" onclick="location.replace('#info')"><?php echo SETTINGS_INFO ?></a></li>
+												<li ><a href="#contact" data-toggle="tab" onclick="location.replace('#contact')"><?php echo SETTINGS_CONTACT ?></a></li>
+												<li ><a href="#image" data-toggle="tab" onclick="location.replace('#image')"><?php echo SETTINGS_IMAGE ?></a></li>
+												<li ><a href="#video" data-toggle="tab"  onclick="location.replace('#video')"><?php echo SETTINGS_VIDEO ?></a></li>
 											</ul>
 											<div class="tab-content">
                                             
@@ -115,43 +115,43 @@ $sprovince			     = $listbox->getProvince();
 														<table class="table table-striped table-advance table-hover ">
 															<tbody>
 																<tr>
-																	<td><a href="#">Province</a></td>
+																	<td><a href="#"><?php echo CANDIDATE_PROVINCES ?></a></td>
 																	<td class="hidden-phone"><?php echo $province; ?></td>
 																</tr>
                                                                 
 																<tr>
-																	<td><a href="#">Address</a></td>
+																	<td><a href="#"><?php echo SETTINGS_ADDRESS ?></a></td>
 																	<td class="hidden-phone"><?php echo $candidate_address; ?><br>
 																	<?php echo $candidate_city; ?></td>
 																</tr>
                                                                 
 																<tr>
-																	<td><a href="#">Phone</a></td>
+																	<td><a href="#"><?php echo SETTINGS_PHONE ?></a></td>
 																	<td class="hidden-phone"><?php echo $phone; ?></td>
 																</tr>
                                                                 
 																<tr>
-																	<td><a href="#">Fax</a></td>
+																	<td><a href="#"><?php echo SETTINGS_FAX ?></a></td>
 																	<td class="hidden-phone"><?php echo $fax; ?></td>
 																</tr>
                                                                 
 																<tr>
-																	<td><a href="#">Email</a></td>
+																	<td><a href="#"><?php echo CANDIDATE_EMAIL ?></a></td>
 																	<td class="hidden-phone"><?php echo $email; ?></td>
 																</tr>
                                                                 
 																<tr>
-																	<td><a href="#">Website</a></td>
+																	<td><a href="#"><?php echo CANDIDATE_WEBSITE_URL ?></a></td>
 																	<td class="hidden-phone"><a href="#"><?php echo $website; ?></a></td>
 																</tr>
                                                                 
 																<tr>
-																	<td><a href="#">Facebook Link</a></td>
+																	<td><a href="#"><?php echo CANDIDATE_FACEBOOK_LINK ?></a></td>
 																	<td class="hidden-phone"><a href="#"><?php echo $facebook; ?></a></td>
 																</tr>
                                                                 
 																<tr>
-																	<td><a href="#">Twitter Link</a></td>
+																	<td><a href="#"><?php echo CANDIDATE_TWITTER_LINK ?></a></td>
 																	<td class="hidden-phone"><a href="#"><?php echo $twitter; ?></a></td>
 																</tr>
                                                                 
