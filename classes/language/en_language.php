@@ -14,14 +14,14 @@ define('MENU_GO','Go');
 
 //login section
 define('LOGIN_SIGN_IN_TO','Sign in to');
-define('LOGIN_ABOUT',' Email');
-define('LOGIN_ABOUT',' Password');
+define('LOGIN_EMAIL',' Email');
+define('LOGIN_PASSWORD',' Password');
 define('LOGIN_STAY_SIGNEDIN',' Stay signed in');
 define('LOGIN_SIGNIN','Sign In');
-define('LOGIN_ABOUT','Forgot Password');
+define('LOGIN_FORGOT_PASSWORD','Forgot Password');
 
 //product section
-define('PRODUCT_PROFILE_PAGE_DETAILS ','Profile page Details');
+define('PRODUCT_PROFILE_PAGE_DETAILS','Profile page Details');
 define('PRODUCT_NAME','NAME');
 define('PRODUCT_PARTY','PARTY');
 define('PRODUCT_NUMBER','NUMBER');
@@ -105,7 +105,6 @@ define('SETTINGS_ADD_IMAGE','Add Image');
 define('SETTINGS_UPLOAD_VIDEO','Upload Video');
 define('SETTINGS_UPLOAD_URL','Upload YouTybe URL');
 
-define('SETTINGS_PRODUCTS','Products');
 define('SETTINGS_HOME','Home');
 define('SETTINGS_REGISTER','Register');
 define('SETTINGS_LOGIN','Login');
@@ -113,7 +112,6 @@ define('SETTINGS_CONTACT','Contact');
 define('SETTINGS_ABOUT','About');
 define('SETTINGS_WELCOME','Welcome');
 define('SETTINGS_ACCOUNT_SPONSER','Account Sponser');
-define('SETTINGS_CANDIDATE_INFO','Candidate Info');
 define('SETTINGS_NAME','Name');
 define('SETTINGS_LABEL','Lable');
 define('SETTINGS_PRICE','Price');
@@ -121,11 +119,10 @@ define('SETTINGS_STATUS','Status');
 
 //profile regiswter section
 define('SETTINGS_INFO','Info');
-define('SETTINGS_INFO','Contact');
-define('SETTINGS_INFO','Phone');
-define('SETTINGS_INFO','Fax');
-define('SETTINGS_INFO','Image');
-define('SETTINGS_INFO','Video');
+define('SETTINGS_PHONE','Phone');
+define('SETTINGS_FAX','Fax');
+define('SETTINGS_IMAGE','Image');
+define('SETTINGS_VIDEO','Video');
 
 //FOOTER regiswter section
 define('FOOTER_ALL_RIGHTS_RESERVER','ALL Rights Reserved.');
@@ -140,7 +137,7 @@ define('MIDDLE_NAME','Middle name');
 define('BUY','BUY');
 define('SUBMIT','Submit');
 define('CLEAR','Clear');
-define('CLEAR','Confirm');
+define('CONFERM','Confirm');
 define('DO_YOU_WANT_TO','Do you want to continue');
 define('NO','No');
 define('BUY_NOW','Buy Now');

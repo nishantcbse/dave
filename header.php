@@ -95,7 +95,7 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
 
         });
     </script>
-    
+<?php include_once('classes/language/en_language.php'); ?>
     </head>
 
 	<body>
@@ -118,12 +118,12 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
         </div> 
         <div class="nav-collapse collapse"  style="float:left">
             <ul class="nav">
-                <li class="active"><a href="home.php">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Site Map</a></li>
+                <li class="active"><a href="home.php"><?php echo MENU_HOME ?></a></li>
+                <li><a href="#"><?php echo MENU_ABOUT ?></a></li>
+                <li><a href="#"><?php echo MENU_CONTACT_US ?></a></li>
+                <li><a href="#"><?php echo MENU_TERMS ?></a></li>
+                <li><a href="#"><?php echo MENU_POLICY ?></a></li>
+                <li><a href="#"><?php echo MENU_SITE_MAP ?></a></li>
                
             </ul>
         </div>
@@ -161,16 +161,16 @@ if(isset($_SESSION['jigowatt']['gravatar']) && !empty($_SESSION['jigowatt']['gra
                         
                     </li>                           
     <?php }else{ ?>
-                    <li><a href="product.php" class="loginnav">Register</a></li>
-                    <li><a href="login.php" class="loginnav">Login</a></li>
+                    <li><a href="product.php" class="loginnav"><?php echo MENU_REGISTER ?></a></li>
+                    <li><a href="login.php" class="loginnav"><?php echo MENU_LOGIN ?></a></li>
                     <br><br><br>
     <?php } ?>
             </ul>
         </div>
            <div class="input-append search">
                 <form method="get" action="search.php">
-                    <input style="background:#fff;" class="m-wrap" type="text" id="searchText" name="search" placeholder="Search" />
-                    <button type="submit" class="btn theme-btn" onClick="">Go</button>
+                    <input style="background:#fff;" class="m-wrap" type="text" id="searchText" name="search" placeholder="<?php echo MENU_SEARCH ?>" />
+                    <button type="submit" class="btn theme-btn" onClick=""><?php echo MENU_GO ?></button>
                </form>
             </div>
 

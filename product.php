@@ -40,60 +40,60 @@ $shomeProduct = $product->homeProduct();
       <div class="visual"> <i class="icon-shopping-cart"></i> </div>
       <div class="details">
         <div class="number productCount" id="productCount"> 0 </div>
-        <div class="desc">Total Price - <span id="totalProductPrice"> $ 0.00 </span></div>
+        <div class="desc"><?php echo PRODUCT_TOTAL_PRICE ?> - <span id="totalProductPrice"> $ 0.00 </span></div>
       </div>
-      <a class="more" href="register.php"> Add Cart <i class="m-icon-swapright m-icon-white"></i> </a> </div>
+      <a class="more" href="register.php"><?php echo PRODUCT_ADD_CART ?><i class="m-icon-swapright m-icon-white"></i> </a> </div>
   </div>
 </div>
 
-    <h2>Profile page Details</h2>
+    <h2><?php echo PRODUCT_PROFILE_PAGE_DETAILS ?></h2>
      <div class="border"></div>
   <div class="margin-bottom-40 span6 profileproduct">
     <div class="row-fluid span12">
       <div class="span8">
         <form action="#" class="form-horizontal">
           <div class="control-group">
-            <label class="control-label leftalign">NAME</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_NAME ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">PARTY</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_PARTY ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">NUMBER</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_NUMBER ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">PHOTO</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_PHOTO ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">DESCRIPTION ABOUT YOU</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_DESCRIPTION_ABOUT_YOU ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">PHONE</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_PHONE ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">FAX</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_FAX ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">ADDRESS</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_ADDRESS ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">WEB ADDRESS</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_WEB_ADDRESS ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">SOCIAL NETWORKING LINKS</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_SOCIAL_NETWORKING ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">RECIEVE DIRECT MAIL</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_RECIEVE_DIRECT_MAIL ?></label>
             <div class="controls checkmark"> <span class="tickmark"><i class="icon-ok"></i></span> </div>
           </div>
           
@@ -104,43 +104,43 @@ $shomeProduct = $product->homeProduct();
   <div class="span6">
   <form action="#" class="form-horizontal">
   <div class="control-group">
-            <label class="control-label leftalign">CAMPAIGN PHOTO</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_CAMPAIGN_PHOTO ?></label>
             <div class="controls">
               <select class="select2 span5 m-wrap" tabindex="1">
-                <option value="Category 1">YES</option>
-                <option value="Category 4">NO</option>
+                <option value="Category 1"><?php echo PRODUCT_YES ?></option>
+                <option value="Category 4"><?php echo PRODUCT_NO ?></option>
               </select>
             </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">CAMPAIGN VIDEO</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_CAMPAIGN_VIDEO ?></label>
             <div class="controls">
               <select class="select2 span5 m-wrap" tabindex="1">
-                <option value="Category 1">YES-100</option>
-                <option value="Category 4">NO-100</option>
+                <option value="Category 1"><?php echo PRODUCT_YES_100 ?></option>
+                <option value="Category 4"><?php echo PRODUCT_NO_100 ?></option>
               </select>
             </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">COMPAIGN AUDIO</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_COMPAIGN_AUDIO ?></label>
             <div class="controls">
               <select class="select2 span5 m-wrap" tabindex="1">
-                <option value="Category 1">YES-100</option>
-                <option value="Category 4">NO-100</option>
+                <option value="Category 1"><?php echo PRODUCT_YES_100 ?></option>
+                <option value="Category 4"><?php echo PRODUCT_NO_100 ?></option>
               </select>
             </div>
           </div>
           <div class="control-group">
-            <label class="control-label leftalign">PLAN DURATION</label>
+            <label class="control-label leftalign"><?php echo PRODUCT_PLAN_DURATION ?></label>
             <div class="controls">
               <select class="select2 span5 m-wrap" tabindex="1">
-                <option value="Category 1">YES-100</option>
-                <option value="Category 4">NO-100</option>
+                <option value="Category 1"><?php echo PRODUCT_YES_100 ?></option>
+                <option value="Category 4"><?php echo PRODUCT_NO_100 ?></option>
               </select>
             </div>
           </div>
         <div class="buy2">
-        <button type="button" class="btn btn-info onClick="addtocart()">BUY</button>
+        <button type="button" class="btn btn-info onClick="addtocart()"><?php echo BUY ?></button>
         </div>
           
   </form>
@@ -152,7 +152,7 @@ $shomeProduct = $product->homeProduct();
 
 <!-- BEGIN CONTAINER -->
 <div class="container min-hight"> 
-  <h2>Home Page Advertisement</h2>
+  <h2><?php echo PRODUCT_HOME_PAGE_ADVERTISEMENT ?></h2>
   <div class="border"></div>
   <div class="row-fluid margin-bottom-10">
     <div class="span12 homeProduct"> 
@@ -173,7 +173,7 @@ $shomeProduct = $product->homeProduct();
               </div>
              <div class="span4 buybtn">
                 <div class="buy">
-                <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
+                <button type="button" class="btn btn-info" onClick="addtocart()"><?php echo BUY ?></button>
                 </div>
             </div>               
            </div>
@@ -186,18 +186,18 @@ $shomeProduct = $product->homeProduct();
     </div>
   </div>
  
-    <h2>Other page Ads</h2>
+    <h2><?php echo PRODUCT_OTHER_PAGE_ADS ?></h2>
     <div class="border"></div>
 	<div class="row-fluid">
          
    <!-- ##############  REGISTER PRODUCT ################# -->  
          
           <div class="span6 homeProduct">
-          	<h4>REGISTER</h4>
+          	<h4><?php echo PRODUCT_REGISTER ?></h4>
                   <?php  display_registerproduct(); ?>
                
                 <div class="buy1">
-                <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
+                <button type="button" class="btn btn-info" onClick="addtocart()"><?php echo BUY ?></button>
                 </div>
           </div>
           
@@ -208,57 +208,57 @@ $shomeProduct = $product->homeProduct();
   
           
           <div class="span6 homeProduct">
-          	<h4>LOGIN PAGE</h4>
+          	<h4><?php echo PRODUCT_LOGIN_PAGE ?></h4>
 
                   <?php  display_loginproduct(); ?>
 
                 <div class="buy1">
-                <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
+                <button type="button" class="btn btn-info" onClick="addtocart()"><?php echo BUY ?></button>
                 </div>
           </div>
           
           <div class="span6 homeProduct">
-          	<h4>CONTACT US PAGE</h4>
+          	<h4><?php echo PRODUCT_CONTACT_US_PAGE ?></h4>
                   <?php  display_contactusproduct(); ?>
               
                 <div class="buy1">
-                <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
+                <button type="button" class="btn btn-info" onClick="addtocart()"><?php echo BUY ?></button>
                 </div>
           </div>
           
           <div class="span6 homeProduct">
-          	<h4>ABOUT PAGE</h4>
+          	<h4><?php echo PRODUCT_ABOUT_PAGE?></h4>
 
                   <?php  display_aboutproduct(); ?>
                 <div class="buy1">
-                <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
+                <button type="button" class="btn btn-info" onClick="addtocart()"><?php echo BUY ?></button>
                 </div>
           </div>
 
           <div class="span6 homeProduct">
-          	<h4>WELCOME PAGE</h4>
+          	<h4><?php echo PRODUCT_WELCOME_PAGE ?></h4>
                   <?php  display_welcomeproduct(); ?>
               
                 <div class="buy1">
-                <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
+                <button type="button" class="btn btn-info" onClick="addtocart()"><?php echo BUY ?></button>
                 </div>
           </div>
 
           <div class="span6 homeProduct">
-          	<h4>ACCOUNT SPONSOR INFO PAGE</h4>
+          	<h4><?php echo PRODUCT_ACCOUNT_SPONSOR ?></h4>
 
                   <?php  display_accountsponsorproduct(); ?>
                 <div class="buy1">
-                <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
+                <button type="button" class="btn btn-info" onClick="addtocart()"><?php echo BUY ?></button>
                 </div>
           </div>
 
           <div class="span6 homeProduct">
-          	<h4>CANDIDATE INFO PAGE</h4>
+          	<h4><?php echo PRODUCT_CANDIDATE_INFO ?></h4>
 
                   <?php  display_candidateinfoproduct(); ?>
                 <div class="buy1">
-                <button type="button" class="btn btn-info" onClick="addtocart()">BUY</button>
+                <button type="button" class="btn btn-info" onClick="addtocart()"><?php echo BUY ?></button>
                 </div>
           </div>
 
