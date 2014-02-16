@@ -40,6 +40,8 @@ $facebook				 = $profile->getField('candidate_fb_link');
 $twitter				 = $profile->getField('candidate_twitter_link');
 $info					 = $profile->getField('candidate_info');
 $created				 = $profile->getField('created');
+$candidate_no			 = $profile->getField('candidate_no');
+$candidate_destrict		 = $profile->getField('candidate_destrict');
 $spartyList              = $listbox->getPolitical_Party_List();
 $sdistrict 				 = $listbox->getDistrict();
 $sprovince			     = $listbox->getProvince();
@@ -71,13 +73,12 @@ $sprovince			     = $listbox->getProvince();
 									<div class="span9">
 										<div class="row-fluid">
 											<div class="span8 profile-info">
-												<h1><?php echo $candidate_first_name; ?>&nbsp<?php echo $candidate_middle_name; ?>&nbsp<?php echo $candidate_last_name; ?></h1>
-												<p><?php echo $info; ?></p>
+												<span style="font-weight:500; font-size:18px;"><?php echo $candidate_first_name; ?>&nbsp<?php echo $candidate_middle_name; ?>&nbsp<?php echo $candidate_last_name; ?>&nbsp;&nbsp;(<?php echo $candidate_no; ?>)</span>
+												<p><?php //echo $info; ?></p>
                                                 <p><div ><img src="<?php echo $party_symbol; ?>" style="width:2%" />&nbsp;&nbsp;&nbsp;<span><?php echo $party_name; ?></span></div></p>
-												<p><a href="#"><?php echo $email; ?></a></p>
+												<p><a href="#"><?php //echo $email; ?></a></p>
 												<ul class="unstyled inline">
-													<li><i class="icon-map-marker"></i> <?php echo $candidate_city; ?></li>
-													<li><i class="icon-calendar"></i> <?php echo $created; ?></li>
+													<li><i class="icon-map-marker"></i> <?php echo $candidate_destrict; ?></li>
 												</ul>
 											</div>
 											<!--end span8-->
@@ -89,12 +90,27 @@ $sprovince			     = $listbox->getProvince();
 										<!--end row-fluid-->
 										<div class="tabbable tabbable-custom tabbable-custom-profile">
 											<ul class="nav nav-tabs">
-												<li class="active"><a href="#details" data-toggle="tab" onclick="location.replace('#details')">Details</a></li>
+												<li class="active"><a href="#info" data-toggle="tab" onclick="location.replace('#info')">Info</a></li>
+												<li ><a href="#contact" data-toggle="tab" onclick="location.replace('#contact')">Contact</a></li>
 												<li ><a href="#image" data-toggle="tab" onclick="location.replace('#image')">Image</a></li>
 												<li ><a href="#video" data-toggle="tab"  onclick="location.replace('#video')">Video</a></li>
 											</ul>
 											<div class="tab-content">
-												<div class="tab-pane active" id="details">
+                                            
+												<div class="tab-pane active" id="info">
+													<div class="portlet-body" style="display: block;">
+														<table class="table table-striped table-advance table-hover ">
+															<tbody>
+																<tr>
+																	<td><a href="#">Info</a></td>
+																	<td class="hidden-phone"><?php echo $info; ?></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div> 
+                                                                                           
+												<div class="tab-pane" id="contact">
 													<div class="portlet-body" style="display: block;">
 														<table class="table table-striped table-advance table-hover ">
 															<tbody>
