@@ -11,14 +11,14 @@ var PRODUCT_USER_ID = '<?php echo $_SESSION['jigowatt']['user_id'] ?>';
   <div class="span12">
     <div class="span2">
       <ul class="ver-inline-menu tabbable margin-bottom-10">
-        <li class="active"> <a data-toggle="tab" href="#home1"> <i class="icon-picture"></i> Home </a> <span class="after"></span></li>
-        <li ><a data-toggle="tab" href="#register1"><i class="icon-picture"></i> Register </a></li>
-        <li ><a data-toggle="tab" href="#login1"><i class="icon-picture"></i> Login </a></li>
-        <li ><a data-toggle="tab" href="#contactus1"><i class="icon-picture"></i> Contact </a></li>
-        <li ><a data-toggle="tab" href="#about1"><i class="icon-picture"></i> About </a></li>
-        <li ><a data-toggle="tab" href="#welcome1"><i class="icon-picture"></i> Welcome </a></li>
-        <li ><a data-toggle="tab" href="#accountsponser1"><i class="icon-picture"></i> Account Sponser </a></li>
-        <li ><a data-toggle="tab" href="#candidateinfo1"><i class="icon-picture"></i> Candidate Info </a></li>
+        <li class="active"> <a data-toggle="tab" href="#home1"> <i class="icon-picture"></i><?php echo SETTINGS_HOME ?></a> <span class="after"></span></li>
+        <li ><a data-toggle="tab" href="#register1"><i class="icon-picture"></i><?php echo SETTINGS_REGISTER ?></a></li>
+        <li ><a data-toggle="tab" href="#login1"><i class="icon-picture"></i><?php echo SETTINGS_LOGIN ?></a></li>
+        <li ><a data-toggle="tab" href="#contactus1"><i class="icon-picture"></i><?php echo SETTINGS_CONTACT ?></a></li>
+        <li ><a data-toggle="tab" href="#about1"><i class="icon-picture"></i><?php echo SETTINGS_ABOUT ?></a></li>
+        <li ><a data-toggle="tab" href="#welcome1"><i class="icon-picture"></i><?php echo SETTINGS_WELCOME ?></a></li>
+        <li ><a data-toggle="tab" href="#accountsponser1"><i class="icon-picture"></i><?php echo SETTINGS_ACCOUNT_SPONSER ?></a></li>
+        <li ><a data-toggle="tab" href="#candidateinfo1"><i class="icon-picture"></i><?php echo SETTINGS_CANDIDATE_INFO ?></a></li>
       </ul>
     </div>
     <div class="span10">
@@ -76,25 +76,25 @@ var PRODUCT_USER_ID = '<?php echo $_SESSION['jigowatt']['user_id'] ?>';
                 <div class="box-content nopadding">
                   <form method="POST" class='form-horizontal form-bordered' id='products-form1'>
                     <div class="control-group">
-                      <label for="textfield" class="control-label">Label</label>
+                      <label for="textfield" class="control-label"><?php echo SETTINGS_LABEL ?></label>
                       <div class="controls">
                         <input type="text" readonly="readonly" name="product-label" id="product-label" class="input-large span7">
                       </div>
                     </div>
                     <div class="control-group">
-                      <label for="textfield" class="control-label">Name</label>
+                      <label for="textfield" class="control-label"><?php echo SETTINGS_NAME ?></label>
                       <div class="controls">
                         <input type="text" readonly="readonly" name="product-name" id="product-name" class="input-large span7">
                       </div>
                     </div>
                     <div class="control-group">
-                      <label for="textfield" class="control-label">Price</label>
+                      <label for="textfield" class="control-label"><?php echo SETTINGS_PRICE ?></label>
                       <div class="controls">
                         <input type="text" name="product-price" id="product-price" class="input-large span7" readonly="readonly">
                       </div>
                     </div>
                     <div class="control-group">
-                      <label for="textfield" class="control-label">Image</label>
+                      <label for="textfield" class="control-label"><?php echo SETTINGS_IMAGE ?></label>
                       <div class="controls">
                         <div style="height: auto;" id="accordion2-4" class="accordion collapse"> 
                          <span id="product-image-preview">
@@ -102,7 +102,7 @@ var PRODUCT_USER_ID = '<?php echo $_SESSION['jigowatt']['user_id'] ?>';
                            </span>                     
                           <input id="uploadImageProduct" type="file" name="fileToUpload" onchange="PreviewImageProduct();" style="display:none" />
                          
-                          <span class="btn btn-file"> <span class="fileupload-new" onclick="selectImgProduct()"> Select image </span> </span> <span class="btn btn-file" id="image-upload-product" style="display:none"> <span class="fileupload-exists" onclick="saveProductPicture()">Upload</span> </span> </div>
+                          <span class="btn btn-file"> <span class="fileupload-new" onclick="selectImgProduct()"><?php echo SELECT_IMAGE ?></span> </span> <span class="btn btn-file" id="image-upload-product" style="display:none"> <span class="fileupload-exists" onclick="saveProductPicture()"><?php echo UPLOAD ?></span> </span> </div>
                       </div>
                     </div>
                     
@@ -116,8 +116,8 @@ var PRODUCT_USER_ID = '<?php echo $_SESSION['jigowatt']['user_id'] ?>';
                     <input type="hidden" name="products-id" id="products-id1" value="">
                     <input type="hidden" name="product-image" id="product-image1" value="">
                     <div class="form-actions">
-                      <button type="button" class="btn btn-primary" id="user-save" onclick="Modifyproducts()">Save</button>
-                      <button type="button" class="btn" id="products-cancel1">Cancel</button>
+                      <button type="button" class="btn btn-primary" id="user-save" onclick="Modifyproducts()"><?php echo SAVE ?></button>
+                      <button type="button" class="btn" id="products-cancel1"><?php echo CANCLE ?></button>
                     </div>
                   </form>
                 </div>

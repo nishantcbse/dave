@@ -254,7 +254,7 @@ $shomeProduct = $product->homeProduct();
           </div>
 
           <div class="span6 homeProduct">
-          	<h4><?php echo PRODUCT_CANDIDATE_INFO ?></h4>
+          	<h4><?php echo PRODUCT_CANDIDATE_INFO_PAGE ?></h4>
 
                   <?php  display_candidateinfoproduct(); ?>
                 <div class="buy1">

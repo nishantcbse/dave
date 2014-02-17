@@ -114,7 +114,7 @@ $sprovince			     = $listbox->getProvince();
               <!-- BEGIN STYLE CUSTOMIZER --> 
               
               <!-- BEGIN PAGE TITLE & BREADCRUMB-->
-              <h3 class="page-title"> User Admin </h3>
+              <h3 class="page-title"><?php echo SETTINGS_USER_ADMIN ?></h3>
               
               <!-- END PAGE TITLE & BREADCRUMB--> 
             </div>
@@ -129,11 +129,11 @@ $sprovince			     = $listbox->getProvince();
                   <!--                  <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
                   <li class="active"><a href="#profile" data-toggle="tab">Profile Info</a></li>
 -->
-                  <li class="active"><a href="#account" data-toggle="tab" onclick="location.replace('#account')">Account</a></li>
-                  <li><a href="#media" data-toggle="tab" onclick="location.replace('#media')">Media</a></li>
+                  <li class="active"><a href="#account" data-toggle="tab" onclick="location.replace('#account')"><?php echo SETTINGS_ACCOUNT ?></a></li>
+                  <li><a href="#media" data-toggle="tab" onclick="location.replace('#media')"><?php echo SETTINGS_MEDIA ?></a></li>
 <!--                  <li><a href="#manage" data-toggle="tab">Manage</a></li>
                  <li><a href="#table" data-toggle="tab">Table</a></li>
--->                   <li><a href="#products" data-toggle="tab" onclick="location.replace('#products')">Products</a></li>
+-->                   <li><a href="#products" data-toggle="tab" onclick="location.replace('#products')"><?php echo SETTINGS_PRODUCTS ?></a></li>
                 </ul>
                 <div class="tab-content">
                   <div class="tab-pane row-fluid active" id="overview">
@@ -151,12 +151,12 @@ $sprovince			     = $listbox->getProvince();
                       <div class="span12">
                         <div class="span3">
                           <ul class="ver-inline-menu tabbable margin-bottom-10">
-                            <li class="active"> <a data-toggle="tab" href="#tab_1-1"> <i class="icon-cog"></i> Personal info </a> <span class="after"></span> </li>
-                            <li ><a data-toggle="tab" href="#tab_2-2"><i class="icon-picture"></i> Change Avatar</a></li>
-                            <li ><a data-toggle="tab" href="#tab_3-3"><i class="icon-lock"></i> Change Password</a></li>
+                            <li class="active"> <a data-toggle="tab" href="#tab_1-1"> <i class="icon-cog"></i><?php echo SETTINGS_PERSONAL_INFO ?></a> <span class="after"></span> </li>
+                            <li ><a data-toggle="tab" href="#tab_2-2"><i class="icon-picture"></i><?php echo SETTINGS_CHANGE_AVATAR ?></a></li>
+                            <li ><a data-toggle="tab" href="#tab_3-3"><i class="icon-lock"></i><?php echo SETTINGS_CHANGE_PASSWORD ?></a></li>
                               <?php if( !empty($candidate_id_check)){ ?>
 
-                            <li ><a data-toggle="tab" href="#tab_4-4"><i class="icon-eye-open"></i> Candidate Info</a></li>
+                            <li ><a data-toggle="tab" href="#tab_4-4"><i class="icon-eye-open"></i><?php echo SETTINGS_CANDIDATE_INFO ?></a></li>
                               <?php } ?>
                           </ul>
                         </div>
@@ -206,14 +206,14 @@ $sprovince			     = $listbox->getProvince();
 	    <h3 id="modal-title"></h3>
 	</div>
 	<div class="modal-body">
-        <p><strong>Confirm</strong></p>
-        <p>Are you certain you want to continue?</p>
+        <p><strong><?php echo CONFERM ?></strong></p>
+        <p><?php echo DO_YOU_WANT_TO ?></p>
         <input type="hidden" name="forfeiture-action" id="forfeiture-action" value="">
         <input type="hidden" name="forfeiture-id" id="forfeiture-id" value="<?php echo $id; ?>">
     </div>
     <div class="modal-footer">
-	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true">No</button>
-		<button type="submit" id="confirm-save" class="btn" data-dismiss="modal">Yes</button>
+	    <button type="button" class="btn" data-dismiss="modal" aria-hidden="true"><?php echo NO ?></button>
+		<button type="submit" id="confirm-save" class="btn" data-dismiss="modal"><?php echo YES ?></button>
 	</div>
 </form>
 </div>

@@ -10,7 +10,7 @@
                            </span>                     
                           <input id="uploadImageProfile" type="file" name="fileToUpload" onchange="PreviewImageProfile();" style="display:none" />
                          
-                          <span class="btn btn-file"> <span class="fileupload-new" onclick="selectImgProfile()"> Select image </span> </span> <span class="btn btn-file" id="image-upload-profile" style="display:none"> <span class="fileupload-exists" onclick="saveProfilePicture()">Upload</span> </span> </div>
+                          <span class="btn btn-file"> <span class="fileupload-new" onclick="selectImgProfile()"><?php echo SELECT_IMAGE ?></span> </span> <span class="btn btn-file" id="image-upload-profile" style="display:none"> <span class="fileupload-exists" onclick="saveProfilePicture()"><?php echo UPLOAD ?></span> </span> </div>
                       </div>
                     </div>
 

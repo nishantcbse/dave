@@ -16,7 +16,7 @@
                         	</div>
                         </div>
 						<div class="control-group">
-							<label class="control-label" for="username"><?php echo $login->use_emails ? _('Email address') : _('Email'); ?></label>
+							<label class="control-label" for="username"><?php echo LOGIN_EMAIL ?></label>
 							<div class="controls">
 								<input class="m-wrap" type="text" id="username" name="username" placeholder="<?php echo LOGIN_EMAIL ?>">
 							</div>

@@ -49,7 +49,8 @@ define('PRODUCT_CONTACT_US_PAGE','CONTACT US PAGE');
 define('PRODUCT_ABOUT_PAGE','ABOUT PAGE');
 define('PRODUCT_WELCOME_PAGE','WELCOME PAGE');
 define('PRODUCT_ACCOUNT_SPONSOR','ACCOUNT SPONSOR INFO PAGE');
-define('PRODUCT_CANDIDATE_INFO','CANDIDATE INFO PAGE');
+define('PRODUCT_CANDIDATE_INFO_PAGE','CANDIDATE INFO PAGE');
+define('PRODUCT_CANDIDATE_INFO','Candidate Info');
 
 //cart section
 define('PRODUCT_ADD_CART','ADD CART');
@@ -84,6 +85,11 @@ define('CANDIDATE_WEBSITE_URL','Website URL');
 define('CANDIDATE_FACEBOOK_LINK','Facebool Link');
 define('CANDIDATE_TWITTER_LINK','Twitter Link');
 define('CANDIDATE_UPLODE_IMAGE','Uplode Image');
+define('CANDIDATE_PARTY_SYMBAL1','UNITED PEOPLE\'S FREEDOM ALLIANCE');
+define('CANDIDATE_PARTY_SYMBAL2','UNITED NATIONAL PARTY');
+define('CANDIDATE_PARTY_SYMBAL3','PEOPLE\'S LIBERATION FRONT (JVP)');
+define('CANDIDATE_PARTY_SYMBAL4','SRI LANKA MUSLIM CONGRESS');
+define('CANDIDATE_PARTY_SYMBAL5','DEMOCRATIC PARTY');
  
 //user_s regiswter section
 define('SETTINGS_USER_ADMIN','User Admin');
@@ -143,6 +149,7 @@ define('MIDDLE_NAME','Middle name');
 define('BUY','BUY');
 define('SUBMIT','Submit');
 define('CLEAR','Clear');
+define('CANCLE','Cancel');
 define('CONFERM','Confirm');
 define('DO_YOU_WANT_TO','Do you want to continue');
 define('NO','No');
@@ -154,6 +161,8 @@ define('DELETE','Delete');
 define('EDIT','Edit');
 define('SELECT_AN_OPTION','Select an Option');
 define('OK','Ok');
+define('UPLOAD','Upload');
+define('SAVE','Save');
 // the whole file with the labels of your system
 
 ?>
