@@ -2,7 +2,8 @@
               <div class="span12">
                 <div class="span2">
                   <ul class="ver-inline-menu tabbable margin-bottom-10">
-                    <li class="active"> <a data-toggle="tab" href="#upload"> <i class="icon-cog"></i> Upload </a> <span class="after"></span> </li>
+                    <li class="active"> <a data-toggle="tab" href="#upload"> <i class="icon-cog"></i><?php echo SETTINGS_IMAGE ?></a> <span class="after"></span> </li>
+                    <li ><a data-toggle="tab" href="#video1" ><i class="icon-picture"></i> <?php echo SETTINGS_VIDEO ?></a></li>
 <!--                    <li ><a data-toggle="tab" href="#view" onclick="viewMedia()"><i class="icon-picture"></i> View </a></li>
 -->                  </ul>
                 </div>
@@ -15,6 +16,11 @@
                       </div>
                     </div>
                     
+                    <div id="video1" class="tab-pane">
+                      <div style="height: auto;" id="video1" class="accordion collapse">
+                        <?php include('page-media-video.php'); ?>
+                      </div>
+                    </div>
                     <!--<div id="view" class="tab-pane">
                       <div style="height: auto;" id="view" class="accordion collapse">
                     <?php //include_once('page-media-view.php'); ?>

@@ -97,7 +97,6 @@ function viewMedia(){
 }
 
 function addYouTubeURL(){
-	alert('mintu or rani');
   $('#responsive').modal();
 }
 
