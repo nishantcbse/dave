@@ -39,6 +39,8 @@ class Settings extends Generic {
 				    $this->change_avatar();
 				}else if($this->options['action']== 'edit-media-detail'){
 				    $this->editMedia();
+				}else if($this->options['action']== 'youtube'){
+				    $this->addYouTubeVideo();
 				}
 				
 				
@@ -342,7 +344,33 @@ class Settings extends Generic {
 	   $query = parent::query($sql);
   }
 	
-	
+   private function addYouTubeVideo() {
+
+		if (!empty($this->error)) return false;
+
+        $detail            	= $_POST['media-detail'];
+        $link     	 	    = $_POST['media-url'];
+        $candidate     	 	= $this->getField('candidate_id');
+		
+		
+	    $sql = "INSERT INTO media (name, type, candidate_id) VALUES ('$detail','$link','$candidate');";
+		parent::query($sql);
+		$id = parent::$dbh->lastInsertId();
+		$this->result = 'Successful';
+
+		$sqlMedia = "SELECT * FROM media WHERE id=".$id;
+        $query = parent::query($sqlMedia);
+        
+		while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                $list[] = array(
+				    'id' 	     =>   $row['id'],
+					'name'       =>   $row['name'],
+					'type'       =>   $row['type'],
+                );
+            }
+		 echo json_encode($list);
+
+	}
 	
     private function grab() {
 

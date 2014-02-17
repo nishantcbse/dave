@@ -38,6 +38,8 @@ function Modify_info(type){
 		var post = $('#candidate-edit-form').serialize();
 	}else if(type == 'password'){
 		var post = $('#password-edit-form').serialize();
+	}else if(type == 'addYouTubeVideo'){
+		var post = $('#add_youtube_video_form').serialize();
 	}
 	
     $.post('classes/settings.class.php', post, function (data) {

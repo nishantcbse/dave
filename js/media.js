@@ -100,8 +100,13 @@ function addYouTubeURL(){
   $('#responsive').modal();
 }
 
+function add_YouTube_video(){
+  $('#add_YouTube_video').modal();
+}
+
 function Modifymedia(){
     var post = $('#media-edit-form').serialize();
+    var post = $('#add_youtube_video_form').serialize();
 	//alert(post);
 	 $.post('classes/settings.class.php',post).done(function(data){
         if (data.match('success') !== null) {

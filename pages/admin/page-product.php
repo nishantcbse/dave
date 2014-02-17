@@ -12,13 +12,13 @@ var PRODUCT_USER_ID = '<?php echo $_SESSION['jigowatt']['user_id'] ?>';
     <div class="span2">
       <ul class="ver-inline-menu tabbable margin-bottom-10">
         <li class="active"> <a data-toggle="tab" href="#home1"> <i class="icon-picture"></i><?php echo SETTINGS_HOME ?></a> <span class="after"></span></li>
-        <li ><a data-toggle="tab" href="#register1"><i class="icon-picture"></i><?php echo SETTINGS_REGISTER ?></a></li>
-        <li ><a data-toggle="tab" href="#login1"><i class="icon-picture"></i><?php echo SETTINGS_LOGIN ?></a></li>
-        <li ><a data-toggle="tab" href="#contactus1"><i class="icon-picture"></i><?php echo SETTINGS_CONTACT ?></a></li>
-        <li ><a data-toggle="tab" href="#about1"><i class="icon-picture"></i><?php echo SETTINGS_ABOUT ?></a></li>
-        <li ><a data-toggle="tab" href="#welcome1"><i class="icon-picture"></i><?php echo SETTINGS_WELCOME ?></a></li>
-        <li ><a data-toggle="tab" href="#accountsponser1"><i class="icon-picture"></i><?php echo SETTINGS_ACCOUNT_SPONSER ?></a></li>
-        <li ><a data-toggle="tab" href="#candidateinfo1"><i class="icon-picture"></i><?php echo SETTINGS_CANDIDATE_INFO ?></a></li>
+        <li ><a data-toggle="tab" href="#register1" onclick="location.replace('#register1')"><i class="icon-picture"></i><?php echo SETTINGS_REGISTER ?></a></li>
+        <li ><a data-toggle="tab" href="#login1" onclick="location.replace('#login1')"><i class="icon-picture"></i><?php echo SETTINGS_LOGIN ?></a></li>
+        <li ><a data-toggle="tab" href="#contactus1" onclick="location.replace('#contactus1')"><i class="icon-picture"></i><?php echo SETTINGS_CONTACT ?></a></li>
+        <li ><a data-toggle="tab" href="#about1" onclick="location.replace('#about1')"><i class="icon-picture"></i><?php echo SETTINGS_ABOUT ?></a></li>
+        <li ><a data-toggle="tab" href="#welcome1" onclick="location.replace('#welcome1')"><i class="icon-picture"></i><?php echo SETTINGS_WELCOME ?></a></li>
+        <li ><a data-toggle="tab" href="#accountsponser1" onclick="location.replace('#accountsponser1')"><i class="icon-picture"></i><?php echo SETTINGS_ACCOUNT_SPONSER ?></a></li>
+        <li ><a data-toggle="tab" href="#candidateinfo1" onclick="location.replace('#candidateinfo1')"><i class="icon-picture"></i><?php echo SETTINGS_CANDIDATE_INFO ?></a></li>
       </ul>
     </div>
     <div class="span10">

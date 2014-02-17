@@ -151,12 +151,12 @@ $sprovince			     = $listbox->getProvince();
                       <div class="span12">
                         <div class="span3">
                           <ul class="ver-inline-menu tabbable margin-bottom-10">
-                            <li class="active"> <a data-toggle="tab" href="#tab_1-1"> <i class="icon-cog"></i><?php echo SETTINGS_PERSONAL_INFO ?></a> <span class="after"></span> </li>
-                            <li ><a data-toggle="tab" href="#tab_2-2"><i class="icon-picture"></i><?php echo SETTINGS_CHANGE_AVATAR ?></a></li>
-                            <li ><a data-toggle="tab" href="#tab_3-3"><i class="icon-lock"></i><?php echo SETTINGS_CHANGE_PASSWORD ?></a></li>
+                            <li class="active"> <a data-toggle="tab" href="#account_personal_info" onclick="location.replace('#account_personal_info')"> <i class="icon-cog"></i><?php echo SETTINGS_PERSONAL_INFO ?></a> <span class="after"></span> </li>
+                            <li ><a data-toggle="tab" href="#account_change_avators" onclick="location.replace('#account_change_avators')"><i class="icon-picture"></i><?php echo SETTINGS_CHANGE_AVATAR ?></a></li>
+                            <li ><a data-toggle="tab" href="#account_change_password" onclick="location.replace('#account_change_password')"><i class="icon-lock"></i><?php echo SETTINGS_CHANGE_PASSWORD ?></a></li>
                               <?php if( !empty($candidate_id_check)){ ?>
 
-                            <li ><a data-toggle="tab" href="#tab_4-4"><i class="icon-eye-open"></i><?php echo SETTINGS_CANDIDATE_INFO ?></a></li>
+                            <li ><a data-toggle="tab" href="#account_candidate_info" onclick="location.replace('#account_candidate_info')"><i class="icon-eye-open"></i><?php echo SETTINGS_CANDIDATE_INFO ?></a></li>
                               <?php } ?>
                           </ul>
                         </div>
